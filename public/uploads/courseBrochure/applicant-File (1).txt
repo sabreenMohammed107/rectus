@@ -1,0 +1,9 @@
+index.jsp
+galleryServlet
+pictureServlt
+fileServlet
+news.jsp
+Messages.jsp
+resource
+home.jsp
+propblem handler
