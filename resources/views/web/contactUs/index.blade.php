@@ -10,8 +10,8 @@
         <div class="row d-flex align-items-center justify-content-center">
         <div class="about-content col-lg-12">
                 <h1 class="text-white"> Contact Us</h1>
-                <p class="text-color link-nav"><a href="{{ url('/') }}">Home </a> 
-                <span class="lnr lnr-arrow-right"></span> 
+                <p class="text-color link-nav"><a href="{{ url('/') }}">Home </a>
+                <span class="lnr lnr-arrow-right"></span>
                 </p>
             </div>
         </div>
@@ -19,16 +19,16 @@
 </section>
 <!-- End banner Area -->
 	<!-- End banner Area -->
-	
+
 	<!-- Start contact-page Area -->
 	<section class="contact-page-area section-gap">
 		<div class="container">
-       
+
 			<div class="row d-flex justify-content-center">
 				<div class="menu-content pb-50 col-lg-8">
 					<div class="title text-center">
 						<h4 class="text-color" style="font-family:pruistin;font-size:30px">Contact Us</h4>
-						<h1 class="mb-10" style="font-size:30px">BTS Offices and Branches</h1>
+						<h1 class="mb-10" style="font-size:30px">Rectus Offices and Branches</h1>
 						<p>We will never stop improving</p>
 					</div>
 				</div>
@@ -44,7 +44,7 @@
 							<h5>{{ $branchxx->branch_name}}</h5>
 							<p>
 							{{ $branchxx->address }}
-							
+
 							</p>
 						</div>
 					</div>
@@ -53,7 +53,7 @@
 							<span class="lnr lnr-phone-handset" style="color:#32a2a8"></span>
 						</div>
 						<div class="contact-details">
-                        
+
 							<h5>Office: {{ $branchxx->office_phone}}</h5>
 							<h5>Mobile: {{ $branchxx->mobile}}</h5>
 						</div>
@@ -98,8 +98,8 @@
 			</div>
             @endforeach
 			<hr />
-		
-	
+
+
 		</div>
 	</section>
 	<!-- End contact-page Area -->

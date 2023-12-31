@@ -27,7 +27,7 @@ position: fixed;
     transition: .2s;
    width: 40px;
 	  margin:5px
-  
+
 }
 	.social-side a:hover {
 	background-color: #32a2a8 !important;
@@ -63,7 +63,7 @@ position: fixed;
   &amp;link={{ urlencode($url) }}
   &amp;redirect_uri={{ urlencode('$url') }}','popup','width=600,height=400'); return false;"><i class="fab fa-facebook-messenger" style="color:#fff"></i></a>
 <!-- new share by email-->
-							<a href="mailto:?subject=Please check this course - Recommended&amp;body=Check out this {{ urlencode($url) }}" style="padding:3px 7px;background-color:#777" target="_blank"><i class="fa fa-envelope" style="color:#fff"></i></a> 
+							<a href="mailto:?subject=Please check this course - Recommended&amp;body=Check out this {{ urlencode($url) }}" style="padding:3px 7px;background-color:#777" target="_blank"><i class="fa fa-envelope" style="color:#fff"></i></a>
                         </div>
 </div>
 
@@ -392,9 +392,9 @@ position: fixed;
                 <div class="social-nav row no-gutters">
 
                     <div class="col-lg-4 col-md-4">
-               
+
 <div class="social">
-	        
+
                             <?php
 
                             $courseId = $course->id;
@@ -414,7 +414,7 @@ position: fixed;
   &amp;link={{ urlencode($url) }}
   &amp;redirect_uri={{ urlencode('$url') }}','popup','width=600,height=400'); return false;"><i class="fab fa-facebook-messenger" style="color:#fff"></i></a>
 <!-- new share by email-->
-							<a href="mailto:?subject=Please check this course - Recommended&amp;body=Check out this {{ urlencode($url) }}" style="padding:3px 7px;background-color:#777" target="_blank"><i class="fa fa-envelope" style="color:#fff"></i></a> 
+							<a href="mailto:?subject=Please check this course - Recommended&amp;body=Check out this {{ urlencode($url) }}" style="padding:3px 7px;background-color:#777" target="_blank"><i class="fa fa-envelope" style="color:#fff"></i></a>
                         </div>
                     </div>
 
@@ -509,7 +509,7 @@ position: fixed;
                             <div class="col-lg-12 sidebar-widgets">
                                 <div class="widget-wrap" style="border:none !important">
                                     <div class="single-sidebar-widget popular-post-widget">
-                                        <h4 class="popular-title">BTS Online Training Solution</h4>
+                                        <h4 class="popular-title">Rectus Online Training Solution</h4>
                                         <div class="popular-post-list">
                                             <div class="single-post-list d-flex flex-row align-items-center">
                                                 <div class="thumb">
@@ -550,7 +550,7 @@ position: fixed;
                                                 </div>
                                                 <div class="details">
                                                     <a >
-                                                        
+
                                                         <h6>More effective learning</h6>
                                                     </a>
                                                     <p>More effective learning</p>
