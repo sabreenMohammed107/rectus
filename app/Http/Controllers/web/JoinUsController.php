@@ -105,7 +105,7 @@ class JoinUsController extends Controller
     }
 
 
-    public function Consunltancy(){
-        return view($this->viewName.'consunltancy');
-    }
+    // public function Consunltancy(){
+    //     return view($this->viewName.'consunltancy');
+    // }
 }

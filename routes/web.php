@@ -13,9 +13,11 @@
 
 /*----------------------Home---------------------------*/
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\web\IndexController;
 use App\Http\Controllers\web\CourseController;
 use App\Http\Controllers\web\JoinUsController;
+use App\Http\Controllers\web\AboutUsController;
 use App\Http\Controllers\web\InHouseController;
 use App\Http\Controllers\web\CalenderController;
 use App\Http\Controllers\web\CategoryController;
@@ -23,7 +25,6 @@ use App\Http\Controllers\web\SpeakersController;
 use App\Http\Controllers\web\ContactUsController;
 use App\Http\Controllers\web\TesimonialController;
 use App\Http\Controllers\web\PublicTrainingController;
-use Illuminate\Support\Facades\Route;
 
 Route::get("/", [IndexController::class, 'index']);
 
@@ -87,10 +88,10 @@ Route::post('speaker_dependentCountry/fetch',  [SpeakersController::class, 'fetc
 Route::get('/joinus', [JoinUsController::class, 'index'])->name('joinus');
 Route::post('/joinusForm', [JoinUsController::class, 'joinusForm'])->name('joinusForm');
 /*-------------------------AboutUsController-------------------------*/
-Route::get('/aboutUs',  [JoinUsController::class, 'index'])->name('aboutUs');
-Route::get('/conditions',  [JoinUsController::class, 'conditions'])->name('conditions');
-Route::get('/consunltancy',  [JoinUsController::class, 'Consunltancy'])->name('consunltancy');
-Route::get('/accreditations',  [JoinUsController::class, 'accreditations'])->name('accreditations');
+Route::get('/aboutUs',  [AboutUsController::class, 'index'])->name('aboutUs');
+Route::get('/conditions',  [AboutUsController::class, 'conditions'])->name('conditions');
+Route::get('/consunltancy',  [AboutUsController::class, 'Consunltancy'])->name('consunltancy');
+Route::get('/accreditations',  [AboutUsController::class, 'accreditations'])->name('accreditations');
 /*-----------------------------------------------------------*/
 Route::post('/reducedForm',  [CourseController::class, 'reducedForm'])->name('reducedForm');
 /******************InHouse**************** */
