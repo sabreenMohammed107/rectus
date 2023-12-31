@@ -364,6 +364,6 @@ $datestarted = Carbon::create($year, 1, 1, 0, 0, 0); // 2016-01-01 00:00:00
         $now = Carbon::now();
         $yearCal = $now->year;
         $calender = Year_calendar::where('id', '=', 1)->firstOrFail();
- return view('web.calender.index', compact('yearCal','calender', 'month', 'years', 'filterd_rounds'));
+ return view('web.calender.next', compact('yearCal','calender', 'month', 'years', 'filterd_rounds'));
     }
 }
