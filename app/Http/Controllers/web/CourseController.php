@@ -235,12 +235,12 @@ if(!empty($request->get("wordName"))){
         $view_page = 'web.courses.';
         switch ($filter_type) {
             case 'title':
-                $filterd_rounds = $courseSubCategory->rounds()->where('rounds.round_start_date', '>', $now_date)->orWhereNull('rounds.round_start_date')->where('rounds.active', '=', 1)->orderBy('course_en_name', 'asc')->get();
+                $filterd_rounds = $courseSubCategory->rounds()->where('rounds.active', '=', 1)->orderBy('course_en_name', 'asc')->get();
 
                 $view_page .= 'byTitle';
                 break;
             case 'venue':
-                $subCategory_rounds = $courseSubCategory->rounds()->where('rounds.round_start_date', '>', $now_date)->orWhereNull('rounds.round_start_date')->where('rounds.active', '=', 1)->orderBy('round_start_date', 'asc')->get();
+                $subCategory_rounds = $courseSubCategory->rounds()->where('rounds.active', '=', 1)->orderBy('round_start_date', 'asc')->get();
                 // dd($subCategory_rounds);
                 foreach ($subCategory_rounds as $round) {
                     array_push($round_places, $round->country->country_en_name);
@@ -262,7 +262,7 @@ if(!empty($request->get("wordName"))){
                 $view_page .= 'byVenue';
                 break;
             case 'date':
-                $courses = Course::with('rounds')->where('rounds.round_start_date', '>', $now_date)->orWhereNull('rounds.round_start_date')->where('courses.active', '=', 1)->where('courses.course_sub_category_id', '=', $subCategory_id)->get();
+                $courses = Course::with('rounds')->where('courses.active', '=', 1)->where('courses.course_sub_category_id', '=', $subCategory_id)->get();
                 foreach ($courses as $course) {
                     foreach ($course->rounds as $round) {
                         if ($round->round_start_date > $now_date && $round->active == 1) {
@@ -332,7 +332,7 @@ if(!empty($request->get("wordName"))){
                 $view_page .= 'byDate';
                 break;
             case 'duration':
-                $subCategory_rounds = $courseSubCategory->rounds()->where('rounds.round_start_date', '>', $now_date)->orWhereNull('rounds.round_start_date')->where('rounds.active', '=', 1)->orderBy('course_duration', 'desc')->get();
+                $subCategory_rounds = $courseSubCategory->rounds()->where('rounds.active', '=', 1)->orderBy('course_duration', 'desc')->get();
                 foreach ($subCategory_rounds as $round) {
                     array_push($round_days, $round->course->course_duration);
                 }
