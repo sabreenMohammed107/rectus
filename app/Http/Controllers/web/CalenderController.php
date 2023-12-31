@@ -34,7 +34,7 @@ class CalenderController extends Controller
         $dateended = Carbon::create($yearnew, 1, 31, 0, 0, 0); // 2016-12-31 00:00:00
 
         $datestarted = Carbon::create($yearnew, 1, 1, 0, 0, 0); // 2016-01-01 00:00:00
-dd([$dateended,$datestarted]);
+
         $rounds = Round::whereHas('course', function ($query) {
             $query->where('courses.active', 1);
         })->where('round_start_date', '>=', $datestarted)->where('round_start_date', '<=', $dateended)->get();
@@ -264,7 +264,12 @@ $datestarted = Carbon::create($year, 1, 1, 0, 0, 0); // 2016-01-01 00:00:00
 
         $year="";
         $now_date = now();
-        $courses = Course::with('rounds')->where('courses.active', '=', 1)->get();
+        $month = 3;
+        $date_1 = Carbon::create($current, $month)->startOfMonth()->format('Y-m-d'); //returns 2020-03-01
+        $date_2 = Carbon::create($current, $month)->lastOfMonth()->format('Y-m-d'); //returns 2020-03-31
+        $courses = Course::with('rounds')
+        ->where('rounds.round_start_date', '>=', $date_1)->where('rounds.round_start_date', '<=', $date_2)
+        ->where('courses.active', '=', 1)->get();
                 foreach ($courses as $course) {
                     foreach ($course->rounds as $round) {
                         if ($round->round_start_date > $now_date && $round->active == 1) {
