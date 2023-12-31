@@ -265,8 +265,8 @@ $datestarted = Carbon::create($year, 1, 1, 0, 0, 0); // 2016-01-01 00:00:00
         $year="";
         $now_date = now();
 
-        $date_1 = Carbon::create($current, $month)->startOfMonth()->format('Y-m-d'); //returns 2020-03-01
-        $date_2 = Carbon::create($current, $month)->lastOfMonth()->format('Y-m-d'); //returns 2020-03-31
+        $datestarted = Carbon::create($current, $month)->startOfMonth()->format('Y-m-d'); //returns 2020-03-01
+        $dateended = Carbon::create($current, $month)->lastOfMonth()->format('Y-m-d'); //returns 2020-03-31
         // $courses = Course::with('rounds')
         // ->where('rounds.round_start_date', '>=', $date_1)->where('rounds.round_start_date', '<=', $date_2)
         // ->where('courses.active', '=', 1)->get();
