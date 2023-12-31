@@ -1,0 +1,1101 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    
+    <link href="https://www.securitymagazine.com/articles/91752-the-linux-foundation-harvards-lab-for-innovation-science-release-census-for-open-source-software-security" rel="canonical" />
+    
+    <meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="MpypeBJRWm6H5fm0QKkbkR2m4XPT+3jROayuFC1IBHI="/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Linux Foundation’s Core Infrastructure Initiative (CII) and the Laboratory for Innovation Science at Harvard (LISH), announced the release of ‘Vulnerabilities in the Core,’ a Preliminary Report and Census II of Open Source Software.` This Census II analysis and report represent important steps towards understanding and addressing structural and security complexities in the modern day supply chain where open source is pervasive, but not always understood, says the organization. According to the CII: Census II identifies the most commonly used free and open source software (FOSS) components . . .">
+    <meta name="keywords" content="cyber security,cybersecurity,software,supply chain,vulnerability assessment">
+    
+    <link href="https://www.securitymagazine.com/rss/articles" rel="alternate" title="Security Magazine  RSS Feed" type="application/rss+xml" />
+    
+    <meta content="The Linux Foundation &amp; Harvard’s Lab for Innovation Science Release Census for Open Source Software Security" property="og:title" />
+<meta content="The Linux Foundation’s Core Infrastructure Initiative (CII) and the Laboratory for Innovation Science at Harvard (LISH), announced the release of ‘Vulnerabilities in the Core,’ a Preliminary Report and Census II of Open Source Software.`" property="og:description" />
+<meta content="https://www.securitymagazine.com/articles/91752-the-linux-foundation-harvards-lab-for-innovation-science-release-census-for-open-source-software-security" property="og:url" />
+<meta content="https://www.securitymagazine.com/ext/resources/SEC/2017/Sept/SEC0917-inews4-feat-slide_900px.jpg?height=635&amp;t=1504109496&amp;width=1200" property="og:image" />
+<meta content="900" property="og:image:width" />
+<meta content="550" property="og:image:height" />
+<meta content="Article" property="og:type" />
+<meta content="The Linux Foundation &amp; Harvard’s Lab for Innovation Science Release Census for Open Source Software Security" name="twitter:title" />
+<meta content="The Linux Foundation’s Core Infrastructure Initiative (CII) and the Laboratory for Innovation Science at Harvard (LISH), announced the release of ‘Vulnerabilities in the Core,’ a Preliminary Report and Census II of Open Source Software.`" name="twitter:description" />
+<meta content="summary" name="twitter:card" />
+<meta content="https://www.securitymagazine.com/ext/resources/SEC/2017/Sept/SEC0917-inews4-feat-slide_900px.jpg?1504109496" name="twitter:image" />
+      
+  
+  
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/images/favicon/mstile-144.png">
+<link href="/images/favicon/favicons.ico?1584372671" rel="icon" sizes="16x16 32x32 48x48 64x64" type="image/x-icon" />
+<link href="/images/favicon/apple-touch-icon-152.png?1584372671" rel="apple-touch-icon-precomposed" sizes="152x152" type="image/vnd.microsoft.icon" />
+<link href="/images/favicon/apple-touch-icon-144.png?1584372671" rel="apple-touch-icon-precomposed" sizes="144x144" type="image/vnd.microsoft.icon" />
+<link href="/images/favicon/apple-touch-icon-120.png?1584372671" rel="apple-touch-icon-precomposed" sizes="120x120" type="image/vnd.microsoft.icon" />
+<link href="/images/favicon/apple-touch-icon-72.png?1584372671" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/vnd.microsoft.icon" />
+
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5159f27a1160d2b2"></script>
+<meta content="true" name="has-log-view" />
+    <title>The Linux Foundation &amp; Harvard’s Lab for Innovation Science Release Census for Open Source Software Security | 2020-02-18 | Security Magazine</title>
+    <link href="/stylesheets/application.css?1584372671" media="screen" rel="stylesheet" type="text/css" />
+      <link href="/stylesheets/print.css?1584372671" media="print" rel="stylesheet" type="text/css" />
+  <link href='//fonts.googleapis.com/css?family=PT+Serif|Open+Sans:400,700|Open+Sans+Condensed:300' rel='stylesheet'>
+
+    <link href="/ext/resources/securitymagazine.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/jade.default.min.js?1584372671" type="text/javascript"></script>
+<script src="/javascripts/application.js" type="text/javascript"></script>
+    
+    
+<!-- dataLayer scripts, place in head before GTM snippet -->
+<script>var dataLayer = window.dataLayer = window.dataLayer || [];</script>
+    <script>
+      dataLayer.push({"id":91752,"topics":["Security Newswire","Cyber Security News","Security News Feed","Cyber","News"],"keywords":["software","cyber security","vulnerability assessment","cybersecurity","supply chain"],"page_type":["articles"],"date_posted":"02/18/2020","gated":false,"registered":false,"author":[],"sponsored":false,"subscribed_user":false});
+    </script>
+
+<!-- End dataLayer -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KNK327G');</script>
+<!-- End Google Tag Manager -->
+
+    <script>
+  window.epub = window.epub || {};
+
+    window.epub['AD_HISTORY_ENABLED'] = false;
+</script>
+
+      <!--[if lt IE 9]><script src="/javascripts/vendor/es5-shim.min" type="text/javascript"></script><![endif]-->
+  <script>
+  var googletag = {
+    cmd: []
+  };
+
+  var targeting = {"id":"91752","topic":["security_newswire","cyber_security_news","security_news_feed","cyber","news"],"topic_id":["2189","2236","2771","2788","2766"],"page_type":["articles"],"keyword":["software","cyber_security","vulnerability_assessment","cybersecurity","supply_chain"],"reg_user":"false","page_name":"the_linux_foundation___harvard_s_lab_for","subscribed_user":"false"};
+</script>
+
+<script>window.vpb={singleDisplayMode:true};var dayMs = 36e5, cb = parseInt(Date.now() / dayMs),vpbSrc = "//player.mediafuse.com/prebidlink/" + cb + "/wrapper_hb_302826_5908.js", gptSrc = "//securepubads.g.doubleclick.net/tag/js/gpt.js", c = document.head || document.body || document.documentElement; function loadScript(src, cb) { var s = document.createElement("script"); s.src = src; c.appendChild(s); s.onload = cb; s.onerror = cb; return s; } loadScript(vpbSrc, function() { loadScript(gptSrc); })</script>
+
+  
+<script>var $hasLogViewMeta = $('meta[name=has-log-view]').attr('content');
+var $logViewUrlMeta = $('meta[name=log-view-url]').attr('content');
+if($hasLogViewMeta === 'true') {
+  var baseLogUrl = typeof $logViewUrlMeta === "undefined" ? window.location.pathname : $logViewUrlMeta
+  var logUrl = baseLogUrl + '/log_view' + window.location.search;
+  if (typeof navigator.sendBeacon === 'function') {
+    navigator.sendBeacon(logUrl);
+  } else {
+    // Gotta love IE
+    $.post(logUrl);
+  }
+}  </script>
+  </head>
+  <body data-action="show" data-ad-unit-prefix="null" data-article-requires-registration="false" data-article-requires-subscription="false" data-controller="articles" data-dfp-prefix="/52040140/sec" data-is-microsite="0" data-poststitial-ad="false" data-prestitial-ad="false">
+    
+    
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNK327G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <section class="cookie-policy" id="cookie-policy"><div class="cookie-policy__body"><style>@charset "utf-8";
+
+.mobileShow {display: none;} 
+
+  /* Smartphone Portrait and Landscape */ 
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+}
+
+  .mobileHide { display: inline; } 
+
+  /* Smartphone Portrait and Landscape */ 
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+     .mobileHide { display: none;}
+  }
+
+
+summary {
+  color:#2fbbc5;
+
+font-family:'Lato', sans-serif; 
+font-weight:200; 
+font-size:12px;
+}
+
+summary:hover {
+opacity:0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+</style>
+
+<div class="mobileHide">
+<span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><strong><span style="color:#696969;">This website requires certain cookies to work and uses other cookies to help you have the best experience.  By visiting this website, certain cookies have already been set, which you may delete and block. By closing this message or continuing to use our site, you agree to the use of cookies. Visit our updated <a href="/privacy"><span style="color:#696969;">privacy and cookie policy to learn more.  </span></a></span></strong></div>
+
+<div class="mobileShow"> 
+<details>
+<summary>This Website Uses Cookies<br />By closing this message or continuing to use our site, you agree to our cookie policy. <u>Learn More</u></summary>
+<span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><strong><span style="color:#696969;">This website requires certain cookies to work and uses other cookies to help you have the best experience.  By visiting this website, certain cookies have already been set, which you may delete and block.  By closing this message or continuing to use our site, you agree to the use of cookies. Visit our updated <a href="/privacy"><span style="color:#696969;">privacy and cookie policy to learn more.  </span></a></span></strong></details></div></div><span class="cookie-policy__close" id="cookie-policy-close"></span></section>
+      <div class="">
+    <div class="mmenu-placeholder">
+      <header class="main-header">
+        <a href="#" id="hamburger-nav-link" class="main-header__hamburger-nav-link"></a>
+
+        <div class="site-logo">
+  <a href="/">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 470.8 171.5"
+      preserveAspectRatio="xMinYMax meet"
+      class="svg-logo"
+      role="image"
+    >
+      <title>Security Magazine logo</title>
+      <path
+        fill="#C52026"
+        d="M123.8 147.6v-15.3H89.4V88.2l28.4.1V73.1H89.5V34.4h34.4V19H73.4v128.6"
+      />
+      <path
+        fill="#FFF"
+        d="M124.5 147.6v-16.1H89.4l.8.8V88.2l-.8.8h29.2V72.3H89.5l.8.8V34.4l-.7.8h35.1v-17H72.6V148.4H124.6v-.8zm-50.4 0V19l-.8.8h50.6l-.8-.8v15.3l.7-.8H88.7v40.2h29.1l-.8-.8V88l.8-.8H88.6V132.9H123.8l-.8-.8v15.3l.8-.8H73.4l.7 1z"
+      />
+      <path
+        fill="#C52026"
+        d="M128.6 116.2c0 12 1.6 18.2 6.2 23.8 5.2 6.2 12.4 9.3 21.3 9.3 13 0 28.5-5 28.5-28.7V98.1h-16.3v22.5c0 9-3.3 13-10.8 13-11.7 0-12.9-7.5-12.9-25.9V49c0-13.9 6.4-15.8 12.7-15.8 3.7 0 6.7 1.7 8.2 4.5 1.6 3.1 1.6 6.1 1.6 24.1v3.9h16.2V44.9c0-11-3.8-18.8-11.3-23.2-4.2-2.6-9.6-4-15.5-4-8.8 0-15.6 2.7-20.5 8.1 0 0-7.6 6.3-7.3 24.9v65.5z"
+      />
+      <path
+        fill="#FFF"
+        d="M127.9 116.2c0 12.2 1.7 18.5 6.3 24.3 5.4 6.4 12.7 9.6 21.9 9.6 13.4 0 29.3-5.1 29.3-29.5V97.3H167.5v23.3c0 8.6-3 12.3-10.1 12.3-10.5 0-12.1-5.7-12.1-25.1V49c0-13.2 5.7-15 12-15 3.4 0 6.2 1.5 7.5 4.1 1.5 2.9 1.6 6 1.6 23.8v4.7h17.8V44.9c0-11.2-3.9-19.3-11.7-23.8-4.4-2.7-9.9-4.1-15.9-4.1-9.1 0-16 2.7-21.1 8.4l.1-.1c-.3.3-7.9 6.8-7.6 25.4-.1 0-.1 65.5-.1 65.5zm1.5-65.5c-.3-17.9 7-24.2 7.1-24.3h.1v-.1c4.8-5.3 11.3-7.8 19.9-7.8 5.7 0 11 1.3 15.1 3.9 7.3 4.3 11 11.9 11 22.6v20.8l.8-.8h-16.2l.8.8v-3.9c0-18.1 0-21.2-1.7-24.4-1.5-3.1-4.8-4.9-8.8-4.9-6.3 0-13.5 1.9-13.5 16.5V108c0 18.5 1.3 26.6 13.6 26.6 7.9 0 11.6-4.4 11.6-13.8V98.1l-.8.8h16.3l-.8-.8v22.5c0 23.1-15.1 28-27.8 28-8.7 0-15.7-3-20.8-9-4.4-5.5-6-11.6-6-23.4.1 0 .1-65.5.1-65.5z"
+      />
+      <path
+        fill="#C52026"
+        d="M276.3 73.8V34h11.8c6.4 0 10.3.8 10.3 12.2v18.7c0 5.4-1.8 8.9-10.8 8.9h-11.3zm23.2 13.1c10.4-3.5 15.7-11.5 15.7-24.1V44c0-16.5-9.4-24.9-27.8-24.9h-27.2v128.6h16.2V88.8h6.6l22.1 58.9h17.2l-22.8-60.8z"
+      />
+      <path
+        fill="#FFF"
+        d="M277.1 73.8V34l-.8.8h11.8c6.1 0 9.6.5 9.6 11.4v18.7c0 5.1-1.7 8.2-10.1 8.2h-11.3l.8.7zm10.6.7c10.2 0 11.6-4.7 11.6-9.7V46.2c0-12-4.6-12.9-11.1-12.9H275.6v41.3H287.7z"
+      />
+      <path
+        fill="#FFF"
+        d="M299.7 87.6c10.7-3.6 16.2-11.9 16.2-24.8V44c0-17-9.6-25.7-28.6-25.7h-28v130.1h17.8V88.8l-.8.8h6.6l-.7-.5 22.1 58.9.2.5h18.8l-.4-1-22.7-60.8-.5.9zm22.5 59.3H305l.7.5-22.1-58.9-.2-.5H275.5V147.7l.8-.8h-16.2l.8.8V19l-.8.8h27.2c18 0 27.1 8.1 27.1 24.2v18.8c0 12.1-5.1 20-15.2 23.3l-.7.2.3.7 22.7 60.8.7-.9z"
+      />
+      <path fill="#C52026" d="M325.9 19h16.5v128.6h-16.5z" />
+      <path
+        fill="#FFF"
+        d="M325.9 148.4h17.3V18.2h-18.1V148.4h.8zm0-128.6h16.5l-.8-.8v128.6l.8-.8h-16.5l.8.8V19l-.8.8z"
+      />
+      <g>
+        <path
+          fill="#C52026"
+          d="M469.7 19h-17.5l-16.5 48.6L419.2 19h-69.5v15.5h21V147.8h16.2V34.5h20.6l19.9 55.9v57.2h16V90.9"
+        />
+        <path
+          fill="#FFF"
+          d="M469.7 18.3h-18.1l-.2.5L435 67.4h1.4L420 18.8l-.2-.5H348.9v17h21.8l-.8-.8V148.6h17.8V34.5l-.8.8h20.7l-.7-.5 19.9 55.9v-.3V148.5h17.6V91v.3l26.3-71.9.4-1h-1.4zm-27 72.6v56.7l.8-.8h-16l.8.8V90.2l-19.9-55.9-.2-.5h-22v114.1l.8-.8h-16.2l.8.8V33.8h-21.8l.8.8V19l-.8.8h69.6l-.7-.5L435 67.9l.7 2.1.7-2.1 16.5-48.6-.7.5h17.6l-.7-1-26.3 71.9v.2z"
+        />
+      </g>
+      <g>
+        <path
+          fill="#C52026"
+          d="M.8 95.9v22.5c0 19.5 12 31.2 32.1 31.2 31.4 0 31.4-26.2 31.4-36.1 0-20.1-7.2-27.6-21.7-42.4-20.6-21-22.7-26-22.7-38.2 0-14.7 5.2-17.7 13.6-17.7 12.2 0 13.2 7.9 13.2 18.3V49h15.6V35.8c0-13.1 0-35.1-29-35.1C4.1.8 4.1 26.1 4.1 34.5c0 20.7 9.4 30.1 25 45.8 15.6 15.4 19.3 20.5 19.3 35.1 0 14.2-4 19.4-14.7 19.4-4.3 0-10.2-.9-13.6-5.3-3.4-4.4-3.4-9.4-3.4-19.4V95.9H.8z"
+        />
+        <path
+          fill="#FFF"
+          d="M0 95.9v22.5c0 20 12.3 31.9 32.9 31.9 32.1 0 32.1-26.7 32.1-36.8 0-20.4-7.3-27.9-21.9-42.9-20.4-20.8-22.4-25.7-22.4-37.7 0-14.2 4.7-16.9 12.8-16.9 11.5 0 12.4 7.3 12.4 17.5v16.3H63v-14C63 22.4 63 0 33.3 0c-30 0-30 25.9-30 34.5 0 21 9.5 30.5 25.3 46.3C44.1 96 47.7 101 47.7 115.3c0 13.8-3.7 18.7-14 18.7-4.1 0-9.8-.9-13.1-5-3.3-4.2-3.3-9.2-3.3-19V95.1H0v.8zm15.8 0V110c0 10.2 0 15.3 3.6 19.9 3.7 4.6 9.8 5.6 14.2 5.6 11.1 0 15.5-5.7 15.5-20.2 0-14.8-3.7-20-19.5-35.6C14.2 64.2 4.8 54.9 4.8 34.5c0-8.2 0-33 28.5-33 28.3 0 28.3 21.5 28.3 34.3v13.1l.8-.8H46.6l.8.8V33.5c0-10.4-1-19-13.9-19-8.6 0-14.3 3.1-14.3 18.4 0 12.5 2.1 17.6 22.9 38.8 14.3 14.7 21.5 22 21.5 41.9 0 9.7 0 35.3-30.6 35.3-19.7 0-31.4-11.4-31.4-30.4V95.9l-.8.8h15.8l-.8-.8z"
+        />
+      </g>
+      <g>
+        <path
+          fill="#C52026"
+          d="M194.4 115.3c0 10.1 0 21.6 9.9 29.1 4.5 3.4 11 5.4 17.7 5.4 17.9 0 28.2-11 28.2-30.1V19H234v92.7c0 12.6-.4 15.9-2.1 18.2l-.1.1-.1.1c-2.4 3.6-6.9 4.1-9.3 4.1-11.3 0-12.2-7.2-12.2-17.5V19h-16v96.3z"
+        />
+        <path
+          fill="#FFF"
+          d="M193.6 115.3c0 10.3 0 22 10.2 29.7 4.6 3.5 11.3 5.6 18.2 5.6 18.4 0 28.9-11.2 28.9-30.8V18.2h-17.8v93.5c0 12.3-.4 15.6-2 17.7l-.1.1-.1.1c-2.2 3.3-6.4 3.8-8.7 3.8-10.6 0-11.4-6.6-11.4-16.7V18.2h-17.6v97.1zm.8-95.5h16l-.8-.8v97.7c0 10.3 1 18.2 12.9 18.2 2.6 0 7.3-.6 9.9-4.4v-.1-.1c1.9-2.5 2.3-5.8 2.3-18.6V19l-.8.8h16.2l-.8-.8v100.7c0 18.6-10 29.3-27.4 29.3-6.6 0-12.9-1.9-17.3-5.3-9.6-7.3-9.6-18.6-9.6-28.5V19l-.6.8z"
+        />
+      </g>
+      <g>
+        <path
+          d="M359.4 163.5h-1.8v2.8h1.8c1.1 0 1.4 0 1.9-.3.3-.2.4-.5.4-1 0-.2 0-.5-.2-.7-.4-.8-1.4-.8-2.1-.8zM359.3 162.1c.5 0 .9 0 1.3-.2s.7-.6.7-1-.2-.7-.6-.9c-.4-.2-.6-.2-1.9-.2h-1.2v2.4h.6c.5-.1.9-.1 1.1-.1zM70.1 159.7c-1.7 0-2.8 1.3-2.8 3.3 0 2.1 1.2 3.4 2.9 3.4 1.2 0 2.8-.9 2.9-3.2-.1-1.8-1.1-3.5-3-3.5zM268.3 164.4h2.7l-1.3-4.4M315.5 160.1c-.4-.2-.9-.2-2-.2h-.9v3H314.4c.4 0 1.7-.1 1.7-1.5.2-.3.2-1-.6-1.3zM131.2 160.1c-.4-.2-.9-.2-2-.2h-.9v3H130.1c.4 0 1.7-.1 1.7-1.5.2-.3.2-1-.6-1.3zM254.8 160.2c-.5-.2-.8-.2-2.1-.3h-1v6.3h.8c1.4 0 1.9-.1 2.3-.2.7-.3 1.5-.9 1.5-2.8 0-.9-.1-2.4-1.5-3zM118.8 159.7c-1.7 0-2.8 1.3-2.8 3.3 0 2.1 1.2 3.4 2.9 3.4 1.2 0 2.8-.9 2.9-3.2-.1-1.8-1.1-3.5-3-3.5zM23.7 159.7c-1.7 0-2.8 1.3-2.8 3.3 0 2.1 1.2 3.4 2.9 3.4 1.2 0 2.8-.9 2.9-3.2-.1-1.8-1-3.5-3-3.5zM165.8 164.4h2.7l-1.3-4.4"
+        />
+        <path
+          d="M.5 154.7v16.8h442.7v-16.8H.5zm11.8 13.4c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.1 2.2-2 3.1-4.1 3.1zm11.4 0c-1.2 0-2.4-.3-3.4-1.5-1-1.1-1.3-2.3-1.3-3.5 0-2.9 2-5 4.8-5 2.5 0 4.8 1.8 4.7 5-.1 2.7-1.8 5-4.8 5zm13.6-.3h-5.8v-9.5h1.9v7.9h3.9v1.6zm10.5-3.5c0 1.1 0 2-1.1 2.8-1 .9-2.3.9-3 .9-.6 0-1.2-.1-1.8-.3-1.2-.4-1.8-1.2-2-1.9-.1-.4-.1-.7-.1-1.9v-5.7h1.9v5.9c0 .4 0 .8.1 1.2.4.9 1.4 1 2 1 .3 0 1 0 1.6-.5.5-.5.5-1 .5-1.8v-5.8h1.9v6.1zm9.9-4.4H55v7.9h-1.9v-7.9h-2.7v-1.6h7.3v1.6zm4.5 7.9h-1.8v-9.5h1.8v9.5zm7.9.3c-1.2 0-2.4-.3-3.4-1.5-1-1.1-1.3-2.3-1.3-3.5 0-2.9 2-5 4.8-5 2.5 0 4.8 1.8 4.7 5-.1 2.7-1.8 5-4.8 5zm15.4-.3h-1.6l-4.3-6.7.1 6.7h-1.8v-9.5h1.7L84 165l-.2-6.7h1.8v9.5zm7.7.3c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.1 2.2-2 3.1-4.1 3.1zm18.7-8.2h-4.7v2.4h4.1v1.5h-4.1v4h-1.8v-9.5h6.6v1.6zm6.9 8.2c-1.2 0-2.4-.3-3.4-1.5-1-1.1-1.3-2.3-1.3-3.5 0-2.9 2-5 4.8-5 2.5 0 4.8 1.8 4.7 5-.1 2.7-1.8 5-4.8 5zm13.2-.3l-2-3.5h-1.7v3.5h-1.8v-9.5h3.2c1.3 0 2.2 0 3.1.7.6.5 1.1 1.2 1.1 2.3 0 1.8-1.4 2.5-2 2.6l2.2 3.9H132zm17.3 0h-7.4v-9.5h7v1.6h-5.2v2.2h4.8v1.5h-4.8v2.6h5.6v1.6zm11 0h-1.6l-4.3-6.7.1 6.7h-1.8v-9.5h1.7l4.4 6.7-.2-6.7h1.8v9.5zm9.3 0l-.6-1.8h-3.7l-.6 1.9h-2l3.3-9.5h2.1l3.4 9.5h-1.9zm10.6-.2c-.6.2-1.1.2-2.2.2h-3.9v-9.5h3.5c1.3 0 1.7 0 2.1.2 1 .3 1.7 1.1 1.7 2.2 0 .4-.1.9-.4 1.3-.3.4-.7.6-1.2.7 1.1.2 2.1 1 2.1 2.5.1 1-.5 2-1.7 2.4zm11.2.2h-5.8v-9.5h1.9v7.9h3.9v1.6zm4.3 0h-1.8v-9.5h1.8v9.5zm11.8 0h-1.6l-4.3-6.7.1 6.7h-1.8v-9.5h1.7l4.4 6.7-.2-6.7h1.8v9.5zm7.9-1.4c1 0 2.3-.5 2.4-2.2h-2.5v-1.6h4.2v5.2H218v-.8c-.9.8-1.9 1.1-2.7 1.1-3.1 0-4.7-2.3-4.7-4.9 0-3 2.1-5.1 4.8-5.1 2.1 0 3.6 1.2 4.2 2.8l-1.8.7c-.2-.5-.7-1.9-2.4-1.9-1.9 0-2.8 1.6-2.8 3.4 0 2.1 1.2 3.3 2.8 3.3zm18.3 1.4l-.6-1.9h-3.7l-.6 1.9h-2l3.3-9.5h2.1l3.4 9.5h-1.9zm12.2 0h-1.6l-4.3-6.7.1 6.7h-1.8v-9.5h1.7l4.4 6.7-.2-6.7h1.8v9.5zm10.4-.5c-1 .6-2 .6-3.2.6h-3.2v-9.5h3.6c.9 0 1.9 0 2.9.7 1.7 1.1 1.9 3 1.9 4.1 0 1.6-.6 3.3-2 4.1zm15.8.5l-.6-1.9h-3.7l-.6 1.9h-2l3.3-9.5h2.1l3.4 9.5h-1.9zm8 .3c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.2 2.2-2 3.1-4.1 3.1zm11 0c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.1 2.2-2 3.1-4.1 3.1zm15.6-3.8c0 1.1 0 2-1.1 2.8-1 .9-2.3.9-3 .9-.6 0-1.2-.1-1.8-.3-1.2-.4-1.8-1.2-2-1.9-.1-.4-.1-.7-.1-1.9v-5.7h1.9v5.9c0 .4 0 .8.1 1.2.4.9 1.4 1 2 1 .3 0 1 0 1.6-.5.5-.5.5-1 .5-1.8v-5.8h1.9v6.1zm9.6 3.5l-2-3.5h-1.7v3.5h-1.8v-9.5h3.2c1.3 0 2.2 0 3.1.7.6.5 1.1 1.2 1.1 2.3 0 1.8-1.4 2.5-2 2.6l2.2 3.9h-2.1zm7.3 0h-1.8v-9.5h1.8v9.5zm11.8 0h-1.6l-4.3-6.7.1 6.7h-1.8v-9.5h1.7l4.4 6.7-.2-6.7h1.8v9.5zm7.8-1.4c1 0 2.3-.5 2.4-2.2h-2.5v-1.6h4.2v5.2h-1.6v-.8c-.9.8-1.9 1.1-2.7 1.1-3.1 0-4.7-2.3-4.7-4.9 0-3 2.1-5.1 4.8-5.1 2.1 0 3.6 1.2 4.2 2.8l-1.8.7c-.2-.5-.7-1.9-2.4-1.9-1.9 0-2.8 1.6-2.8 3.4.1 2.1 1.3 3.3 2.9 3.3zm18.7 1.2c-.6.2-1.1.2-2.2.2h-3.9v-9.5h3.5c1.3 0 1.7 0 2.1.2 1 .3 1.7 1.1 1.7 2.2 0 .4-.1.9-.4 1.3-.3.4-.7.6-1.2.7 1.1.2 2.1 1 2.1 2.5 0 1-.5 2-1.7 2.4zm13.3-3.3c0 1.1 0 2-1.1 2.8-1 .9-2.3.9-3 .9-.6 0-1.2-.1-1.8-.3-1.2-.4-1.8-1.2-2-1.9-.1-.4-.1-.7-.1-1.9v-5.7h1.9v5.9c0 .4 0 .8.1 1.2.4.9 1.4 1 2 1 .3 0 1 0 1.6-.5.5-.5.5-1 .5-1.8v-5.8h1.9v6.1zm7.1 3.8c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.1 2.2-2 3.1-4.1 3.1zm9.5-.3H390v-9.5h1.8v9.5zm11.8 0H402l-4.3-6.7.1 6.7H396v-9.5h1.7l4.4 6.7-.2-6.7h1.8v9.5zm11.4 0h-7.4v-9.5h7v1.6h-5.2v2.2h4.8v1.5h-4.8v2.6h5.6v1.6zm6.8.3c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.1 2.2-2 3.1-4.1 3.1zm10.9 0c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.2 2.2-1.9 3.1-4.1 3.1z"
+        />
+        <path
+          d="M177.7 162.1c.5 0 .9 0 1.3-.2s.7-.6.7-1-.2-.7-.6-.9c-.4-.2-.6-.2-1.9-.2H176v2.4h.6c.5-.1.9-.1 1.1-.1zM177.8 163.5H176v2.8h1.8c1.1 0 1.4 0 1.9-.3.3-.2.4-.5.4-1 0-.2 0-.5-.2-.7-.4-.8-1.5-.8-2.1-.8zM229.9 164.4h2.8l-1.4-4.4"
+        />
+      </g>
+    </svg>
+  </a>
+</div>
+
+
+        <div class="main-header__top-nav-actions">
+          <nav class="top-nav">
+            <span class="quick-search-wrapper">
+              <a href="/search" class="top-nav__search-link" id="top-nav-search-link">
+                <span class="top-nav__search-link-label">search</span>
+              </a>
+
+              <div class="quick-search" id="quick-search" role="search">
+  <form id="quick-search-form" name="quick-search" method="get" action="/search">
+    <label for="q" alt="search" class="quick-search__label">Search</label>
+    <input type="search" name="q" id="q" placeholder="Search" tabindex="1" value="Search" onfocus="this.value = ''" />
+    <button class="quick-search__button">
+      search
+    </button>
+    <button class="quick-search__close-button">
+      close search
+    </button>
+  </form>
+
+  
+</div>
+
+
+            </span>
+            <a href="/cart" id="cart-link" class="top-nav__cart-link">
+              <span class="top-nav__cart-link-label">cart</span>
+            </a>
+
+            <div id="social-links">
+                <section class="editorial-content social-media-links">
+
+    <div class="editorial-content__details">
+
+
+      <div class="editorial-content__body">
+          <a href="http://www.facebook.com/SECmagazine" class="facebook" target="_blank"><span class="facebook__text">facebook</span></a>
+
+<a href="http://www.twitter.com/SecurityMag" class="twitter" target="_blank" class="twitter" alt="twitter"><span class="twitter__text">twitter</span></a>
+
+<a href="https://www.linkedin.com/company/security-magazine" class="linkedin" target="_blank"><span class="linkedin__text">linkedin</span></a>
+
+<a href="http://www.youtube.com/user/SecurityMag" class="youtube" target="_blank"><span class="youtube__text">youtube</span></a>
+      </div>
+
+    </div>
+  </section>
+
+            </div>
+          </nav>
+
+          <nav class="user-actions" id="user-actions">
+            <ul class="user-actions__list">
+              <li class="user-actions__signin"><a href="https://bnp.dragonforms.com/init.do?pk=RSIGN&amp;returnurl=http://www.securitymagazine.com/user/postlogin?redirect=https://www.securitymagazine.com/&amp;omedasite=BNP6289_SECMAG522login" class="user-actions__signin-link">Sign In</a></li>
+              <li class="user-actions__register"><a href="https://bnp.dragonforms.com/init.do?pk=RREGI&amp;returnurl=http://www.securitymagazine.com/user/postlogin?redirect=https://www.securitymagazine.com/&amp;omedasite=BNP6289_SECMAG522create" class="user-actions__register-link">Create Account</a></li>
+              <li class="user-actions__signout"><a href="/user/logout" class="user-actions__signout-link">Sign Out</a></li>
+              <li class="user-actions__account user-actions__account-link">My Account</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <nav class="main-nav main-nav--horizontal">
+        <div class="wrapper">
+          <div class="site-logo">
+  <a href="/">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 470.8 171.5"
+      preserveAspectRatio="xMinYMax meet"
+      class="svg-logo"
+      role="image"
+    >
+      <title>Security Magazine logo</title>
+      <path
+        fill="#C52026"
+        d="M123.8 147.6v-15.3H89.4V88.2l28.4.1V73.1H89.5V34.4h34.4V19H73.4v128.6"
+      />
+      <path
+        fill="#FFF"
+        d="M124.5 147.6v-16.1H89.4l.8.8V88.2l-.8.8h29.2V72.3H89.5l.8.8V34.4l-.7.8h35.1v-17H72.6V148.4H124.6v-.8zm-50.4 0V19l-.8.8h50.6l-.8-.8v15.3l.7-.8H88.7v40.2h29.1l-.8-.8V88l.8-.8H88.6V132.9H123.8l-.8-.8v15.3l.8-.8H73.4l.7 1z"
+      />
+      <path
+        fill="#C52026"
+        d="M128.6 116.2c0 12 1.6 18.2 6.2 23.8 5.2 6.2 12.4 9.3 21.3 9.3 13 0 28.5-5 28.5-28.7V98.1h-16.3v22.5c0 9-3.3 13-10.8 13-11.7 0-12.9-7.5-12.9-25.9V49c0-13.9 6.4-15.8 12.7-15.8 3.7 0 6.7 1.7 8.2 4.5 1.6 3.1 1.6 6.1 1.6 24.1v3.9h16.2V44.9c0-11-3.8-18.8-11.3-23.2-4.2-2.6-9.6-4-15.5-4-8.8 0-15.6 2.7-20.5 8.1 0 0-7.6 6.3-7.3 24.9v65.5z"
+      />
+      <path
+        fill="#FFF"
+        d="M127.9 116.2c0 12.2 1.7 18.5 6.3 24.3 5.4 6.4 12.7 9.6 21.9 9.6 13.4 0 29.3-5.1 29.3-29.5V97.3H167.5v23.3c0 8.6-3 12.3-10.1 12.3-10.5 0-12.1-5.7-12.1-25.1V49c0-13.2 5.7-15 12-15 3.4 0 6.2 1.5 7.5 4.1 1.5 2.9 1.6 6 1.6 23.8v4.7h17.8V44.9c0-11.2-3.9-19.3-11.7-23.8-4.4-2.7-9.9-4.1-15.9-4.1-9.1 0-16 2.7-21.1 8.4l.1-.1c-.3.3-7.9 6.8-7.6 25.4-.1 0-.1 65.5-.1 65.5zm1.5-65.5c-.3-17.9 7-24.2 7.1-24.3h.1v-.1c4.8-5.3 11.3-7.8 19.9-7.8 5.7 0 11 1.3 15.1 3.9 7.3 4.3 11 11.9 11 22.6v20.8l.8-.8h-16.2l.8.8v-3.9c0-18.1 0-21.2-1.7-24.4-1.5-3.1-4.8-4.9-8.8-4.9-6.3 0-13.5 1.9-13.5 16.5V108c0 18.5 1.3 26.6 13.6 26.6 7.9 0 11.6-4.4 11.6-13.8V98.1l-.8.8h16.3l-.8-.8v22.5c0 23.1-15.1 28-27.8 28-8.7 0-15.7-3-20.8-9-4.4-5.5-6-11.6-6-23.4.1 0 .1-65.5.1-65.5z"
+      />
+      <path
+        fill="#C52026"
+        d="M276.3 73.8V34h11.8c6.4 0 10.3.8 10.3 12.2v18.7c0 5.4-1.8 8.9-10.8 8.9h-11.3zm23.2 13.1c10.4-3.5 15.7-11.5 15.7-24.1V44c0-16.5-9.4-24.9-27.8-24.9h-27.2v128.6h16.2V88.8h6.6l22.1 58.9h17.2l-22.8-60.8z"
+      />
+      <path
+        fill="#FFF"
+        d="M277.1 73.8V34l-.8.8h11.8c6.1 0 9.6.5 9.6 11.4v18.7c0 5.1-1.7 8.2-10.1 8.2h-11.3l.8.7zm10.6.7c10.2 0 11.6-4.7 11.6-9.7V46.2c0-12-4.6-12.9-11.1-12.9H275.6v41.3H287.7z"
+      />
+      <path
+        fill="#FFF"
+        d="M299.7 87.6c10.7-3.6 16.2-11.9 16.2-24.8V44c0-17-9.6-25.7-28.6-25.7h-28v130.1h17.8V88.8l-.8.8h6.6l-.7-.5 22.1 58.9.2.5h18.8l-.4-1-22.7-60.8-.5.9zm22.5 59.3H305l.7.5-22.1-58.9-.2-.5H275.5V147.7l.8-.8h-16.2l.8.8V19l-.8.8h27.2c18 0 27.1 8.1 27.1 24.2v18.8c0 12.1-5.1 20-15.2 23.3l-.7.2.3.7 22.7 60.8.7-.9z"
+      />
+      <path fill="#C52026" d="M325.9 19h16.5v128.6h-16.5z" />
+      <path
+        fill="#FFF"
+        d="M325.9 148.4h17.3V18.2h-18.1V148.4h.8zm0-128.6h16.5l-.8-.8v128.6l.8-.8h-16.5l.8.8V19l-.8.8z"
+      />
+      <g>
+        <path
+          fill="#C52026"
+          d="M469.7 19h-17.5l-16.5 48.6L419.2 19h-69.5v15.5h21V147.8h16.2V34.5h20.6l19.9 55.9v57.2h16V90.9"
+        />
+        <path
+          fill="#FFF"
+          d="M469.7 18.3h-18.1l-.2.5L435 67.4h1.4L420 18.8l-.2-.5H348.9v17h21.8l-.8-.8V148.6h17.8V34.5l-.8.8h20.7l-.7-.5 19.9 55.9v-.3V148.5h17.6V91v.3l26.3-71.9.4-1h-1.4zm-27 72.6v56.7l.8-.8h-16l.8.8V90.2l-19.9-55.9-.2-.5h-22v114.1l.8-.8h-16.2l.8.8V33.8h-21.8l.8.8V19l-.8.8h69.6l-.7-.5L435 67.9l.7 2.1.7-2.1 16.5-48.6-.7.5h17.6l-.7-1-26.3 71.9v.2z"
+        />
+      </g>
+      <g>
+        <path
+          fill="#C52026"
+          d="M.8 95.9v22.5c0 19.5 12 31.2 32.1 31.2 31.4 0 31.4-26.2 31.4-36.1 0-20.1-7.2-27.6-21.7-42.4-20.6-21-22.7-26-22.7-38.2 0-14.7 5.2-17.7 13.6-17.7 12.2 0 13.2 7.9 13.2 18.3V49h15.6V35.8c0-13.1 0-35.1-29-35.1C4.1.8 4.1 26.1 4.1 34.5c0 20.7 9.4 30.1 25 45.8 15.6 15.4 19.3 20.5 19.3 35.1 0 14.2-4 19.4-14.7 19.4-4.3 0-10.2-.9-13.6-5.3-3.4-4.4-3.4-9.4-3.4-19.4V95.9H.8z"
+        />
+        <path
+          fill="#FFF"
+          d="M0 95.9v22.5c0 20 12.3 31.9 32.9 31.9 32.1 0 32.1-26.7 32.1-36.8 0-20.4-7.3-27.9-21.9-42.9-20.4-20.8-22.4-25.7-22.4-37.7 0-14.2 4.7-16.9 12.8-16.9 11.5 0 12.4 7.3 12.4 17.5v16.3H63v-14C63 22.4 63 0 33.3 0c-30 0-30 25.9-30 34.5 0 21 9.5 30.5 25.3 46.3C44.1 96 47.7 101 47.7 115.3c0 13.8-3.7 18.7-14 18.7-4.1 0-9.8-.9-13.1-5-3.3-4.2-3.3-9.2-3.3-19V95.1H0v.8zm15.8 0V110c0 10.2 0 15.3 3.6 19.9 3.7 4.6 9.8 5.6 14.2 5.6 11.1 0 15.5-5.7 15.5-20.2 0-14.8-3.7-20-19.5-35.6C14.2 64.2 4.8 54.9 4.8 34.5c0-8.2 0-33 28.5-33 28.3 0 28.3 21.5 28.3 34.3v13.1l.8-.8H46.6l.8.8V33.5c0-10.4-1-19-13.9-19-8.6 0-14.3 3.1-14.3 18.4 0 12.5 2.1 17.6 22.9 38.8 14.3 14.7 21.5 22 21.5 41.9 0 9.7 0 35.3-30.6 35.3-19.7 0-31.4-11.4-31.4-30.4V95.9l-.8.8h15.8l-.8-.8z"
+        />
+      </g>
+      <g>
+        <path
+          fill="#C52026"
+          d="M194.4 115.3c0 10.1 0 21.6 9.9 29.1 4.5 3.4 11 5.4 17.7 5.4 17.9 0 28.2-11 28.2-30.1V19H234v92.7c0 12.6-.4 15.9-2.1 18.2l-.1.1-.1.1c-2.4 3.6-6.9 4.1-9.3 4.1-11.3 0-12.2-7.2-12.2-17.5V19h-16v96.3z"
+        />
+        <path
+          fill="#FFF"
+          d="M193.6 115.3c0 10.3 0 22 10.2 29.7 4.6 3.5 11.3 5.6 18.2 5.6 18.4 0 28.9-11.2 28.9-30.8V18.2h-17.8v93.5c0 12.3-.4 15.6-2 17.7l-.1.1-.1.1c-2.2 3.3-6.4 3.8-8.7 3.8-10.6 0-11.4-6.6-11.4-16.7V18.2h-17.6v97.1zm.8-95.5h16l-.8-.8v97.7c0 10.3 1 18.2 12.9 18.2 2.6 0 7.3-.6 9.9-4.4v-.1-.1c1.9-2.5 2.3-5.8 2.3-18.6V19l-.8.8h16.2l-.8-.8v100.7c0 18.6-10 29.3-27.4 29.3-6.6 0-12.9-1.9-17.3-5.3-9.6-7.3-9.6-18.6-9.6-28.5V19l-.6.8z"
+        />
+      </g>
+      <g>
+        <path
+          d="M359.4 163.5h-1.8v2.8h1.8c1.1 0 1.4 0 1.9-.3.3-.2.4-.5.4-1 0-.2 0-.5-.2-.7-.4-.8-1.4-.8-2.1-.8zM359.3 162.1c.5 0 .9 0 1.3-.2s.7-.6.7-1-.2-.7-.6-.9c-.4-.2-.6-.2-1.9-.2h-1.2v2.4h.6c.5-.1.9-.1 1.1-.1zM70.1 159.7c-1.7 0-2.8 1.3-2.8 3.3 0 2.1 1.2 3.4 2.9 3.4 1.2 0 2.8-.9 2.9-3.2-.1-1.8-1.1-3.5-3-3.5zM268.3 164.4h2.7l-1.3-4.4M315.5 160.1c-.4-.2-.9-.2-2-.2h-.9v3H314.4c.4 0 1.7-.1 1.7-1.5.2-.3.2-1-.6-1.3zM131.2 160.1c-.4-.2-.9-.2-2-.2h-.9v3H130.1c.4 0 1.7-.1 1.7-1.5.2-.3.2-1-.6-1.3zM254.8 160.2c-.5-.2-.8-.2-2.1-.3h-1v6.3h.8c1.4 0 1.9-.1 2.3-.2.7-.3 1.5-.9 1.5-2.8 0-.9-.1-2.4-1.5-3zM118.8 159.7c-1.7 0-2.8 1.3-2.8 3.3 0 2.1 1.2 3.4 2.9 3.4 1.2 0 2.8-.9 2.9-3.2-.1-1.8-1.1-3.5-3-3.5zM23.7 159.7c-1.7 0-2.8 1.3-2.8 3.3 0 2.1 1.2 3.4 2.9 3.4 1.2 0 2.8-.9 2.9-3.2-.1-1.8-1-3.5-3-3.5zM165.8 164.4h2.7l-1.3-4.4"
+        />
+        <path
+          d="M.5 154.7v16.8h442.7v-16.8H.5zm11.8 13.4c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.1 2.2-2 3.1-4.1 3.1zm11.4 0c-1.2 0-2.4-.3-3.4-1.5-1-1.1-1.3-2.3-1.3-3.5 0-2.9 2-5 4.8-5 2.5 0 4.8 1.8 4.7 5-.1 2.7-1.8 5-4.8 5zm13.6-.3h-5.8v-9.5h1.9v7.9h3.9v1.6zm10.5-3.5c0 1.1 0 2-1.1 2.8-1 .9-2.3.9-3 .9-.6 0-1.2-.1-1.8-.3-1.2-.4-1.8-1.2-2-1.9-.1-.4-.1-.7-.1-1.9v-5.7h1.9v5.9c0 .4 0 .8.1 1.2.4.9 1.4 1 2 1 .3 0 1 0 1.6-.5.5-.5.5-1 .5-1.8v-5.8h1.9v6.1zm9.9-4.4H55v7.9h-1.9v-7.9h-2.7v-1.6h7.3v1.6zm4.5 7.9h-1.8v-9.5h1.8v9.5zm7.9.3c-1.2 0-2.4-.3-3.4-1.5-1-1.1-1.3-2.3-1.3-3.5 0-2.9 2-5 4.8-5 2.5 0 4.8 1.8 4.7 5-.1 2.7-1.8 5-4.8 5zm15.4-.3h-1.6l-4.3-6.7.1 6.7h-1.8v-9.5h1.7L84 165l-.2-6.7h1.8v9.5zm7.7.3c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.1 2.2-2 3.1-4.1 3.1zm18.7-8.2h-4.7v2.4h4.1v1.5h-4.1v4h-1.8v-9.5h6.6v1.6zm6.9 8.2c-1.2 0-2.4-.3-3.4-1.5-1-1.1-1.3-2.3-1.3-3.5 0-2.9 2-5 4.8-5 2.5 0 4.8 1.8 4.7 5-.1 2.7-1.8 5-4.8 5zm13.2-.3l-2-3.5h-1.7v3.5h-1.8v-9.5h3.2c1.3 0 2.2 0 3.1.7.6.5 1.1 1.2 1.1 2.3 0 1.8-1.4 2.5-2 2.6l2.2 3.9H132zm17.3 0h-7.4v-9.5h7v1.6h-5.2v2.2h4.8v1.5h-4.8v2.6h5.6v1.6zm11 0h-1.6l-4.3-6.7.1 6.7h-1.8v-9.5h1.7l4.4 6.7-.2-6.7h1.8v9.5zm9.3 0l-.6-1.8h-3.7l-.6 1.9h-2l3.3-9.5h2.1l3.4 9.5h-1.9zm10.6-.2c-.6.2-1.1.2-2.2.2h-3.9v-9.5h3.5c1.3 0 1.7 0 2.1.2 1 .3 1.7 1.1 1.7 2.2 0 .4-.1.9-.4 1.3-.3.4-.7.6-1.2.7 1.1.2 2.1 1 2.1 2.5.1 1-.5 2-1.7 2.4zm11.2.2h-5.8v-9.5h1.9v7.9h3.9v1.6zm4.3 0h-1.8v-9.5h1.8v9.5zm11.8 0h-1.6l-4.3-6.7.1 6.7h-1.8v-9.5h1.7l4.4 6.7-.2-6.7h1.8v9.5zm7.9-1.4c1 0 2.3-.5 2.4-2.2h-2.5v-1.6h4.2v5.2H218v-.8c-.9.8-1.9 1.1-2.7 1.1-3.1 0-4.7-2.3-4.7-4.9 0-3 2.1-5.1 4.8-5.1 2.1 0 3.6 1.2 4.2 2.8l-1.8.7c-.2-.5-.7-1.9-2.4-1.9-1.9 0-2.8 1.6-2.8 3.4 0 2.1 1.2 3.3 2.8 3.3zm18.3 1.4l-.6-1.9h-3.7l-.6 1.9h-2l3.3-9.5h2.1l3.4 9.5h-1.9zm12.2 0h-1.6l-4.3-6.7.1 6.7h-1.8v-9.5h1.7l4.4 6.7-.2-6.7h1.8v9.5zm10.4-.5c-1 .6-2 .6-3.2.6h-3.2v-9.5h3.6c.9 0 1.9 0 2.9.7 1.7 1.1 1.9 3 1.9 4.1 0 1.6-.6 3.3-2 4.1zm15.8.5l-.6-1.9h-3.7l-.6 1.9h-2l3.3-9.5h2.1l3.4 9.5h-1.9zm8 .3c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.2 2.2-2 3.1-4.1 3.1zm11 0c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.1 2.2-2 3.1-4.1 3.1zm15.6-3.8c0 1.1 0 2-1.1 2.8-1 .9-2.3.9-3 .9-.6 0-1.2-.1-1.8-.3-1.2-.4-1.8-1.2-2-1.9-.1-.4-.1-.7-.1-1.9v-5.7h1.9v5.9c0 .4 0 .8.1 1.2.4.9 1.4 1 2 1 .3 0 1 0 1.6-.5.5-.5.5-1 .5-1.8v-5.8h1.9v6.1zm9.6 3.5l-2-3.5h-1.7v3.5h-1.8v-9.5h3.2c1.3 0 2.2 0 3.1.7.6.5 1.1 1.2 1.1 2.3 0 1.8-1.4 2.5-2 2.6l2.2 3.9h-2.1zm7.3 0h-1.8v-9.5h1.8v9.5zm11.8 0h-1.6l-4.3-6.7.1 6.7h-1.8v-9.5h1.7l4.4 6.7-.2-6.7h1.8v9.5zm7.8-1.4c1 0 2.3-.5 2.4-2.2h-2.5v-1.6h4.2v5.2h-1.6v-.8c-.9.8-1.9 1.1-2.7 1.1-3.1 0-4.7-2.3-4.7-4.9 0-3 2.1-5.1 4.8-5.1 2.1 0 3.6 1.2 4.2 2.8l-1.8.7c-.2-.5-.7-1.9-2.4-1.9-1.9 0-2.8 1.6-2.8 3.4.1 2.1 1.3 3.3 2.9 3.3zm18.7 1.2c-.6.2-1.1.2-2.2.2h-3.9v-9.5h3.5c1.3 0 1.7 0 2.1.2 1 .3 1.7 1.1 1.7 2.2 0 .4-.1.9-.4 1.3-.3.4-.7.6-1.2.7 1.1.2 2.1 1 2.1 2.5 0 1-.5 2-1.7 2.4zm13.3-3.3c0 1.1 0 2-1.1 2.8-1 .9-2.3.9-3 .9-.6 0-1.2-.1-1.8-.3-1.2-.4-1.8-1.2-2-1.9-.1-.4-.1-.7-.1-1.9v-5.7h1.9v5.9c0 .4 0 .8.1 1.2.4.9 1.4 1 2 1 .3 0 1 0 1.6-.5.5-.5.5-1 .5-1.8v-5.8h1.9v6.1zm7.1 3.8c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.1 2.2-2 3.1-4.1 3.1zm9.5-.3H390v-9.5h1.8v9.5zm11.8 0H402l-4.3-6.7.1 6.7H396v-9.5h1.7l4.4 6.7-.2-6.7h1.8v9.5zm11.4 0h-7.4v-9.5h7v1.6h-5.2v2.2h4.8v1.5h-4.8v2.6h5.6v1.6zm6.8.3c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.1 2.2-2 3.1-4.1 3.1zm10.9 0c-.5 0-1.2-.1-1.8-.2-.7-.2-1.8-.6-2.6-1.8l1.6-1.1c.2.4 1 1.4 3.1 1.4.4 0 .7 0 1.1-.2.7-.3.8-.8.8-1.1 0-.6-.4-.8-.7-.9-.2-.1-.3-.1-1.2-.3l-1.2-.2c-.6-.1-.9-.2-1.2-.3-.4-.2-1.7-.8-1.7-2.3 0-1.8 1.6-3 3.9-3 2.1 0 3.3 1 4 1.9l-1.5 1.1c-.3-.5-1-1.4-2.6-1.4-1 0-1.9.4-1.9 1.2 0 .8.9 1 1.8 1.1l1 .2c1.3.3 3.2.8 3.2 2.8.2 2.2-1.9 3.1-4.1 3.1z"
+        />
+        <path
+          d="M177.7 162.1c.5 0 .9 0 1.3-.2s.7-.6.7-1-.2-.7-.6-.9c-.4-.2-.6-.2-1.9-.2H176v2.4h.6c.5-.1.9-.1 1.1-.1zM177.8 163.5H176v2.8h1.8c1.1 0 1.4 0 1.9-.3.3-.2.4-.5.4-1 0-.2 0-.5-.2-.7-.4-.8-1.5-.8-2.1-.8zM229.9 164.4h2.8l-1.4-4.4"
+        />
+      </g>
+    </svg>
+  </a>
+</div>
+
+          <div class='navigation' id='primaryNav'><ul class='level1'><li class='level1-li first '><a href="/topics/2911-coronavirus-coverage" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: COVID-19|url: /topics/2911-coronavirus-coverage" data-eventname="nav-menu-primaryNav">COVID-19</a><ul class='level2'><li class='level2-li first '><a href="/topics/2912-coronavirus-news" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Coronavirus News
+|url: /topics/2912-coronavirus-news" data-eventname="nav-menu-primaryNav">Coronavirus News
+</a></li><li class='level2-li  '><a href="/topics/2913-coronavirus-blogs" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Coronavirus Blogs|url: /topics/2913-coronavirus-blogs" data-eventname="nav-menu-primaryNav">Coronavirus Blogs</a></li><li class='level2-li  '><a href="/topics/2914-coronavirus-and-business-continuity" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Coronavirus and Business Continuity|url: /topics/2914-coronavirus-and-business-continuity" data-eventname="nav-menu-primaryNav">Coronavirus and Business Continuity</a></li><li class='level2-li  '><a href="/topics/2915-coronavirus-and-cybersecurity" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Coronavirus and Cybersecurity|url: /topics/2915-coronavirus-and-cybersecurity" data-eventname="nav-menu-primaryNav">Coronavirus and Cybersecurity</a></li><li class='level2-li  '><a href="/topics/2916-economic-impact-of-coronavirus" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Economic Impact of Coronavirus|url: /topics/2916-economic-impact-of-coronavirus" data-eventname="nav-menu-primaryNav">Economic Impact of Coronavirus</a></li><li class='level2-li  '><a href="/topics/2917-coronavirus-and-emergency-planning" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Coronavirus and Emergency Planning|url: /topics/2917-coronavirus-and-emergency-planning" data-eventname="nav-menu-primaryNav">Coronavirus and Emergency Planning</a></li><li class='level2-li  last'><a href="/topics/2918-coronavirus-and-telecommuting-employees" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Coronavirus and Telecommuting Employees|url: /topics/2918-coronavirus-and-telecommuting-employees" data-eventname="nav-menu-primaryNav">Coronavirus and Telecommuting Employees</a></li></ul></li><li class='level1-li  '><a href="/topics/2189-security-newswire" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: News|url: /topics/2189-security-newswire" data-eventname="nav-menu-primaryNav">News</a><ul class='level2'><li class='level2-li first '><a href="/topics/2189-security-newswire" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Security Newswire
+|url: /topics/2189-security-newswire" data-eventname="nav-menu-primaryNav">Security Newswire
+</a></li><li class='level2-li  '><a href="/topics/2785-technologies" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Technologies|url: /topics/2785-technologies" data-eventname="nav-menu-primaryNav">Technologies</a></li><li class='level2-li  '><a href="/blogs/14" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Security Blog
+|url: /blogs/14" data-eventname="nav-menu-primaryNav">Security Blog
+</a></li><li class='level2-li  '><a href="/newsletters" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Newsletter|url: /newsletters" data-eventname="nav-menu-primaryNav">Newsletter</a></li><li class='level2-li  last'><a href="/articles/topic/2150-web-exclusives" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Web Exclusives
+|url: /articles/topic/2150-web-exclusives" data-eventname="nav-menu-primaryNav">Web Exclusives
+</a></li></ul></li><li class='level1-li  '><a href="/topics/2644-columns" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Columns|url: /topics/2644-columns" data-eventname="nav-menu-primaryNav">Columns</a><ul class='level2'><li class='level2-li first '><a href="/topics/2780-career-intelligence" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Career Intelligence 
+|url: /topics/2780-career-intelligence" data-eventname="nav-menu-primaryNav">Career Intelligence 
+</a></li><li class='level2-li  '><a href="/topics/2613-security-talk" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Security Talk|url: /topics/2613-security-talk" data-eventname="nav-menu-primaryNav">Security Talk</a></li><li class='level2-li  '><a href="/topics/2782-the-corner-office" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: The Corner Office 
+|url: /topics/2782-the-corner-office" data-eventname="nav-menu-primaryNav">The Corner Office 
+</a></li><li class='level2-li  '><a href="/topics/2250-leadership-management" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Leadership &amp; Management|url: /topics/2250-leadership-management" data-eventname="nav-menu-primaryNav">Leadership &amp; Management</a></li><li class='level2-li  '><a href="/topics/2654-cyber-tactics" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Cyber Tactics
+|url: /topics/2654-cyber-tactics" data-eventname="nav-menu-primaryNav">Cyber Tactics
+</a></li><li class='level2-li  '><a href="/topics/2648-overseas-and-secure" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Overseas and Secure|url: /topics/2648-overseas-and-secure" data-eventname="nav-menu-primaryNav">Overseas and Secure</a></li><li class='level2-li  last'><a href="https://www.securitymagazine.com/topics/2873-the-risk-matrix" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: The Risk Matrix|url: https://www.securitymagazine.com/topics/2873-the-risk-matrix" data-eventname="nav-menu-primaryNav">The Risk Matrix</a></li></ul></li><li class='level1-li  '><a href="/topics/2786-management" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Management|url: /topics/2786-management" data-eventname="nav-menu-primaryNav">Management</a><ul class='level2'><li class='level2-li first '><a href="/topics/2227-security-leadership-and-management" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Leadership Management
+|url: /topics/2227-security-leadership-and-management" data-eventname="nav-menu-primaryNav">Leadership Management
+</a></li><li class='level2-li  '><a href="/topics/2231-enterprise-services" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Enterprise Services
+|url: /topics/2231-enterprise-services" data-eventname="nav-menu-primaryNav">Enterprise Services
+</a></li><li class='level2-li  '><a href="/topics/2614-education-training" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Security Education &amp; Training
+|url: /topics/2614-education-training" data-eventname="nav-menu-primaryNav">Security Education &amp; Training
+</a></li><li class='level2-li  last'><a href="/topics/2786-management" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: More|url: /topics/2786-management" data-eventname="nav-menu-primaryNav">More</a></li></ul></li><li class='level1-li  '><a href="/topics/2787-physical" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Physical|url: /topics/2787-physical" data-eventname="nav-menu-primaryNav">Physical</a><ul class='level2'><li class='level2-li first '><a href="/topics/2232-access-management" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Access Management
+|url: /topics/2232-access-management" data-eventname="nav-menu-primaryNav">Access Management
+</a></li><li class='level2-li  '><a href="/topics/2234-video-surveillance" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Video Surveillance
+|url: /topics/2234-video-surveillance" data-eventname="nav-menu-primaryNav">Video Surveillance
+</a></li><li class='level2-li  '><a href="/topics/2233-identity-management" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Identity Management
+|url: /topics/2233-identity-management" data-eventname="nav-menu-primaryNav">Identity Management
+</a></li><li class='level2-li  last'><a href="/topics/2787-physical" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: More|url: /topics/2787-physical" data-eventname="nav-menu-primaryNav">More</a></li></ul></li><li class='level1-li  '><a href="/topics/2788-cyber" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Cyber|url: /topics/2788-cyber" data-eventname="nav-menu-primaryNav">Cyber</a></li><li class='level1-li  '><a href="/topics/2789-sectors" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Sectors|url: /topics/2789-sectors" data-eventname="nav-menu-primaryNav">Sectors</a><ul class='level2'><li class='level2-li first '><a href="/topics/2241-education-university" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Education: University
+|url: /topics/2241-education-university" data-eventname="nav-menu-primaryNav">Education: University
+</a></li><li class='level2-li  '><a href="/topics/2247-hospitals-medical-centers" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Hospitals &amp; Medical Centers
+|url: /topics/2247-hospitals-medical-centers" data-eventname="nav-menu-primaryNav">Hospitals &amp; Medical Centers
+</a></li><li class='level2-li  '><a href="/topics/2238-infrastructure-electric-gas-water" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Critical Infrastructure
+|url: /topics/2238-infrastructure-electric-gas-water" data-eventname="nav-menu-primaryNav">Critical Infrastructure
+</a></li><li class='level2-li  last'><a href="/topics/2789-sectors" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: More|url: /topics/2789-sectors" data-eventname="nav-menu-primaryNav">More</a></li></ul></li><li class='level1-li  '><a href="#" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Exclusives|url: #" data-eventname="nav-menu-primaryNav">Exclusives</a><ul class='level2'><li class='level2-li first '><a href="/Security-500" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Security 500 Report|url: /Security-500" data-eventname="nav-menu-primaryNav">Security 500 Report</a></li><li class='level2-li  '><a href="/mostinfluential" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Most Influential People in Security
+|url: /mostinfluential" data-eventname="nav-menu-primaryNav">Most Influential People in Security
+</a></li><li class='level2-li  '><a href="/top-guarding-and-security-officer-companies" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Top Guard and Security Officer Companies|url: /top-guarding-and-security-officer-companies" data-eventname="nav-menu-primaryNav">Top Guard and Security Officer Companies</a></li><li class='level2-li  '><a href="/leadership" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: The Security Leadership Issue
+|url: /leadership" data-eventname="nav-menu-primaryNav">The Security Leadership Issue
+</a></li><li class='level2-li  last'><a href="/innovations" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Annual Innovations, Technology, &amp; Services Report
+|url: /innovations" data-eventname="nav-menu-primaryNav">Annual Innovations, Technology, &amp; Services Report
+</a></li></ul></li><li class='level1-li  '><a href="/events" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Events|url: /events" data-eventname="nav-menu-primaryNav">Events</a><ul class='level2'><li class='level2-li first '><a href="/events" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Industry Events
+|url: /events" data-eventname="nav-menu-primaryNav">Industry Events
+</a></li><li class='level2-li  '><a href="/events/category/2141" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Webinars
+|url: /events/category/2141" data-eventname="nav-menu-primaryNav">Webinars
+</a></li><li class='level2-li  '><a href="https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:APIUTILS!51004&amp;PageID=E7AFDE8D-F28D-4B24-A3CE-758E483B3E6B" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Solutions by Sector|url: https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:APIUTILS!51004&amp;PageID=E7AFDE8D-F28D-4B24-A3CE-758E483B3E6B" data-eventname="nav-menu-primaryNav" target="_blank">Solutions by Sector</a></li><li class='level2-li  '><a href="http://www.security500.com/" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Security 500 Conference|url: http://www.security500.com/" data-eventname="nav-menu-primaryNav" target="_blank">Security 500 Conference</a></li><li class='level2-li  last'><a href="http://www.security500west.com/ " class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Security 500 West
+|url: http://www.security500west.com/ " data-eventname="nav-menu-primaryNav" target="_blank">Security 500 West
+</a></li></ul></li><li class='level1-li  '><a href="#" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Resources|url: #" data-eventname="nav-menu-primaryNav">Resources</a><ul class='level2'><li class='level2-li first '><a href="/publications/3" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: The Magazine
+|url: /publications/3" data-eventname="nav-menu-primaryNav">The Magazine
+</a><ul class='level3'><li class='level3-li first '><a href="/publications/3" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: This Month&#x27;s Issue
+|url: /publications/3" data-eventname="nav-menu-primaryNav">This Month&#x27;s Issue
+</a></li><li class='level3-li  '><a href="/digital-edition-archives" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Digital Edition
+|url: /digital-edition-archives" data-eventname="nav-menu-primaryNav">Digital Edition
+</a></li><li class='level3-li  '><a href="/publications/3/editions/1166" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Archives|url: /publications/3/editions/1166" data-eventname="nav-menu-primaryNav">Archives</a></li><li class='level3-li  last'><a href="http://www.sdmmag.com/topics/4539-Professional-Security-Canada" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Professional Security Canada|url: http://www.sdmmag.com/topics/4539-Professional-Security-Canada" data-eventname="nav-menu-primaryNav" target="_blank">Professional Security Canada</a></li></ul></li><li class='level2-li  '><a href="/videos" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Videos
+|url: /videos" data-eventname="nav-menu-primaryNav">Videos
+</a><ul class='level3'><li class='level3-li first last'><a href="/ISC-west-2019-Videos" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: ISC West 2019|url: /ISC-west-2019-Videos" data-eventname="nav-menu-primaryNav">ISC West 2019</a></li></ul></li><li class='level2-li  '><a href="/media/photos/" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Photo Galleries|url: /media/photos/" data-eventname="nav-menu-primaryNav">Photo Galleries</a></li><li class='level2-li  '><a href="/polls" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Polls
+|url: /polls" data-eventname="nav-menu-primaryNav">Polls
+</a></li><li class='level2-li  '><a href="/classifieds" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Classifieds &amp; Job Listings
+|url: /classifieds" data-eventname="nav-menu-primaryNav">Classifieds &amp; Job Listings
+</a></li><li class='level2-li  '><a href="/security-white-papers" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: White Papers
+|url: /security-white-papers" data-eventname="nav-menu-primaryNav">White Papers
+</a></li><li class='level2-li  '><a href="/apps" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Mobile App
+|url: /apps" data-eventname="nav-menu-primaryNav">Mobile App
+</a></li><li class='level2-li  '><a href="/products" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Store|url: /products" data-eventname="nav-menu-primaryNav">Store</a></li><li class='level2-li  '><a href="/topics/2745-sponsored-content" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Sponsor Insights |url: /topics/2745-sponsored-content" data-eventname="nav-menu-primaryNav">Sponsor Insights </a></li><li class='level2-li  last'><a href="https://engineeringcenter.bnpmedia.com/library.php?g=security" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Continuing Education|url: https://engineeringcenter.bnpmedia.com/library.php?g=security" data-eventname="nav-menu-primaryNav" target="_blank">Continuing Education</a></li></ul></li><li class='level1-li  '><a href="#" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: InfoCenters|url: #" data-eventname="nav-menu-primaryNav">InfoCenters</a><ul class='level2'><li class='level2-li first '><a href="/infocenter/ESRM" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: ESRM|url: /infocenter/ESRM" data-eventname="nav-menu-primaryNav">ESRM</a></li><li class='level2-li  last'><a href="/infocenter/ip-security-solutions-and-technology" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: IP Security Solutions &amp; Technology|url: /infocenter/ip-security-solutions-and-technology" data-eventname="nav-menu-primaryNav">IP Security Solutions &amp; Technology</a></li></ul></li><li class='level1-li  '><a href="/contactus" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Contact|url: /contactus" data-eventname="nav-menu-primaryNav">Contact</a><ul class='level2'><li class='level2-li first last'><a href="/editorial-guidelines" class="link1" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Editorial Guidelines|url: /editorial-guidelines" data-eventname="nav-menu-primaryNav">Editorial Guidelines</a></li></ul></li><li class='level1-li  last'><a href="/advertise" class="link2" data-background-image="" data-eventaction="primaryNav-link" data-eventcategory="click" data-eventlabel="text: Advertise|url: /advertise" data-eventname="nav-menu-primaryNav">Advertise</a></li></ul></div>
+        </div>
+      </nav>
+
+      <div class="ad-leaderboard-container">
+        <div id="div-gpt-ad-leaderboard" class="advertisement"></div>
+      </div>
+
+      <div class="container ">
+        
+
+
+
+  <article class="main-body page-article-show ">
+    <div id="breadcrumbs" class="breadcrumbs"><a href="/" class="">Home</a> &raquo; The Linux Foundation & Harvard’s Lab for Innovation Science Release Census for Open Source Software Security</div>
+    
+
+    
+
+    <span class="topics"><a href="/topics/2236-cyber-security-news" class="topic">Cyber Security News</a><span class="del"></span><a href="/topics/2788-cyber" class="topic">Cyber</a><span class="del"></span><a href="/topics/2189-security-newswire" class="topic">Security Newswire</a></span>
+
+    
+
+
+    <h1 class="headline">The Linux Foundation & Harvard’s Lab for Innovation Science Release Census for Open Source Software Security</h1>
+
+
+      <figure class="article-featured-image">
+    <div class="article-featured-image__image" style="background-image: url(//www.securitymagazine.com/ext/resources/SEC/2017/Sept/SEC0917-inews4-feat-slide_900px.jpg?1504109496); background-size: cover"><img alt="Most Countries without Cybersecurity Strategy" src="//www.securitymagazine.com/ext/resources/SEC/2017/Sept/SEC0917-inews4-feat-slide_900px.jpg?1504109496" /></div>
+
+  </figure>
+
+
+    <div class="content">
+      <section class="additional">
+          <div class="date">February 18, 2020</div>
+
+        <div class="author"></div>
+
+        <div class="article-toolbar">
+  <div class="tags">KEYWORDS <a href="/keywords/418-cyber-security">cyber security</a>  /  <a href="/keywords/7795-cybersecurity">cybersecurity</a>  /  <a href="/keywords/98-software">software</a>  /  <a href="/keywords/8378-supply-chain">supply chain</a>  /  <a href="/keywords/7093-vulnerability-assessment">vulnerability assessment</a></div>
+      <a href="http://www.bnpmedia.com/reprints" target="_blank" class="article-toolbar__reprints-link">
+        Order Reprints
+      </a>
+</div><!-- end toolbar -->
+
+
+        <div class="social-networking">
+  <div class="addthis_inline_share_toolbox_8qb6" id="sharing-toolbox"></div>
+</div>
+
+
+
+        
+<div class="comment-count">
+      <a href="#comments">
+        No Comments
+      </a>
+</div>
+
+
+        
+
+        <div id="div-gpt-ad-article-body-sky" class="advertisement"></div>
+      </section>
+
+      <script type="text/javascript">
+//<![CDATA[
+                window._define = window.define;
+                window.define = undefined;
+
+//]]>
+</script><div class="body gsd-paywall"><p>The Linux Foundation&rsquo;s Core Infrastructure Initiative (CII) and the Laboratory for Innovation Science at Harvard (LISH), <a href="https://www.linuxfoundation.org/press-release/2020/02/the-linux-foundation-and-harvards-lab-for-innovation-science-release-census-for-open-source-software-security/">announced </a>the release of&nbsp;<a href="https://www.coreinfrastructure.org/programs/census-project-ii/">&lsquo;</a><a href="https://www.coreinfrastructure.org/programs/census-project-ii/">Vulnerabilities in the Core,&rsquo; a Preliminary Report and Census II of Open Source Software.`</a></p>
+
+<p>This Census II analysis and report represent important steps towards understanding and addressing structural and security complexities in the modern day supply chain where open source is pervasive, but not always understood, says the organization.&nbsp;According to the CII:</p>
+
+<ul>
+	<li>Census II identifies the most commonly used free and open source software (FOSS) components in production applications and begins to examine them for potential vulnerabilities, which can inform actions to sustain the long-term security and health of FOSS.&nbsp;</li>
+	<li><a href="https://www.coreinfrastructure.org/programs/census-project/">Census</a><a href="https://www.coreinfrastructure.org/programs/census-project/">&nbsp;I (2015)</a>&nbsp;identified which software packages in the Debian Linux distribution were the most critical to the kernel&rsquo;s operation and security.</li>
+</ul>
+
+<p>&ldquo;The Census II report addresses some of the most important questions facing us as we try to understand the complexity and interdependence among open source software packages and components in the global supply chain,&rdquo; said Jim Zemlin, executive director at the Linux Foundation. &ldquo;The report begins to give us an inventory of the most important shared software and potential vulnerabilities and is the first step to understand more about these projects so that we can create tools and standards that results in trust and transparency in software.&rdquo;</p>
+
+<p>Working in collaboration with Software Composition Analysis (SCAs) and application security companies, including developer-first security company&nbsp;<a href="https://snyk.io/">Snyk</a>&nbsp;and&nbsp;<a href="https://www.synopsys.com/software-integrity/cybersecurity-research-center.html">Synopsys Cybersecurity Research Center (CyRC)</a>, the Linux Foundation and Harvard combined private usage data with publicly available datasets and develop a methodology for identifying more than 200 of the most used open source software projects, 20 of which are detailed in the findings. For the detailed methodology and list, including elaboration on each project,&nbsp;<a href="https://www.coreinfrastructure.org/programs/census-project-ii/">please read the&nbsp;</a><a href="https://www.coreinfrastructure.org/programs/census-project-ii/">report.</a></p>
+
+<p>&ldquo;FOSS was long seen as the domain of hobbyists and tinkerers. However, it has now become an integral component of the modern economy and is a fundamental building block of everyday technologies like smart phones, cars, the Internet of Things, and numerous pieces of critical infrastructure,&rdquo; said Frank Nagle, a professor at Harvard Business School and co-director of the Census II project. &ldquo;Understanding which components are most widely used and most vulnerable will allow us to help ensure the continued health of the ecosystem and the digital economy.&rdquo;</p>
+
+<p>With&nbsp;<a href="https://www.sonatype.com/hubfs/SSC/Software_Supply_Chain_Inforgraphic.pdf?t=1468857601884">FOSS constituting 80-</a><a href="https://www.sonatype.com/hubfs/SSC/Software_Supply_Chain_Inforgraphic.pdf?t=1468857601884">90</a><a href="https://www.sonatype.com/hubfs/SSC/Software_Supply_Chain_Inforgraphic.pdf?t=1468857601884">&nbsp;percent of all software</a>, it is more important than ever that we understand what FOSS is most used and where it could be vulnerable to attack, says the CII. &quot;The increasing importance of this has been underscored with US government agencies pushing for deeper insights into the software building blocks that make up various packages and devices via a software bill of materials (SBOM). For example, in April 2018, the leaders of the US Congress House of Representatives Energy and Commerce Committee sent a letter to the Linux Foundation, acknowledging the critical importance of FOSS and exploring the opportunities and challenges related to FOSS,&quot; says the CII.</p>
+
+<p>The increasing importance of FOSS throughout the economy became critically apparent in 2014 when the Heartbleed security bug in the OpenSSL cryptography library was discovered, notes the organization.&nbsp;<a href="https://news.netcraft.com/archives/2014/04/08/half-a-million-widely-trusted-websites-vulnerable-to-heartbleed-bug.html">By some estimates,</a>&nbsp;the bug impacted nearly 20 percent, or half a million, of secure web servers on the Internet. It was the impetus for the Core Infrastructure Initiative, which has raised millions of dollars for open source security in just the last six years.</p>
+
+<p>&ldquo;Open source is an undeniable and critical part of today&rsquo;s economy, providing the underpinnings for most of our global commerce. Hundreds of thousands of open source software packages are in production applications throughout the supply chain, so understanding what we need to be assessing for vulnerabilities is the first step for ensuring long-term security and sustainability of open source software,&rdquo; said Zemlin.</p>
+</div><script type="text/javascript">
+//<![CDATA[
+                window.define = window._define;
+
+//]]>
+</script>
+
+      
+
+
+    </div>
+
+    <div class="pager">
+  
+  
+</div>
+
+
+      <section class="editorial-content article-show-bottom">
+
+    <div class="editorial-content__details">
+
+
+      <div class="editorial-content__body">
+          <p style="text-align: center;"><a href="https://bnp.dragonforms.com/BNP6090_VTnew?pk=WARTCL" target="_blank"><img alt="Subscribe to Security Magazine" src="/ext/resources/Default-images/sec-subscribe.gif" /> </a></p>
+
+<p>&nbsp;</p>
+
+<p><a class="emailWithURL" href="mailto:tagg.henderson@bnpmedia.com"><img alt="Email-icon-100" src="/ext/resources/images/2020/Email-icon-100.png" style="float: right; margin-left: 5px; margin-right: 5px;" /></a></p>
+
+<p style="text-align: right;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>I want to hear from you. Tell me how we can improve.</strong></span></p>
+
+<p style="text-align: right;"><span style="font-family:tahoma,geneva,sans-serif;"><a class="emailWithURL" href="mailto:tagg.henderson@bnpmedia.com"><strong><u>BNP Media Owner &amp; Co-CEO, Tagg Henderson</u></strong></a></span></p>
+
+
+<script>
+// This array holds all elements with the class emailWithURL.
+var emailWithURLArray = document.getElementsByClassName("emailWithURL");
+ 
+// This updates all emailWithURLs to include the URL in the subject line.
+for (i = 0; i < emailWithURLArray.length; i++){
+emailWithURLArray[i].setAttribute("href", "mailto:tagg.henderson@bnpmedia.com&subject=Regarding " + window.location.href);;                    
+}
+</script>
+
+      </div>
+
+    </div>
+  </section>
+
+
+    
+
+
+      
+
+
+      <section class="sidebar related-content">
+        <div class="records show articles related-content__articles">
+          <h3 class="current related-content__title">Related Articles</h3>
+            <article class="record related-content__article">
+              <h2 class="headline related-content__headline"><a href="https://www.securitymagazine.com/articles/91640-applications-open-for-2020-loss-prevention-foundation-scholarships" data-eventaction="related-content-article-headline-link" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/articles/91640-applications-open-for-2020-loss-prevention-foundation-scholarships" data-eventname="related-content-article-headline-link" title="Applications Open for 2020 Loss Prevention Foundation Scholarships">Applications Open for 2020 Loss Prevention Foundation Scholarships</a></h2>
+            </article>
+            <article class="record related-content__article">
+              <h2 class="headline related-content__headline"><a href="https://www.securitymagazine.com/articles/89879-lockheed-martin-ucf-open-15-million-cyber-lab-in-orlando" data-eventaction="related-content-article-headline-link" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/articles/89879-lockheed-martin-ucf-open-15-million-cyber-lab-in-orlando" data-eventname="related-content-article-headline-link" title="Lockheed Martin, UCF Open $1.5 Million Cyber Lab in Orlando">Lockheed Martin, UCF Open $1.5 Million Cyber Lab in Orlando</a></h2>
+            </article>
+            <article class="record related-content__article">
+              <h2 class="headline related-content__headline"><a href="https://www.securitymagazine.com/articles/90804-university-of-north-florida-opens-cybersecurity-lab" data-eventaction="related-content-article-headline-link" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/articles/90804-university-of-north-florida-opens-cybersecurity-lab" data-eventname="related-content-article-headline-link" title="University of North Florida Opens Cybersecurity Lab">University of North Florida Opens Cybersecurity Lab</a></h2>
+            </article>
+        </div>
+        <div class="records show products related-content__products">
+          <h3 class="current related-content__title">Related Products</h3>
+            <article class="record related-content__article">
+              <h2 class="headline related-content__headline"><a href="https://www.securitymagazine.com/products/504-the-database-hackers-handboo" data-eventaction="related-content-product-name-link" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/products/504-the-database-hackers-handboo" data-eventname="related-content-product-name-link" title="The Database Hacker&#x27;s Handbook: Defending Database Servers">The Database Hacker&#x27;s Handbook: Defending Database Servers</a></h2>
+            </article>
+        </div>
+  </section>
+
+    
+<script src="/javascripts/pages/comments.js" type="text/javascript"></script>
+
+<a name="comments_anchor"></a>
+<a name="comments"></a>
+<div class="box4 comment" id="comments-container">
+	<div class="records" id="add-comment">
+		<div id="comment_form_wrapper">
+  <div class="record">
+    <div id="comment_notice" class="warning"></div>
+    <a name="comment_form"></a>
+      You must <a href="/user/login">login</a> or <a href="/user/new">register</a> in order to post a comment.
+  </div>
+</div>
+
+	</div>
+	<div class="records" id="comment-list" data-comment-location="/articles/91752-the-linux-foundation-harvards-lab-for-innovation-science-release-census-for-open-source-software-security/comments"></div>
+	<div id="report-abusive-comment-form" style="display: none;">
+		<div class="modal">
+			<a class="close"></a>
+			<h2>Report Abusive Comment</h2>
+			<form accept-charset="UTF-8" action="/comments/flag/article/" class="form" id="comment_flag_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="MpypeBJRWm6H5fm0QKkbkR2m4XPT+3jROayuFC1IBHI=" /></div>
+				<label for="reason">Thank you for helping us to improve our forums. Is this comment offensive? Please tell us why.</label>
+				<textarea cols="40" id="reason" name="reason" rows="5">
+</textarea>
+				<p><input class="button" name="commit" rel="nofollow" type="submit" value="Submit Report" /></p>
+</form>		</div>
+	</div>
+	<script type="text/javascript">
+		function initReportAbusiveCommentForm () {
+			$("#report-abusive-comment-form").overlay({
+				top: 'center',
+				expose: { color: '#000', loadSpeed: 200, opacity: 0.6 },
+				closeOnClick: true
+			});
+
+			$("#comment-list").delegate (".modalInput", "click", function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				$("#comment_flag_form").attr ("action", "/comments/flag/article/" + e.target.href.split (/\#id=/)[1]);
+				$("#report-abusive-comment-form").overlay().load();
+			});
+		}
+		$(document).ready(
+			function () {
+				if (window.customInitReportAbusiveCommentForm) {
+					window.customInitReportAbusiveCommentForm ();
+				}
+				else {
+					initReportAbusiveCommentForm ();
+				}
+			}
+		);
+	</script>
+</div>
+
+
+  </article>
+
+
+
+
+
+
+
+        <aside class="interior-sidebar">
+  <div class="wrapper">
+      <div id="div-gpt-ad-sidebar-sky" class="advertisement"></div>
+
+    <div class="subscribe-now subscribe-now--dropdown" id="subscribe-now">
+      <a href="#" class="subscribe-now__subscribe-link" data-eventaction="interior-subscribe-now-link" data-eventcategory="click" data-eventlabel="#" data-eventname="interior-subscribe-now-link">Subscribe For Free!</a>
+      <nav class="subscribe-now__nav">
+        
+<nav class="navigation" id="subscriptions"><div class="navigation"><ul class="navigation-level1__items"><li class="navigation-level1__item"><a href="https://bnp.dragonforms.com/BNP6090_VTnew&amp;pk=W.HOME" class="navigation__link" data-eventaction="subscriptions-link" data-eventcategory="click" data-eventlabel="Print &amp; Digital Edition Subscriptions|https://bnp.dragonforms.com/BNP6090_VTnew&amp;pk=W.HOME" data-eventname="subscriptions" target="_blank">Print &amp; Digital Edition Subscriptions</a></li><li class="navigation-level1__item"><a href="/eNewsletters" class="navigation__link" data-eventaction="subscriptions-link" data-eventcategory="click" data-eventlabel="Security eNewsletter &amp; Other eNews Alerts|/eNewsletters" data-eventname="subscriptions">Security eNewsletter &amp; Other eNews Alerts</a></li><li class="navigation-level1__item"><a href="https://bnp.dragonforms.com/BNP6289_SECMAG522create&amp;pk=RHOME" class="navigation__link" data-eventaction="subscriptions-link" data-eventcategory="click" data-eventlabel="Online Registration|https://bnp.dragonforms.com/BNP6289_SECMAG522create&amp;pk=RHOME" data-eventname="subscriptions">Online Registration</a></li><li class="navigation-level1__item"><a href="/apps" class="navigation__link" data-eventaction="subscriptions-link" data-eventcategory="click" data-eventlabel="Mobile App|/apps" data-eventname="subscriptions">Mobile App</a></li><li class="navigation-level1__item"><a href="/customerservice" class="navigation__link" data-eventaction="subscriptions-link" data-eventcategory="click" data-eventlabel="Subscription Customer Service|/customerservice" data-eventname="subscriptions">Subscription Customer Service</a></li></ul></div></nav>      </nav>
+    </div>
+
+    <hr class="divider" />
+
+        <section class="editorial-content video-brightcove-home">
+
+    <div class="editorial-content__details">
+
+
+      <div class="editorial-content__body">
+          <div class="records videos">
+<div 
+data-carousel="true"
+  data-playlist-id="660964958001" 
+  data-player-url="/videos"
+  data-video-play-arrow="/images/video/play_arrow3.png"
+  data-video-logo="/images/video/logo.png"
+    data-randomize-videos="true"
+  data-autoplay="true"
+    data-max-thumbnails-visible="0"
+    data-max-videos-visible="4" >
+</div>
+</div>
+      </div>
+
+    </div>
+  </section>
+
+
+        <a href="/videos" class="view-more" data-eventaction="interior-sidebar-view-more-link" data-eventcategory="click" data-eventlabel="/videos" data-eventname="interior-sidebar-view-more-link">More Videos</a>
+
+    <hr class="divider" />
+
+      <div id="div-gpt-ad-sidebar-mrect" class="advertisement"></div>
+
+    
+
+        <section class="popular-stories " id="popular-stories">
+    <h1 class="popular-stories__title">Popular Stories</h1>
+  
+                       
+
+    <div class="popular-stories__items">
+    
+<div class="popular-stories__item">
+  
+      <a href="https://www.securitymagazine.com/articles/91860-isc-west-postponed-to-july-2020-due-to-coronavirus" class="popular-stories__link" data-eventaction="popular-stories-headline" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/articles/91860-isc-west-postponed-to-july-2020-due-to-coronavirus" data-eventname="popular-stories-headline" title="ISC West 2020 Postponed to July 2020 Due to Coronavirus">
+
+
+          <div class="popular-stories__image">
+            <img alt="ISC West" src="https://www.securitymagazine.com/ext/resources/isc-west1.jpg?crop=true&amp;height=100&amp;t=1583906646&amp;width=100" />
+          </div>
+
+        <h1 class="popular-stories__headline">
+          ISC West 2020 Postponed to July 2020 Due to Coronavirus
+        </h1>
+</a>
+</div>  
+<div class="popular-stories__item">
+  
+      <a href="https://www.securitymagazine.com/articles/91844-why-ethical-hacking-the-what-and-why-of-ethical-hacking" class="popular-stories__link" data-eventaction="popular-stories-headline" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/articles/91844-why-ethical-hacking-the-what-and-why-of-ethical-hacking" data-eventname="popular-stories-headline" title="Why Ethical Hacking? (The What and Why of Ethical Hacking)">
+
+
+          <div class="popular-stories__image">
+            <img alt="hacker" src="https://www.securitymagazine.com/ext/resources/secenews/2018/e-hacker_900.jpg?crop=true&amp;height=100&amp;t=1538672647&amp;width=100" />
+          </div>
+
+        <h1 class="popular-stories__headline">
+          Why Ethical Hacking? (The What and Why of Ethical Hacking)
+        </h1>
+</a>
+</div>  
+<div class="popular-stories__item">
+  
+      <a href="https://www.securitymagazine.com/articles/91815-setting-the-gold-standard-in-school-security" class="popular-stories__link" data-eventaction="popular-stories-headline" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/articles/91815-setting-the-gold-standard-in-school-security" data-eventname="popular-stories-headline" title="Setting the Gold Standard in School Security">
+
+
+          <div class="popular-stories__image">
+            <img alt="SEC0320-cover-feat-slide1_900px.jpg" src="https://www.securitymagazine.com/ext/resources/Issues/2020/March/Cover-Story/SEC0324.jpg?crop=true&amp;height=100&amp;t=1582920897&amp;width=100" />
+          </div>
+
+        <h1 class="popular-stories__headline">
+          Setting the Gold Standard in School Security
+        </h1>
+</a>
+</div>  
+<div class="popular-stories__item">
+  
+      <a href="https://www.securitymagazine.com/blogs/14-security-blog/post/91950-what-law-enforcement-and-security-personnel-need-to-know-about-coronavirus-covid-19" class="popular-stories__link" data-eventaction="popular-stories-headline" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/blogs/14-security-blog/post/91950-what-law-enforcement-and-security-personnel-need-to-know-about-coronavirus-covid-19" data-eventname="popular-stories-headline" title="What Law Enforcement and Security Personnel Need to Know about Coronavirus (COVID-19)">
+
+
+          <div class="popular-stories__image">
+            <img alt="coronavirus" src="https://www.securitymagazine.com/ext/resources/coronavirus5_900.jpg?crop=true&amp;height=100&amp;t=1584718182&amp;width=100" />
+          </div>
+
+        <h1 class="popular-stories__headline">
+          What Law Enforcement and Security Personnel Need to Know about Coronavirus (COVID-19)
+        </h1>
+</a>
+</div>  
+<div class="popular-stories__item">
+  
+      <a href="https://www.securitymagazine.com/articles/91798-nist-releases-roadmap-on-how-to-build-cybersecurity-workforce" class="popular-stories__link" data-eventaction="popular-stories-headline" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/articles/91798-nist-releases-roadmap-on-how-to-build-cybersecurity-workforce" data-eventname="popular-stories-headline" title="NIST Releases Roadmap on How to Build Cybersecurity Workforce">
+
+
+          <div class="popular-stories__image">
+            <img alt="NIST" src="https://www.securitymagazine.com/ext/resources/Default-images/Responsive-Defaults/NIST.jpg?crop=true&amp;height=100&amp;t=1582757223&amp;width=100" />
+          </div>
+
+        <h1 class="popular-stories__headline">
+          NIST Releases Roadmap on How to Build Cybersecurity Workforce
+        </h1>
+</a>
+</div>  
+
+</div>    
+
+</section>
+
+      <section class="editorial-content interior-sidebar-1">
+
+    <div class="editorial-content__details">
+
+
+      <div class="editorial-content__body">
+          <p><a href="https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:APIUTILS!51004&amp;PageID=E7AFDE8D-F28D-4B24-A3CE-758E483B3E6B&amp;AffiliateData=CustomContent" target="_blank"><img alt="4.21_SEC_SBS_360x184customcontent" src="/ext/resources/images/Custom-content/2020-CC/421_SEC_SBS_360x184customcontent.png" /></a></p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+    
+<section class="box5 featured-upcoming-events">
+  <div class="records featured-upcoming-events__wrapper">
+    <h3 class="feature-title featured-upcoming-events__title">Events</h3>
+
+        <div class="record featured-upcoming-events__event">
+          <div class="date featured-upcoming-events__date">March 26, 2020</div>
+          <h2 class="headline featured-upcoming-events__headline">
+            <a href="https://www.securitymagazine.com/events/2060-passive-vs-active-video-surveillance-at-yale-university" class="url" data-eventaction="featured-upcoming-events-headline" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/events/2060-passive-vs-active-video-surveillance-at-yale-university" data-eventname="featured-upcoming-events-headline" title="Passive vs. Active Video Surveillance at Yale University">Passive vs. Active Video Surveillance at Yale University</a>
+          </h2>
+          <div class="abstract description featured-upcoming-events__description">This webinar will cover the design phase of the Yale Police Department’s existing radar layout at the Yale Bowl and the security challenges it has presented. It will also discuss the need to keep the historical nature of the Yale Bowl building in mind while designing a new surveillance system. In addition, the webinar will cover how the Yale public safety team is using the new surveillance system to identify a suspect to decide, in real time, whether or not to dispatch additional resources.</div>
+        </div>
+        <div class="record featured-upcoming-events__event">
+          <div class="date featured-upcoming-events__date">March 31, 2020</div>
+          <h2 class="headline featured-upcoming-events__headline">
+            <a href="https://www.securitymagazine.com/events/2094-trends-in-security-pay-bill-rates-how-do-you-stack-up" class="url" data-eventaction="featured-upcoming-events-headline" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/events/2094-trends-in-security-pay-bill-rates-how-do-you-stack-up" data-eventname="featured-upcoming-events-headline" title="Trends in Security Pay &amp; Bill Rates - How Do You Stack Up?">Trends in Security Pay &amp; Bill Rates - How Do You Stack Up?</a>
+          </h2>
+          <div class="abstract description featured-upcoming-events__description">In this webinar, we’ll share quantitative, real-world pay and bill rate data from hundreds of security firms across the U.S. to identify common trends. We’ll review how companies price their services based on location, type of post, and the size of the firm.</div>
+        </div>
+
+    <div class="abstract description featured-upcoming-events__actions">
+      <a href="https://www.securitymagazine.com/events" class="more" data-eventaction="featured-upcoming-events-more-link" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/events" data-eventname="featured-upcoming-events-more-link">View All</a>
+        <a href="https://www.securitymagazine.com/events/new" class="more" data-eventaction="featured-upcoming-events-more-submit-link" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/events/new" data-eventname="featured-upcoming-events-more-submit-link">Submit An Event</a>
+    </div>
+  </div>
+</section>
+
+
+      <section class="featured-poll">
+        <h1 class="featured-poll__title">Poll</h1>
+        
+  <h3 class="feature-title">Emergency <span>Communications</span></h3>
+
+
+  <form accept-charset="UTF-8" action="/polls/79/vote" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="MpypeBJRWm6H5fm0QKkbkR2m4XPT+3jROayuFC1IBHI=" /></div>
+      <div class="question">What does your enterprise use to communicate emergencies to company employees? </div>
+      <div class="answers">
+        <div class="answer">
+          <span>
+            <input data-eventaction="poll-answer-radio-button" data-eventcategory="click" data-eventlabel="origin: interior-sidebar|question: 107|answer: 411|index:0" data-eventname="poll-answer-radio-button" id="question_107_answer_411" name="question[107][answer]" type="radio" value="411" />
+          </span>
+          <label data-eventaction="poll-answer-label" data-eventcategory="click" data-eventlabel="question: 107|answer: 411|index:0" data-eventname="poll-answer-label" for="question_107_answer_411">Crisis telephone lines</label>
+        </div>
+        <div class="answer">
+          <span>
+            <input data-eventaction="poll-answer-radio-button" data-eventcategory="click" data-eventlabel="origin: interior-sidebar|question: 107|answer: 412|index:1" data-eventname="poll-answer-radio-button" id="question_107_answer_412" name="question[107][answer]" type="radio" value="412" />
+          </span>
+          <label data-eventaction="poll-answer-label" data-eventcategory="click" data-eventlabel="question: 107|answer: 412|index:1" data-eventname="poll-answer-label" for="question_107_answer_412">Emergency notification systems</label>
+        </div>
+        <div class="answer">
+          <span>
+            <input data-eventaction="poll-answer-radio-button" data-eventcategory="click" data-eventlabel="origin: interior-sidebar|question: 107|answer: 410|index:2" data-eventname="poll-answer-radio-button" id="question_107_answer_410" name="question[107][answer]" type="radio" value="410" />
+          </span>
+          <label data-eventaction="poll-answer-label" data-eventcategory="click" data-eventlabel="question: 107|answer: 410|index:2" data-eventname="poll-answer-label" for="question_107_answer_410">Text messages/SMS</label>
+        </div>
+        <div class="answer">
+          <span>
+            <input data-eventaction="poll-answer-radio-button" data-eventcategory="click" data-eventlabel="origin: interior-sidebar|question: 107|answer: 409|index:3" data-eventname="poll-answer-radio-button" id="question_107_answer_409" name="question[107][answer]" type="radio" value="409" />
+          </span>
+          <label data-eventaction="poll-answer-label" data-eventcategory="click" data-eventlabel="question: 107|answer: 409|index:3" data-eventname="poll-answer-label" for="question_107_answer_409">Internal emails </label>
+        </div>
+        <div class="answer">
+          <span>
+            <input data-eventaction="poll-answer-radio-button" data-eventcategory="click" data-eventlabel="origin: interior-sidebar|question: 107|answer: 408|index:4" data-eventname="poll-answer-radio-button" id="question_107_answer_408" name="question[107][answer]" type="radio" value="408" />
+          </span>
+          <label data-eventaction="poll-answer-label" data-eventcategory="click" data-eventlabel="question: 107|answer: 408|index:4" data-eventname="poll-answer-label" for="question_107_answer_408">Manual call trees </label>
+        </div>
+        <div class="answer">
+          <span>
+            <input data-eventaction="poll-answer-radio-button" data-eventcategory="click" data-eventlabel="origin: interior-sidebar|question: 107|answer: 407|index:5" data-eventname="poll-answer-radio-button" id="question_107_answer_407" name="question[107][answer]" type="radio" value="407" />
+          </span>
+          <label data-eventaction="poll-answer-label" data-eventcategory="click" data-eventlabel="question: 107|answer: 407|index:5" data-eventname="poll-answer-label" for="question_107_answer_407">All of the Above</label>
+        </div>
+        <div class="answer">
+          <span>
+            <input data-eventaction="poll-answer-radio-button" data-eventcategory="click" data-eventlabel="origin: interior-sidebar|question: 107|answer: 406|index:6" data-eventname="poll-answer-radio-button" id="question_107_answer_406" name="question[107][answer]" type="radio" value="406" />
+          </span>
+          <label data-eventaction="poll-answer-label" data-eventcategory="click" data-eventlabel="question: 107|answer: 406|index:6" data-eventname="poll-answer-label" for="question_107_answer_406">None of the Above</label>
+        </div>
+      </div>
+    <input class="button" data-eventaction="poll-answer-submit" data-eventcategory="click" data-eventlabel="question: 79" data-eventname="poll-submit" name="commit" type="submit" value="Submit" />
+</form>
+    <a href="/polls/79-emergency-communications/results" class="first more" data-eventaction="poll-show-results-link" data-eventcategory="click" data-eventlabel="/polls/79-emergency-communications/results" data-eventname="poll-show-results-link">View Results</a>
+  <a href="https://www.securitymagazine.com/polls" class="more" data-eventaction="poll-archive-link" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/polls" data-eventname="poll-archive-link">Poll Archive</a>
+
+
+      </section>
+
+    <section class="featured-products">
+  <h1 class="featured-products__title">Products</h1>
+
+  <div class="featured-products__container">
+      <article class="featured-product featured-product--has-image">
+          <figure class="featured-product__image">
+            <a href="/products/517-effective-security-management" class="featured-product__thumbnail" data-eventaction="featured-product-image" data-eventcategory="click" data-eventlabel="/products/517-effective-security-management" data-eventname="featured-product-image"><img alt="Effective Security Management, 7th Edition" src="//www.securitymagazine.com/ext/resources/images/2020/thumb/9780128147948.jpg?1582918358" /></a>
+          </figure>
+
+        <h1 class="featured-product__headline">
+          <a href="/products/517-effective-security-management" class="featured-product__headline-link" data-eventaction="featured-product-headline-link" data-eventcategory="click" data-eventlabel="/products/517-effective-security-management" data-eventname="featured-product-headline-link">Effective Security Management, 7th Edition</a>
+        </h1>
+
+          <div class="featured-product__teaser"><p>
+	<span _fck_bookmark="1" style="display: none;">&nbsp;</span><span style="margin: 0px; padding: 0px; border: 0px; font-family: Arial, Helvetica, sans-serif; font-style: inherit; font-stretch: inherit; line-height: 15px; vertical-align: baseline; color: rgb(102, 102, 102);">Effective Security Management, 5e,</span><span style="color: rgb(102, 102, 102); font-family: Arial, Helvetica, sans-serif; line-height: 15px;">&nbsp;teaches practicing security professionals how to build their careers by mastering the fundamentals of good management. Charles Sennewald brings a time-tested blend of common sense, wisdom, and humor to this bestselling introduction to workplace dynamics.&nbsp;</span></p></div>
+      </article>
+  </div>
+
+  <a href="/products" class="featured-products__more-link" data-eventaction="featured-product-more-link" data-eventcategory="click" data-eventlabel="/products" data-eventname="featured-product-more-link">See More Products</a>
+</section>
+
+
+
+      <section class="editorial-content interior-sidebar-2">
+
+    <div class="editorial-content__details">
+
+
+      <div class="editorial-content__body">
+          <div style="text-align: center;"><a href="https://www.securitymagazine.com/security-500-conference" target="_blank"><img alt="SEC500_250x180 clear" src="/ext/resources/images/Custom-content/2019-CC/SEC500_250x180-clear.png" style="width: 300px; height: 200px;" /></a></div>
+<!--
+<style type="text/css">
+
+.digitalEditionContainer{
+padding: 8px;
+border: 1px solid #696969;
+vertical-align: top;
+background-color: #eeeeee;
+overflow: hidden;
+max-width: 360px;
+margin: auto;
+}
+
+.digitalEditionText{
+margin: 30px 8px 0px 0px;
+padding: 0px;
+color: #c52026;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 28px;
+line-height: 1;
+}
+
+@media screen and (max-width: 700px){
+  .digitalEditionText{
+    font-size: 22px;
+  }
+}
+
+</style>
+
+
+
+<div class="digitalEditionContainer">
+<a href="/digital-edition-archives" target="_blank" 
+data-eventname="ec-unique-name-link" 
+data-eventlabel="/digitaledition" 
+data-eventaction="inside-bottom-right-ec" 
+data-eventcategory="click">
+<img src="/ext/resources/Default-images/Responsive-Defaults/Security-Magazine-iPad.png" alt="Security Magazine - Digital Edition" style="float: right; height: 130px;" />	
+	<img src="/ext/resources/Default-images/Responsive-Defaults/Security-Magazine-Logo.jpg" alt="Beverage Industry - Logo" style="height: 75px;" />
+	<div class="digitalEditionText">
+	Digital Edition
+	</div>
+</a>
+</div>
+-->
+      </div>
+
+    </div>
+  </section>
+
+  </div>
+</aside>
+
+      </div>
+
+      <div class="main-footer" id="main-footer">
+  <div class="wrapper">
+      <section class="current-editions">
+    <h1 class="current-editions__title">
+      <a href="https://www.securitymagazine.com/publications/3-security-magazine" data-eventaction="footer-current-editions-title-link" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/publications/3-security-magazine" data-eventname="footer-current-editions-title-link">Security Magazine</a>
+    </h1>
+
+    <article class="current-editions__issue">
+        <div class="current-editions__image">
+          <a href="https://www.securitymagazine.com/publications/3" data-eventaction="footer-current-editions-image-link" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/publications/3" data-eventname="footer-current-editions-image-link" title="Security Magazine"><img alt="SEC-March-2020-144px.png" border="0" height="192" src="//www.securitymagazine.com/ext/resources/Issues/2020/March/SEC-March-2020-144px.png?1582922972" width="144" /></a>
+        </div>
+      <div class="current-editions__content">
+        <h1 class="current-editions__headline">
+          <a href="https://www.securitymagazine.com/publications/3" data-eventaction="footer-current-editions-headline-link" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/publications/3" data-eventname="footer-current-editions-headline-link">2020 March</a>
+        </h1>
+          <div class="current-editions__teaser"><p>This month in Security magazine: Mike Matranga has been labeled brash, tough, outspoken, emotional and controversial. But when it comes to school security, he doesn&rsquo;t care what people think of him. He is 100 percent undeterred by anyone who may question his methods when it comes to keeping schools and students safe at Texas City ISD.</p>
+</div>
+
+        <a href="https://www.securitymagazine.com/publications/3" class="current-editions__more-link" data-eventaction="footer-current-editions-more-link" data-eventcategory="click" data-eventlabel="https://www.securitymagazine.com/publications/3" data-eventname="footer-current-editions-more-link">View More</a>  
+        <a href="/subscription" class="current-editions__subscribe-link more" data-eventaction="footer-current-editions-subscribe-link" data-eventcategory="click" data-eventlabel="/subscription" data-eventname="footer-current-editions-subscribe-link">Create Account</a>
+      </div>
+    </article>
+  </section>
+
+
+    <nav class="main-footer-nav">
+      
+<nav class="navigation" id="main-footer-nav"><div class="navigation"><ul class="navigation-level1__items"><li class="navigation-level1__item"><a href="/wantmore" class="navigation__link -has-children" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="More|/wantmore" data-eventname="main-footer-nav">More</a><ul class="navigation-level2__items"><li class="navigation-level2__item"><a href="https://clearseasresearch.com/" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="Market Research|https://clearseasresearch.com/" data-eventname="main-footer-nav" target="_blank">Market Research</a></li><li class="navigation-level2__item"><a href="http://orangetap.bnpmedia.com/" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="Custom Content &amp; Marketing Services
+|http://orangetap.bnpmedia.com/" data-eventname="main-footer-nav" target="_blank">Custom Content &amp; Marketing Services
+</a></li><li class="navigation-level2__item"><a href="/security-group" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="Security Group
+|/security-group" data-eventname="main-footer-nav">Security Group
+</a></li><li class="navigation-level2__item"><a href="/editorial-guidelines" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="Editorial Guidelines|/editorial-guidelines" data-eventname="main-footer-nav">Editorial Guidelines</a></li><li class="navigation-level2__item"><a href="/privacy" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="Privacy Policy|/privacy" data-eventname="main-footer-nav" target="_blank">Privacy Policy</a></li><li class="navigation-level2__item"><a href="http://www.myclearopinionpanel.com/contact-us/" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="Survey And Sample|http://www.myclearopinionpanel.com/contact-us/" data-eventname="main-footer-nav">Survey And Sample</a></li></ul></li><li class="navigation-level1__item"><a href="/wantmore" class="navigation__link -has-children" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="Want More|/wantmore" data-eventname="main-footer-nav">Want More</a><ul class="navigation-level2__items"><li class="navigation-level2__item"><a href="https://bnp.dragonforms.com/init.do?pk=W.HOME&amp;omedasite=BNP6090_Vtnew" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="Subscribe|https://bnp.dragonforms.com/init.do?pk=W.HOME&amp;omedasite=BNP6090_Vtnew" data-eventname="main-footer-nav" target="_blank">Subscribe</a></li><li class="navigation-level2__item"><a href="/connect" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="Connect|/connect" data-eventname="main-footer-nav">Connect</a></li><li class="navigation-level2__item"><a href="/partners" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="Partners|/partners" data-eventname="main-footer-nav">Partners</a></li></ul></li><li class="navigation-level1__item"><a href="http://www.bnpmedia.com/privacy" class="navigation__link -has-children" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="Privacy|http://www.bnpmedia.com/privacy" data-eventname="main-footer-nav">Privacy</a><ul class="navigation-level2__items"><li class="navigation-level2__item"><a href="http://www.bnpmedia.com/privacy" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="PRIVACY POLICY|http://www.bnpmedia.com/privacy" data-eventname="main-footer-nav">PRIVACY POLICY</a></li><li class="navigation-level2__item"><a href="www.bnpmedia.com/terms" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="TERMS &amp; CONDITIONS|www.bnpmedia.com/terms" data-eventname="main-footer-nav">TERMS &amp; CONDITIONS</a></li><li class="navigation-level2__item"><a href="http://www.bnpmedia.com/do-not-sell" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="DO NOT SELL MY PERSONAL INFORMATION|http://www.bnpmedia.com/do-not-sell" data-eventname="main-footer-nav">DO NOT SELL MY PERSONAL INFORMATION</a></li><li class="navigation-level2__item"><a href="http://www.bnpmedia.com/data-request" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="PRIVACY REQUEST|http://www.bnpmedia.com/data-request" data-eventname="main-footer-nav">PRIVACY REQUEST</a></li><li class="navigation-level2__item"><a href="/accessibility" class="navigation__link" data-eventaction="main-footer-nav-link" data-eventcategory="click" data-eventlabel="ACCESSIBILITY|/accessibility" data-eventname="main-footer-nav">ACCESSIBILITY</a></li></ul></li></ul></div></nav>    </nav>
+
+    <div class="main-footer__copyright">
+      <p>Copyright &copy;2020. All Rights Reserved BNP Media.</p>
+      <p class="epub-credit">Design, CMS, Hosting &amp; Web Development :: <a href="http://www.epublishing.com" target="_blank">ePublishing</a></p>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <div id="div-gpt-ad-interstitial"></div>
+    <div id="div-gpt-ad-slider"></div>
+  </div>
+
+      <!-- google structured data -->
+  <script type="application/ld+json">{"@context":"http://schema.org","@type":"NewsArticle","headline":"The Linux Foundation & Harvard\u2019s Lab for Innovation Science Release Census for Open Source Software Security","description":"The Linux Foundation\u2019s Core Infrastructure Initiative (CII) and the Laboratory for Innovation Science at Harvard (LISH), announced the release of\u00a0\u2018Vulnerabilities in the Core,\u2019 a Preliminary Report and Census II of Open Source Software.`","publisher":{"@type":"Organization","name":"Security Magazine","logo":{"@type":"ImageObject","url":"https://www.securitymagazine.com/ext/resources/files/Security-Magazine.png"}},"image":{"@type":"ImageObject","url":"https://www.securitymagazine.com/ext/resources/SEC/2017/Sept/SEC0917-inews4-feat-slide_900px.jpg?t=1504109496&width=696"},"author":null,"datePublished":"2020-02-18T00:00:00-05:00","dateModified":"2020-02-18T11:33:37-05:00","url":"https://www.securitymagazine.com/articles/91752-the-linux-foundation-harvards-lab-for-innovation-science-release-census-for-open-source-software-security","dateCreated":"2020-02-18T00:00:00-05:00","creator":[],"keywords":["software","cyber security","vulnerability assessment","cybersecurity","supply chain"],"thumbnailUrl":"https://www.securitymagazine.com/ext/resources/SEC/2017/Sept/SEC0917-inews4-feat-slide_900px.jpg?t=1504109496&width=696","articleSection":"Security Newswire"}</script>
+
+    <script async="async" src="/javascripts/app/main.js" type="text/javascript"></script>
+      <script src="/javascripts/pages/article.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.rating.pack.js" type="text/javascript"></script>
+
+  <script>
+    $(function(){
+      var $image_gallery = $('#photo-gallery');
+      if($image_gallery.length !== 0){
+        require(['bundle/photo-gallery.bundle'], function(PhotoGallery){
+          new PhotoGallery.default('#photo-gallery');
+        });
+      }
+
+      return false;
+    });
+  </script>
+  <iframe width="0" height="0" name="Trade Desk Tracking - IP1713744_Security Magazine RT_Core" frameborder="0" scrolling="no" src="//insight.adsrvr.org/tags/h83y0ff/j7ic26x/iframe"></iframe>
+
+
+
+<script>require(['jquery','jquery-cookie'], function($){
+  $(function() {
+    var $cookiePolicy = $('.cookie-policy');
+
+    if(!$.cookie("cookie_policy")){
+      $cookiePolicy.show();
+      $cookiePolicy.on('click', '#cookie-policy-close', function(evt) {
+        evt.preventDefault();
+        $.cookie('cookie_policy', 'true', { expires: 30 });
+        $cookiePolicy.remove();
+      });
+      $(document).on('epub.afterMenu', $cookiePolicy, function() {
+        $cookiePolicy.prependTo($('.mm-page'));
+      });
+    }
+  });
+});</script>
+    
+    
+
+</body></html>
+
