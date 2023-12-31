@@ -85,9 +85,9 @@
 							<div id="indexAjax">
 							@include('web.calender.indexAjax')
 							</div>
-								
+
 								<div class="col-lg-4"></div>
-							
+
 
 							</div>
 						</div>
@@ -933,8 +933,9 @@
 	});
 
 	function calend(x) {
-	
+
 		var cc=x-1;
+        alert(x);
 		$.ajax({
 
 			url: "{{route('dynamicCalender.fetch')}}",
@@ -955,21 +956,21 @@
 			},
 
 			success: function(data) {
-			
+
 				 $('#indexAjax').html(data);
 				 $('#cat-'+cc).addClass('active');
 			}
-			
+
 		});
 		// $('.nav-tabs a[href="#' + cc + '"]').tab('show');
 
-	
-		
-				
+
+
+
 
 	}
 
-	
+
 </script>
 
 
