@@ -34,7 +34,7 @@ class CalenderController extends Controller
         $dateended = Carbon::create($yearnew, 1, 31, 0, 0, 0); // 2016-12-31 00:00:00
 
         $datestarted = Carbon::create($yearnew, 1, 1, 0, 0, 0); // 2016-01-01 00:00:00
-
+dd([$dateended,$datestarted]);
         $rounds = Round::whereHas('course', function ($query) {
             $query->where('courses.active', 1);
         })->where('round_start_date', '>=', $datestarted)->where('round_start_date', '<=', $dateended)->get();
@@ -172,7 +172,7 @@ class CalenderController extends Controller
         $filterd_rounds = array();
         $subCategory_rounds = array();
         $round_months = array();
-     
+
         $year="";
         $now_date = now();
         $courses = Course::with('rounds')->where('courses.active', '=', 1)->get();
@@ -183,14 +183,14 @@ class CalenderController extends Controller
                             $round['month'] = $month;
                             array_push($subCategory_rounds, $round);
                             array_push($round_months, $month);
-                            
+
                             //sasa
                             $year=date("Y", strtotime($round->round_start_date));
                             $year= $current;
                         }
                     }
                 }*/
-					
+
 					  //new
          //new
 		   $year = date('Y');
@@ -201,7 +201,7 @@ $datestarted = Carbon::create($year, 1, 1, 0, 0, 0); // 2016-01-01 00:00:00
         $rounds = Round::whereHas('course', function ($query) {
             $query->where('courses.active', 1);
         })->where('round_start_date','>=',$datestarted) ->where('round_start_date','<=',$dateended)->get();
-					
+
         foreach ($rounds as $round) {
             if (($round->round_start_date >= Carbon::parse($now_date)) && $round->active == 1) {
                 $month = date("F", strtotime($round->round_start_date));
@@ -228,20 +228,20 @@ $datestarted = Carbon::create($year, 1, 1, 0, 0, 0); // 2016-01-01 00:00:00
                 });
 
                 $round_months = array_unique($round_months);
-             
+
                 foreach ($round_months as $round_month) {
                     $obj = new Collection();
                     $obj->month = $round_month;
                     $obj->year = $year;
                     $obj->rounds = array();
-                  
+
                           foreach ($subCategory_rounds as $round) {
-							 
+
                 if ($round->month === $round_month) {
                    if ($round->round_start_date >= Carbon::parse($now_date)) {
                         array_push($obj->rounds, $round);
                     }
-              
+
 							   }
             }
             array_push($filterd_rounds, $obj);
@@ -261,7 +261,7 @@ $datestarted = Carbon::create($year, 1, 1, 0, 0, 0); // 2016-01-01 00:00:00
         $filterd_rounds = array();
         $subCategory_rounds = array();
         $round_months = array();
-     
+
         $year="";
         $now_date = now();
         $courses = Course::with('rounds')->where('courses.active', '=', 1)->get();
@@ -272,7 +272,7 @@ $datestarted = Carbon::create($year, 1, 1, 0, 0, 0); // 2016-01-01 00:00:00
                             $round['month'] = $month;
                             array_push($subCategory_rounds, $round);
                             array_push($round_months, $month);
-                            
+
                             //sasa
                             $year=date("Y", strtotime($round->round_start_date));
                             $year= $current;
@@ -291,7 +291,7 @@ $datestarted = Carbon::create($year, 1, 1, 0, 0, 0); // 2016-01-01 00:00:00
                 });
 
                 $round_months = array_unique($round_months);
-               
+
                 foreach ($round_months as $round_month) {
                     $obj = new Collection();
                     $obj->month = $round_month;
