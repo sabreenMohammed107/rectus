@@ -19,9 +19,9 @@ class JoinUsController extends Controller
         return view($this->viewName.'index',compact('careers','careerLevels'));
     }
      public function joinusForm(Request $request){
-       
-      
-     
+
+
+
         $data=[
             'career_id'=>$request->input('career_id'),
              'carrer_level_id'=>$request->input('carrer_level_id'),
@@ -29,31 +29,31 @@ class JoinUsController extends Controller
              'name'=>$request->input('name'),
              'email'=>$request->input('email'),
              'mobile'=>$request->input('mobile'),
-            
-             
+
+
                          ];
- 
+
               $cv_path=$request->file('cv_path');
 
-              
+
              if($request->file('cv_path')){
                $data['cv_path'] = $this->UplaodImage($cv_path);
                 }
-           
-            
-             
+
+
+
               $doc_path=$request->file('doc_path');
              if($request->file('doc_path')){
             $data['doc_path'] = $this->UplaodFile($doc_path);
               }
-            
-         
+
+
             $careerApp= CareersApplicant::create($data);
             // $emails = ['sabreenm312@gmail.com','senior.steps.info@gmail.com'];
             $emails = ['senior.steps.info@gmail.com','info@btsconsultant.com','nasser@btsconsultant.com'];
             \Mail::to($emails)->send(new JoinUsNotification($careerApp));
             return redirect()->back()->with('message', 'Thanks; your request has been submitted successfully !');
-  
+
      }
 
 
@@ -74,10 +74,10 @@ class JoinUsController extends Controller
 		// Rename The Image ..
 		$imageName = $name;
 		$uploadPath = 'uploads/applicant';
-		
+
 		// Move The image..
 		$file->move($uploadPath, $imageName);
-       
+
 		return $imageName;
     }
     /**
@@ -97,10 +97,15 @@ class JoinUsController extends Controller
 		// Rename The Image ..
 		$fileName =$name;
 		$uploadPath = 'uploads/applicant';
-		
+
 		// Move The image..
 		$file->move($uploadPath, $fileName);
-       
+
 		return $fileName;
+    }
+
+
+    public function Consunltancy(){
+        return view($this->viewName.'consunltancy');
     }
 }
