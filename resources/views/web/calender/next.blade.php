@@ -35,7 +35,7 @@
 			<li class="nav-item">
 				<a class="nav-link" href="#home"></a>
 			</li>
-            <?php 
+            <?php
                         $current=now()->year;
                         $next=$current+1;
 						?>
@@ -64,19 +64,19 @@ td:first-child { width:75%; }
 									<!-- required for floating -->
 									<!-- Nav tabs -->
 									<ul class="nav nav-tabs tabs-left sideways list-group">
-										<li class="active"><a href="#cat-0" data-toggle="tab">January</a></li>
-										<li><a href="#cat-1" data-toggle="tab">February</a></li>
-										<li><a href="#cat-2" data-toggle="tab">March</a></li>
-										<li><a href="#cat-3" data-toggle="tab">April</a></li>
-										<li><a href="#cat-4" data-toggle="tab">May</a></li>
-										<li><a href="#cat-5" data-toggle="tab">June</a></li>
-										<li><a href="#cat-6" data-toggle="tab">July</a></li>
-										<li><a href="#cat-7" data-toggle="tab">August</a></li>
-										<li><a href="#cat-8" data-toggle="tab">September</a></li>
-										<li><a href="#cat-9" data-toggle="tab">October</a></li>
-										<li><a href="#cat-10" data-toggle="tab">November</a></li>
-										<li><a href="#cat-11" data-toggle="tab">December</a></li>
-									</ul>
+                                        <li class="active"><a href="#cat-0" data-toggle="tab" onclick="calend(1);">January</a></li>
+                                        <li><a href="#cat-1" data-toggle="tab" onclick="calend(2);" >February</a></li>
+                                        <li><a href="#cat-2" data-toggle="tab" onclick="calend(3);" >March</a></li>
+                                        <li><a href="#cat-3" data-toggle="tab" onclick="calend(4);">April</a></li>
+                                        <li><a href="#cat-4" data-toggle="tab" onclick="calend(5);">May</a></li>
+                                        <li><a href="#cat-5" data-toggle="tab" onclick="calend(6);">June</a></li>
+                                        <li><a href="#cat-6" data-toggle="tab" onclick="calend(7);">July</a></li>
+                                        <li><a href="#cat-7" data-toggle="tab" onclick="calend(8);">August</a></li>
+                                        <li><a href="#cat-8" data-toggle="tab" onclick="calend(9);">September</a></li>
+                                        <li><a href="#cat-9" data-toggle="tab" onclick="calend(10);">October</a></li>
+                                        <li><a href="#cat-10" data-toggle="tab" onclick="calend(11);">November</a></li>
+                                        <li><a href="#cat-11" data-toggle="tab" onclick="calend(12);">December</a></li>
+                                    </ul>
 								</div>
 
 								<div class="col-lg-10 col-md-8 col-sm-12">
@@ -110,7 +110,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -132,7 +132,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-												
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -167,7 +167,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -189,7 +189,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -199,7 +199,7 @@ td:first-child { width:75%; }
 										</div>
 										<div class="tab-pane" id="cat-2">
                                         @foreach($filterd_rounds as $rounds)
-                                       
+
                                         @if($rounds->month==='March' && $rounds->year===$years)
 											<table class="table">
 												<thead style="">
@@ -225,7 +225,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -247,7 +247,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-										
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -282,7 +282,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -304,7 +304,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-												
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -339,7 +339,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -361,7 +361,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-							
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -396,7 +396,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -418,7 +418,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-							
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -453,7 +453,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -475,7 +475,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-										
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -510,7 +510,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -532,7 +532,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-										
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -567,7 +567,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -589,7 +589,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-										
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -624,7 +624,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -646,7 +646,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-											
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -681,7 +681,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -703,7 +703,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-								
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -738,7 +738,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -760,7 +760,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -816,20 +816,20 @@ td:first-child { width:75%; }
 								<div class="col-lg-2 col-md-4 col-sm-12">
 									<!-- required for floating -->
 									<!-- Nav tabs -->
-									<ul class="nav nav-tabs tabs-left sideways list-group">
-										<li class="active"><a href="#cate-0" data-toggle="tab">January</a></li>
-										<li><a href="#cate-1" data-toggle="tab">February</a></li>
-										<li><a href="#cate-2" data-toggle="tab">March</a></li>
-										<li><a href="#cate-3" data-toggle="tab">April</a></li>
-										<li><a href="#cate-4" data-toggle="tab">May</a></li>
-										<li><a href="#cate-5" data-toggle="tab">June</a></li>
-										<li><a href="#cate-6" data-toggle="tab">July</a></li>
-										<li><a href="#cate-7" data-toggle="tab">August</a></li>
-										<li><a href="#cate-8" data-toggle="tab">September</a></li>
-										<li><a href="#cate-9" data-toggle="tab">October</a></li>
-										<li><a href="#cate-10" data-toggle="tab">November</a></li>
-										<li><a href="#cate-11" data-toggle="tab">December</a></li>
-									</ul>
+                                    <ul class="nav nav-tabs tabs-left sideways list-group">
+                                        <li class="active"><a href="#cat-0" data-toggle="tab" onclick="calend(1);">January</a></li>
+                                        <li><a href="#cat-1" data-toggle="tab" onclick="calend(2);" >February</a></li>
+                                        <li><a href="#cat-2" data-toggle="tab" onclick="calend(3);" >March</a></li>
+                                        <li><a href="#cat-3" data-toggle="tab" onclick="calend(4);">April</a></li>
+                                        <li><a href="#cat-4" data-toggle="tab" onclick="calend(5);">May</a></li>
+                                        <li><a href="#cat-5" data-toggle="tab" onclick="calend(6);">June</a></li>
+                                        <li><a href="#cat-6" data-toggle="tab" onclick="calend(7);">July</a></li>
+                                        <li><a href="#cat-7" data-toggle="tab" onclick="calend(8);">August</a></li>
+                                        <li><a href="#cat-8" data-toggle="tab" onclick="calend(9);">September</a></li>
+                                        <li><a href="#cat-9" data-toggle="tab" onclick="calend(10);">October</a></li>
+                                        <li><a href="#cat-10" data-toggle="tab" onclick="calend(11);">November</a></li>
+                                        <li><a href="#cat-11" data-toggle="tab" onclick="calend(12);">December</a></li>
+                                    </ul>
 								</div>
 
 								<div class="col-lg-10 col-md-8 col-sm-12">
@@ -862,7 +862,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -884,7 +884,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -919,7 +919,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -941,7 +941,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -976,7 +976,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -998,7 +998,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -1033,7 +1033,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -1055,7 +1055,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -1090,7 +1090,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -1112,7 +1112,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -1147,7 +1147,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -1169,7 +1169,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -1177,7 +1177,7 @@ td:first-child { width:75%; }
                                             @endif
                                             @endforeach
 										</div>
-                                      
+
 										<div class="tab-pane" id="cate-6">
                                         @foreach($filterd_rounds as $rounds)
                                         @if($rounds->month==='July' )
@@ -1205,7 +1205,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -1227,7 +1227,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -1235,7 +1235,7 @@ td:first-child { width:75%; }
                                             @endif
                                             @endforeach
 										</div>
-                                      
+
 										<div class="tab-pane" id="cate-7">
                                         @foreach($filterd_rounds as $rounds)
                                         @if($rounds->month==='August' )
@@ -1263,7 +1263,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -1285,7 +1285,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -1293,7 +1293,7 @@ td:first-child { width:75%; }
                                             @endif
                                             @endforeach
 										</div>
-                                  
+
 										<div class="tab-pane" id="cate-8">
                                         @foreach($filterd_rounds as $rounds)
                                         @if($rounds->month==='September' )
@@ -1321,7 +1321,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -1343,7 +1343,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -1351,7 +1351,7 @@ td:first-child { width:75%; }
                                             @endif
                                             @endforeach
 										</div>
-                                      
+
                                         <div class="tab-pane" id="cate-9">
                                         @foreach($filterd_rounds as $rounds)
                                         @if($rounds->month==='October')
@@ -1379,7 +1379,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -1401,7 +1401,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -1409,7 +1409,7 @@ td:first-child { width:75%; }
                                             @endif
                                             @endforeach
 										</div>
-                                        
+
 										<div class="tab-pane" id="cate-10">
                                         @foreach($filterd_rounds as $rounds)
                                         @if($rounds->month==='November' )
@@ -1437,7 +1437,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -1459,7 +1459,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -1494,7 +1494,7 @@ td:first-child { width:75%; }
                                                     </a>
                                                                  <p style="margin-bottom:0px">
                                                         {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                                                               </p>
 															</div>
                                                             <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
@@ -1516,7 +1516,7 @@ td:first-child { width:75%; }
 															</div>
 														</td>
 													</tr>
-									
+
 													@endif
                                                     @endforeach
 												</tbody>
@@ -1524,7 +1524,7 @@ td:first-child { width:75%; }
                                             @endif
                                             @endforeach
 										</div>
-									
+
 									<div class="col-lg-4"></div>
 									<!-- <div class="col-lg-8 align-content-center">
 										<nav class="blog-pagination justify-content-center">
@@ -1580,7 +1580,7 @@ td:first-child { width:75%; }
 							Calender {{$yearCal}}
 				               </a>
 				<input type="hidden" name="calender" value="{{ asset('uploads/calender')}}/{{$calender->current_year_calendar}}" alt="{{$calender->current_year_calendar}}" />
-								
+
 				<a class="primary-btn" id="downloadNextCalender">Calender {{$yearCal+1}}</a>
 								<input type="hidden" name="nextCalender" value="{{ asset('uploads/calender')}}/{{$calender->next_year_calendar}}" alt="{{$calender->next_year_calendar}}" />
 
@@ -1622,25 +1622,25 @@ td:first-child { width:75%; }
 			//dawnload calender
 			$('#downloadCurrentCalender').click(function() {
             var calender = $('input[name="calender"]').val();
-            
-            
+
+
             var link = document.createElement("a");
 						link.download = 'Current-Calender';
 						link.href = calender;
 						link.click();
 
-		
+
 		});
         $('#downloadNextCalender').click(function() {
             var calender = $('input[name="nextCalender"]').val();
-            
-            
+
+
             var link = document.createElement("a");
 						link.download = 'Next-Calender';
 						link.href = calender;
 						link.click();
 
-		
+
 		});
 		})
 	</script>

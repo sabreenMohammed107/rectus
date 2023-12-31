@@ -109,8 +109,8 @@
 								<!-- Nav tabs -->
 								<ul class="nav nav-tabs tabs-left sideways list-group">
 									<li class="active"><a href="#cat-0" data-toggle="tab" onclick="calend(1);">January</a></li>
-									<li><a href="#cat-1" data-toggle="tab" onclick="calend(2);">February</a></li>
-									<li><a href="#cat-2" data-toggle="tab" onclick="calend(3);">March</a></li>
+									<li><a href="#cat-1" data-toggle="tab" onclick="calend(2);" >February</a></li>
+									<li><a href="#cat-2" data-toggle="tab" onclick="calend(3);" >March</a></li>
 									<li><a href="#cat-3" data-toggle="tab" onclick="calend(4);">April</a></li>
 									<li><a href="#cat-4" data-toggle="tab" onclick="calend(5);">May</a></li>
 									<li><a href="#cat-5" data-toggle="tab" onclick="calend(6);">June</a></li>
