@@ -235,12 +235,16 @@ if(!empty($request->get("wordName"))){
         $view_page = 'web.courses.';
         switch ($filter_type) {
             case 'title':
-                $filterd_rounds = $courseSubCategory->rounds()->where('rounds.active', '=', 1)->orderBy('course_en_name', 'asc')->get();
+                $filterd_rounds = $courseSubCategory->rounds()
+                ->where('rounds.round_start_date', '>', $now_date)
+                ->where('rounds.active', '=', 1)->orderBy('course_en_name', 'asc')->get();
 
                 $view_page .= 'byTitle';
                 break;
             case 'venue':
-                $subCategory_rounds = $courseSubCategory->rounds()->where('rounds.active', '=', 1)->orderBy('round_start_date', 'asc')->get();
+                $subCategory_rounds = $courseSubCategory->rounds()
+                ->where('rounds.round_start_date', '>', $now_date)
+                ->where('rounds.active', '=', 1)->orderBy('round_start_date', 'asc')->get();
                 // dd($subCategory_rounds);
                 foreach ($subCategory_rounds as $round) {
                     array_push($round_places, $round->country->country_en_name);
@@ -332,7 +336,9 @@ if(!empty($request->get("wordName"))){
                 $view_page .= 'byDate';
                 break;
             case 'duration':
-                $subCategory_rounds = $courseSubCategory->rounds()->where('rounds.active', '=', 1)->orderBy('course_duration', 'desc')->get();
+                $subCategory_rounds = $courseSubCategory->rounds()
+                ->where('rounds.round_start_date', '>', $now_date)
+                ->where('rounds.active', '=', 1)->orderBy('course_duration', 'desc')->get();
                 foreach ($subCategory_rounds as $round) {
                     array_push($round_days, $round->course->course_duration);
                 }
@@ -353,7 +359,7 @@ if(!empty($request->get("wordName"))){
             default:
                 break;
         };
-        $randomRounds = $courseSubCategory->rounds()->where('rounds.active', '=', 1)->where('rounds.round_start_date', '>', $now_date)->orWhereNull('rounds.round_start_date')->paginate(8);
+        $randomRounds = $courseSubCategory->rounds()->where('rounds.active', '=', 1)->paginate(8);
         return view($view_page, compact('randomRounds', 'courseCategory', 'courseSubCategory', 'filterd_rounds','objectCourses'));
     }
 
