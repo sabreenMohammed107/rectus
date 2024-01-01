@@ -51,7 +51,7 @@ class JoinUsController extends Controller
             $careerApp= CareersApplicant::create($data);
             // $emails = ['sabreenm312@gmail.com','senior.steps.info@gmail.com'];
             $emails = ['senior.steps.info@gmail.com','info@btsconsultant.com','nasser@btsconsultant.com'];
-            \Mail::to($emails)->send(new JoinUsNotification($careerApp));
+           // \Mail::to($emails)->send(new JoinUsNotification($careerApp));
             return redirect()->back()->with('message', 'Thanks; your request has been submitted successfully !');
 
      }

@@ -46,31 +46,31 @@ class IndexController extends Controller
     }
 
     public function sendMessage(Request $request){
-      
+
         try{
-          
-            
+
+
             $user=  ContactMessage::create($request->all());
             $emails = ['senior.steps.info@gmail.com','info@btsconsultant.com','nasser@btsconsultant.com'];
-            \Mail::to($emails)->send(new NewUserNotification($user));
-           
-           
+           // \Mail::to($emails)->send(new NewUserNotification($user));
+
+
               return redirect()->back()->with('message', 'Thanks; your request has been submitted successfully !');
-         
-      
-       
-        }
-        catch(QueryException $q){
-         
-            return redirect()->back()->with('message','You cannot send Empty Message...');  
+
+
 
         }
-    
-     
+        catch(QueryException $q){
+
+            return redirect()->back()->with('message','You cannot send Empty Message...');
+
+        }
+
+
     }
     public function refreshCaptcha()
     {
-      
+
         return response()->json(['captcha'=> captcha_img()]);
     }
 
@@ -79,17 +79,17 @@ class IndexController extends Controller
 
        $letter= NewsLetter::create($request->all());
        $emails = ['senior.steps.info@gmail.com','info@btsconsultant.com','nasser@btsconsultant.com'];
-       \Mail::to($emails)->send(new NewsLetterNotification($letter));
-   
+      // \Mail::to($emails)->send(new NewsLetterNotification($letter));
+
 
         return redirect()->back()->with('message', 'Thanks; your request has been submitted successfully !');
     }
        catch(QueryException $q){
-     
-        return redirect()->back()->with('message','ُEmpty Newsletter !!!');  
+
+        return redirect()->back()->with('message','ُEmpty Newsletter !!!');
 
     }
-    
+
     }
 
     /**

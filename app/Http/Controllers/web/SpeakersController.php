@@ -30,12 +30,12 @@ class SpeakersController extends Controller
     public function speakerForm(Request $request){
         $courses=[];
         $expertises=[];
-        
-       
+
+
         $speaker = new Speakers;
         $courses=$request->input('courses');
         $expertises=$request->input('expertise');
-       
+
         $data=[
            'salut_id'=>$request->input('salut_id'),
             'frist_name'=>$request->input('frist_name'),
@@ -46,32 +46,32 @@ class SpeakersController extends Controller
             'phone'=>$request->input('phone'),
             'mobile'=>$request->input('mobile'),
             'other_data'=>$request->input('other_data'),
-            
+
                         ];
 
                         if($request->hasFile('cv_path'))
                         {
                      $cv_path=$request->file('cv_path');
-       
+
                       $data['cv_path'] = $this->UplaodImage($cv_path);
-           
+
                         }
                         if($request->hasFile('doc_path'))
                          {
                          $doc_path=$request->file('doc_path');
-       
+
                           $data['doc_path'] = $this->UplaodFile($doc_path);
                          }
              DB::beginTransaction();
 
-    try{   
+    try{
              $speaker= Speakers::create($data);
-         
-           
-             if($courses!==null ){     
-            
+
+
+             if($courses!==null ){
+
                 foreach ($courses as $course)
-        
+
              {
             $input=[
                 'course_id'=>$course,
@@ -81,13 +81,13 @@ class SpeakersController extends Controller
             ] ;
 
             // Store The Image Name..
-          
+
 
     SpeakerCourse::create($input);
- 
-           
+
+
             }
-			
+
         }
         if($expertises!==null ){
         foreach ( $expertises as $expertise)
@@ -100,16 +100,16 @@ class SpeakersController extends Controller
             ] ;
 
 			// Store The Image Name..
-           
+
                 SpeakersExpertise::create($input);
-           
+
         }
     }
         DB::commit();
         // $emails = ['sabreenm312@gmail.com','senior.steps.info@gmail.com'];
          $emails = ['senior.steps.info@gmail.com','info@btsconsultant.com','nasser@btsconsultant.com'];
-        \Mail::to($emails)->send(new SpeakerNotification($speaker));
-       
+       // \Mail::to($emails)->send(new SpeakerNotification($speaker));
+
         return redirect()->back()->with('message', 'Thanks; your request has been submitted successfully !');
 
     }catch(\Exception $e){
@@ -117,7 +117,7 @@ class SpeakersController extends Controller
         return redirect()->back()
         ->with('flash_danger','Something Went Wrong!');
     }
-   
+
     }
 
 
@@ -126,7 +126,7 @@ class SpeakersController extends Controller
  */
 function fetchCountry(Request $request)
 {
-   
+
  $select = $request->get('select');
  $value = $request->get('value');
 
@@ -158,10 +158,10 @@ echo $output;
 		// Rename The Image ..
 		$imageName =$name;
 		$uploadPath = 'uploads/courseBrochure';
-		
+
 		// Move The image..
 		$file->move($uploadPath, $imageName);
-       
+
 		return $imageName;
     }
     /**
@@ -181,10 +181,10 @@ echo $output;
 		// Rename The Image ..
 		$fileName =$name;
 		$uploadPath = 'uploads/courseBrochure';
-		
+
 		// Move The image..
 		$file->move($uploadPath, $fileName);
-       
+
 		return $fileName;
     }
 

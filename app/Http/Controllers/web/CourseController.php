@@ -387,7 +387,7 @@ if(!empty($request->get("wordName"))){
        $quick= Applicant::create($data);
        $emails = ['senior.steps.info@gmail.com','info@btsconsultant.com','nasser@btsconsultant.com'];
 
-          \Mail::to($emails)->send(new QuickEnqueryNotification($quick));
+        //   \Mail::to($emails)->send(new QuickEnqueryNotification($quick));
 
           if (!$request->get('courseBrochure')) {
             return redirect()->back()->with('message', 'Thanks; your request has been submitted successfully !');
@@ -405,7 +405,7 @@ if(!empty($request->get("wordName"))){
 
        $emails = ['senior.steps.info@gmail.com','info@btsconsultant.com','nasser@btsconsultant.com'];
 
-           \Mail::to($emails)->send(new DawnloadNotification($dawnload));
+          // \Mail::to($emails)->send(new DawnloadNotification($dawnload));
 
           if (!$request->get('courseBrochure')) {
 
@@ -484,7 +484,7 @@ if(!empty($request->get("wordName"))){
 
         $emails = ['senior.steps.info@gmail.com','info@btsconsultant.com','nasser@btsconsultant.com'];
 
-         \Mail::to($emails)->send(new RegisterNotification($applicant_id,$billingDetails));
+        // \Mail::to($emails)->send(new RegisterNotification($applicant_id,$billingDetails));
         return redirect()->back()->with('message', 'Thanks; your request has been submitted successfully !');
 
     }
@@ -520,7 +520,7 @@ if(!empty($request->get("wordName"))){
             $App=Applicant::create($data);
             $emails = ['senior.steps.info@gmail.com','info@btsconsultant.com','nasser@btsconsultant.com'];
 
-         \Mail::to($emails)->send(new CouseOfferNotification($App));
+        // \Mail::to($emails)->send(new CouseOfferNotification($App));
 
             return redirect()->back()->with('message', 'Thanks; your request has been submitted successfully !');
 
