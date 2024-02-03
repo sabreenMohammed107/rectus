@@ -62,8 +62,14 @@
             bottom: 0;
             text-align: center;
             margin-top: -1em;
+            font-weight: bold;
         }
-
+        .form-control {
+            font-weight: bold;
+        }
+        .form-control::placeholder {
+            font-weight: bold;
+}
 
 				</style>
 <!-- <section id="intro">
