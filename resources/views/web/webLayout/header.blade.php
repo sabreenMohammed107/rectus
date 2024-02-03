@@ -91,7 +91,7 @@
 						?>
 
 					{{-- <li><a href='{{url ("/courses/$catId/$catId/date") }}' style="font-size:16px">البرامج العربية</a></li> --}}
-					<li><a href='{{url ("/courses/$online/$online/date") }}' >Online Courses</a></li>
+					{{-- <li><a href='{{url ("/courses/$online/$online/date") }}' >Online Courses</a></li> --}}
 					<li><a href="{{ route('contactus') }}">CONTACT US</a></li>
 					<li class="menu-has-children">
 						<a href="">JOIN US</a>
