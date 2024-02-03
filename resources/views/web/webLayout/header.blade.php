@@ -13,7 +13,7 @@
 					</ul>
 				</div>
 				<div class="col-lg-6 col-md-9 col-4 header-top-right no-padding ">
-				
+
 					<a href="{{ route('contactus') }}" id="xx"><span class="lnr lnr-phone-handset"></span> <span class="text">
 					<i class="fas fa-phone" style="opacity:0.9"></i> {{$branch->office_phone}}</span></a>
 					<a href="{{ route('contactus') }}" id="yy"><span class="lnr lnr-envelope"></span> <span class="text">
@@ -58,7 +58,7 @@
 					</li>
 					<li class="menu-has-children">
 						<a href="">TRAINING CALENDER</a>
-						<?php 
+						<?php
 						$current=now()->year;
 						$next=$current+1;
 						?>
@@ -84,13 +84,13 @@
 							@endforeach
 						</ul>
 					</li>
-					<?php 
+					<?php
 						$catId=4;
 						$sub=4;
 						$online=6;
 						?>
-					
-					<li><a href='{{url ("/courses/$catId/$catId/date") }}' style="font-size:16px">البرامج العربية</a></li>
+
+					{{-- <li><a href='{{url ("/courses/$catId/$catId/date") }}' style="font-size:16px">البرامج العربية</a></li> --}}
 					<li><a href='{{url ("/courses/$online/$online/date") }}' >Online Courses</a></li>
 					<li><a href="{{ route('contactus') }}">CONTACT US</a></li>
 					<li class="menu-has-children">
@@ -107,10 +107,10 @@
 	</div>
 	@if ($message =Session::get('message'))
 		<div id="alertDiv" class="alert alert-info alert-block">
-	<button type="button" id="alertClose" class="close" data-dismiss="alert">×</button>	
+	<button type="button" id="alertClose" class="close" data-dismiss="alert">×</button>
         <strong style="color:black;font-weight:bold">{{ $message }}</strong>
 </div>
-	
+
 
 @endif
 @if ($errors->any())
