@@ -368,7 +368,7 @@
 	@endif
 
 
-				<a href="{{ url('courseDetails/'.$round->course->id) }}" style="position: absolute; bottom: -10px;" class="details-btn d-flex justify-content-center align-items-center "><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
+				<a href="{{ url('courseDetails/'.$round->course->id) }}" style="position: absolute; bottom: -22px;" class="details-btn d-flex justify-content-center align-items-center "><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
 				</div>
 			</div>
 			@endforeach
