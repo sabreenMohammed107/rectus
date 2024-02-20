@@ -24,7 +24,7 @@
 			<p>hellow first message</p>
 		</div>
 	</div> -->
-	
+
 	<!-- /.massage-box -->
 
 	<!-- <div class="create-massage">
@@ -46,30 +46,36 @@
 	.video-wrapper {
 	position: relative;
 	width: 100%;
-	
+
 	overflow: hidden;
 }
 .video {
 	position: relative;
 }
 .text-holder {
-        
+
             position: absolute;
             color: #fff;
             left: 20%;
-           
+
             top: 50%;
             bottom: 0;
             text-align: center;
             margin-top: -1em;
+            font-weight: bold;
         }
-        
-    
+        .form-control {
+            font-weight: bold;
+        }
+        .form-control::placeholder {
+            font-weight: bold;
+}
+
 				</style>
 <!-- <section id="intro">
-	
 
-		
+
+
 	</div>
 	<div class="video-wrapper">
 	<video playsinline="playsinline" style="width: 100%;" autoplay="autoplay" muted="muted" loop="loop"  >
@@ -78,14 +84,14 @@
 
 		<div class="container">
 		<div class="text-holder">
-       
+
 					<h1 class="text-uppercase" style="color:#000000">
 						{{ $homeSlider->slider_en_title }}
 					</h1>
 					<mark class="" style="color:#ffffff;background-color:#212529;opacity:.7">
 						{{ $homeSlider->slider_en_subtitle }}
 					</mark>
-				
+
 </div>
 
 		</div>
@@ -130,7 +136,7 @@
 	object-fit: cover;
 	object-position: center;
 	height: 100%;
-	
+
 }
 .box p {
 	position: relative;
@@ -140,29 +146,29 @@
 	font-size: 4em;
 	color: #fff;
     font-weight: bold;
-   
+
 }
 	</style>
 <section id="intro">
 	<div class="banner-area relative h-100" id="home" >
-	
+
 		 {{-- <div class="overlay overlay-bg">  --}}
-	
+
 		<div class="wrapper" >
-		
+
 
 		{{-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" >
 		<source src="{{ asset('uploads/vedio')}}/{{ $homeSlider->slider_video_url }}" type="video/mp4">
 				</video> --}}
                 <div class="gradient box h-100">
                     <img   src="{{ asset('webasset/images/banner-bg.jpg')}}" alt="Image de naruto usada de fondo">
-                   
+
                     <p>EXPLORE YOUR OPPORTUNITIES AT  - RECTUS</p>
                 </div>
-              
-				
+
+
 </div>
-		
+
 	<!-- </div> -->
 </div>
 
@@ -184,7 +190,7 @@
 			<div class="col-lg-8">
 				<div class="search-section-padding">
 					<form  action="{{route('searchForm')}}" class="search-area">
-				
+
 						<div class="row form-group">
 							<div class="col-md-3" style="margin:0px 5px 10px 0px">
 								<input type="text" class="form-control" name="wordName" placeholder="Enter Course" />
@@ -196,7 +202,7 @@
                                         <option value='{{$category->id}}' >
                                          {{ $category->subcategory_en_name }}</option>
                                            @endforeach
-									
+
 								</select>
 							</div>
 							<div class="col-md-3" style="margin:0px 5px 10px 0px">
@@ -209,7 +215,7 @@
 								</select>
 							</div>
 							<div class="col-md-3" style="margin:0px 5px 10px 0px">
-						
+
 							<input name="start" placeholder="From Date" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
 							</div>
 							<div class="col-md-3" style="margin:0px 5px 10px 0px">
@@ -234,20 +240,20 @@
 			<div class="col-lg-3">
 				<div class="single-feature">
 					<div class="title">
-					<?php 
+					<?php
 						$catId=1;
 						?>
 					<a href="{{ url('category/'.$catId) }}" >
-						<h4><i class="fas fa-cogs" style="color:#fff;font-size:20px"></i> Technical Categories</h4>
+						<h4><i class="fas fa-cogs" style="color:#fff;font-size:20px"></i>ENGINEERING & TECHNICAL SERVICES </h4>
 					</a>
 					</div>
 					<div class="desc-wrap">
 						<p>
 						Our training programs are designed to maximize delegate participation.
 						Participants ..
-						  
+
 						</p>
-						
+
 						<a href="{{ url('category/'.$catId) }}" >More Details</a>
 					</div>
 				</div>
@@ -255,17 +261,17 @@
 			<div class="col-lg-3">
 				<div class="single-feature">
 					<div class="title">
-					<?php 
+					<?php
 						$catId=2;
 						?>
 						<a href="{{ url('category/'.$catId) }}">
-						<h4><i class="fas fa-users" style="color:#fff;font-size:20px"></i> Soft skills Categories</h4>
+						<h4><i class="fas fa-users" style="color:#fff;font-size:20px"></i> LEADERSHIP AND PROFESSIONAL GROWTH</h4>
 				</a>
 					</div>
 					<div class="desc-wrap">
-						<p>RECTUS offers a range of Soft Skills training courses which provides delegates opportunities to develop .. 
+						<p>RECTUS offers a range of Soft Skills training courses which provides delegates opportunities to develop ..
 						</p>
-						
+
 						<a href="{{ url('category/'.$catId) }}">More Details</a>
 					</div>
 				</div>
@@ -273,18 +279,18 @@
 			<div class="col-lg-3">
 				<div class="single-feature">
 					<div class="title">
-					<?php 
+					<?php
 						$catId=3;
 						?>
 						<a href="{{ url('category/'.$catId) }}">
-						<h4><i class="fas fa-graduation-cap" style="color:#fff;font-size:20px"></i> Certified Courses</h4>
+						<h4><i class="fas fa-graduation-cap" style="color:#fff;font-size:20px"></i> TALENT MANAGEMENT AND ORGANIZATIONAL DEVELOPMENT</h4>
 					</a>
 					</div>
 					<div class="desc-wrap">
 						<p>
 						Why do some participants take Professional Certificate training course? According to The Guide to ..
 						</p>
-						
+
 						<a href="{{ url('category/'.$catId) }}">More Details</a>
 					</div>
 				</div>
@@ -292,19 +298,19 @@
 			<div class="col-lg-3">
 				<div class="single-feature">
 					<div class="title">
-					<?php 
+					<?php
 						$catId=4;
-						
+
 						?>
 						<a href='{{url ("/courses/$catId/$catId/date") }}'>
-						<h4><i class="fas fa-book-reader" style="color:#fff;font-size:20px"></i> البرامج العربية</h4>
+						<h4><i class="fas fa-book-reader" style="color:#fff;font-size:20px"></i> BUSINESS OPERATIONS AND COMPLIANCE</h4>
 					</a>
 					</div>
 					<div class="desc-wrap">
 						<p>
 						تقدم بى تى إس للتدريب والإستشارات الإدارية حلول التدريب الإحترافي. ذات مستوى عالمي بمهنية وجودة، لتمكين المنظمات والأفراد العاملين في القطاعين الحكومي والخاص
 						</p>
-						
+
 						<a href='{{url ("/courses/$catId/$catId/date") }}'>More Details</a>
 					</div>
 				</div>
@@ -334,7 +340,7 @@
 				</div>
 				<?php $date = date_create($round->round_start_date)?>
 				<div style=" position: relative ;height: 21%; border-bottom:1px solid #ccc;">
-				
+
 				<p style="margin-top:10px;margin-bottom:20px; "class="meta">
 				<a href="{{ url('courseDetails/'.$round->course->id) }}"  >
 				@if($round->course->course_sub_category_id==4)
@@ -345,12 +351,12 @@
 				         </a>
                           </p>
                      <p class="meta" style="margin-top:10px; position: absolute;bottom:0">
-					 {{ $round->venue->venue_en_name }} - {{ $round->country->country_en_name }}  |  {{ date_format($date,"d M, Y") }} 
-				</a></p>			
+					 {{ $round->venue->venue_en_name }} - {{ $round->country->country_en_name }}  |  {{ date_format($date,"d M, Y") }}
+				</a></p>
 				</div>
-				
+
 			     <div style="padding: 0 0 30px 0;">
-				
+
 					@if($round->course->course_sub_category_id==4)
 					<p style="direction: rtl;">
 				  {{ Str::limit($round->course->course_en_desc, 400, '...') }}
@@ -360,9 +366,9 @@
 	{{ Str::limit($round->course->course_en_desc, 200, ' ...') }}
 	</p>
 	@endif
-				
 
-				<a href="{{ url('courseDetails/'.$round->course->id) }}" style="position: absolute; bottom: 0;" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
+
+				<a href="{{ url('courseDetails/'.$round->course->id) }}" style="position: absolute; bottom: -22px;" class="details-btn d-flex justify-content-center align-items-center "><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
 				</div>
 			</div>
 			@endforeach
@@ -390,14 +396,14 @@
 					<div class="thumb-wrap relative">
 						<div class="thumb relative">
 							<div class="overlay overlay-bg"></div>
-							<img class="img-fluid" 
+							<img class="img-fluid"
 							src="{{ asset('uploads/clients')}}/{{ $client->client_logo_url }}" alt="{{ $client->client_name }}"
 							style="max-height:100px;max-width:200px">
 						</div>
 					</div>
 				</div>
 				@endforeach
-				
+
 			</div>
 		</div>
 	</div>
@@ -405,7 +411,7 @@
 <!-- End Clients Area -->
 
 <!--Start Counter Section-->
-<div class="row d-flex justify-content-center" style="margin:0px !important">
+{{-- <div class="row d-flex justify-content-center" style="margin:0px !important">
 	<div class="menu-content pb-15">
 		<div class="title text-center">
 			<h4 class="text-color" style="font-family:pruistin;font-size:30px;padding-top:50px">RECTUS in Numbers</h4>
@@ -435,11 +441,11 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> --}}
 <!-- End Counter Section-->
 
 <!-- Start Instructors Area -->
-<section class="popular-course-area section-gap">
+{{-- <section class="popular-course-area section-gap">
 	<div class="container">
 		<div class="row d-flex justify-content-center">
 			<div class="menu-content pb-15">
@@ -457,24 +463,24 @@
 					<div class="thumb-wrap relative">
 						<div class="thumb relative">
 							<div class="overlay overlay-bg"></div>
-							<img class="img-fluid" 
+							<img class="img-fluid"
 							src="{{ asset('uploads/trainers')}}/{{ $trainer->trainer_image }}" alt="{{ $trainer->trainer_name }}"
 							 style="border-radius:1rem ;width:100%;height:200px">
 						</div>
 					</div>
 					<div class="details" style="text-align:center">
-						
+
 							<h4>{{$trainer->trainer_name}}</h4>
-						
+
 						<p >{{$trainer->trainer_desc}}</p>
 					</div>
 				</div>
 				@endforeach
-				
+
 			</div>
 		</div>
 	</div>
-</section>
+</section> --}}
 <!-- End Instructors Area -->
 
 <!-- Start become instructor Area -->
@@ -483,7 +489,7 @@
 		<div class="overlay overlay-bg"></div>
 		<div class="row justify-content-center">
 			<div class="wrap">
-				<h1 class="text-white">Become an Instructor</h1>
+				<h1 class="text-white">Join Us as a Trainer </h1>
 				<p>
 				Join our group of world-class training experts and help reshape the world of learning and development one training course at a time.
 				</p>
@@ -514,14 +520,14 @@
 					<div class="thumb-wrap relative">
 						<div class="thumb relative">
 							<div class="overlay overlay-bg"></div>
-							<img class="img-fluid" 
+							<img class="img-fluid"
 							src="{{ asset('uploads/partners')}}/{{ $partner->partner_logo_url }}" alt="{{ $partner->partner_name }}"
 							 style="max-height:100px;max-width:200px">
 						</div>
 					</div>
 				</div>
 				@endforeach
-				
+
 			</div>
 		</div>
 	</div>
@@ -551,7 +557,7 @@
 							Calender {{$year}}
 				               </a>
 				<input type="hidden" name="calender" value="{{ asset('uploads/calender')}}/{{$calender->current_year_calendar}}" alt="{{$calender->current_year_calendar}}" />
-								
+
 							</div>
 						</div>
 						<div class="col-md-4 col-12">
@@ -583,36 +589,36 @@
 	$(document).ready(function() {
 		$('#downloadCurrentCalender').click(function() {
             var calender = $('input[name="calender"]').val();
-            
-            
+
+
             var link = document.createElement("a");
 						link.download = 'Current-Calender';
 						link.href = calender;
 						link.click();
 
-		
+
 		});
         $('#downloadNextCalender').click(function() {
             var calender = $('input[name="nextCalender"]').val();
-            
-            
+
+
             var link = document.createElement("a");
 						link.download = 'Next-Calender';
 						link.href = calender;
 						link.click();
 
-		
+
 		});
 		$('#downloadProfile').click(function() {
             var calender = $('input[name="campany_profile"]').val();
-            
-            
+
+
             var link = document.createElement("a");
 						link.download = 'campany_profile';
 						link.href = calender;
 						link.click();
 
-		
+
 		});
     });
     </script>
