@@ -41,7 +41,7 @@ Route::get('/adminLogin', function () {
     return view('auth.login');
 });
 
-Route::namespace('Admin')->group(function () {
+// Route::namespace('Admin')->group(function () {
 
 Route::get('/admin',  [AdminHomeController::class, 'home']);
 Route::get('/home',  [AdminHomeController::class, 'home']);
@@ -129,4 +129,4 @@ Route::resource('/admin/usersList',  UserListController::class);
 Route::get('/resetPassword/{id}',  [UserListController::class, 'resetPassword'])->name('resetPassword');
 Route::post('editUserPassword',  [UserListController::class, 'editUserPassword'])->name('editUserPassword');
 
-});
+// });

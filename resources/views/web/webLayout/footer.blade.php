@@ -10,7 +10,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<div class="row">
 			<div class="col-lg-4 d-flex flex-column address-wrap">
 				<div class="single-contact-address d-flex flex-row">
@@ -56,14 +56,14 @@
 						<div class="col-lg-6 form-group">
 							<textarea class="common-textarea form-control" value="{{ old('sender_message') }}" name="sender_message" placeholder="Enter Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'" required="">{{Request::old('sender_message')}}</textarea>
 						</div>
-						
+
 						<div class="col-lg-12">
-						
+
 							<div class="alert-msg" style="text-align: left;"></div>
 							<button type="submit" class="genric-btn primary" style="float: right;">Send Message</button>
 						</div>
 					</div>
-					
+
 				</form>
 			</div>
 		</div>
@@ -99,27 +99,27 @@
 					<div class="single-footer-widget">
 						<h4>Majors</h4>
 						<ul>
-							<li><?php 
+							<li><?php
 						$catId=1;
 						?>
 					<a href="{{ url('category/'.$catId) }}" >Technical</a></li>
-							<li><?php 
+							<li><?php
 						$catId=2;
 						?>
 						<a href="{{ url('category/'.$catId) }}">Soft skills</a></li>
 							<li>
-							<?php 
+							<?php
 						$catId=3;
 						?>
 						<a href="{{ url('category/'.$catId) }}">Certified</a></li>
-							
+
 						<li>
-							<?php 
+							<?php
 						$catId=4;
 						$sub=4;
 						?>
-					
-					<a href='{{url ("/courses/$catId/$catId/date") }}' style="font-size:16px">البرامج العربية</a></li>
+
+					{{-- <a href='{{url ("/courses/$catId/$catId/date") }}' style="font-size:16px">البرامج العربية</a></li> --}}
 						</ul>
 					</div>
 				</div>
@@ -129,7 +129,7 @@
 						<ul>
 						<li><a href="{{ route('publicTraining') }}">Public Training</a></li>
 									<li><a href="{{ route('inHouse') }}">In-House Training</a></li>
-							<?php 
+							<?php
 						$current=now()->year;
 						$next=$current+1;
 						?>
@@ -162,13 +162,13 @@
 							<a href="https://www.facebook.com/BTSforTraining/?mibextid=ZbWKwL" target="_blank" ><i class="fab fa-facebook-f"></i></a>
 								<a href="https://twitter.com/bts_consultants" target="_blank"><i class="fab fa-twitter"></i></a>
 								<a href="https://www.linkedin.com/company/best-technology-solutions-bts" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-								<a href="https://wa.me/971506652671" target="_blank"><i class="fab fa-whatsapp"></i></a>
+								<a href="https://wa.me/971547049500" target="_blank"><i class="fab fa-whatsapp"></i></a>
 								<a href="https://www.instagram.com/best_technology_solutions/" target="_blank" ><i class="fab fa-instagram"></i></a>
 							</div>
-							
+
 						</div>
 
-						
+
 </div>
 
 					</div>

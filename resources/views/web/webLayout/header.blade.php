@@ -8,7 +8,7 @@
 						<li><a href="https://www.facebook.com/BTSforTraining/?mibextid=ZbWKwL" target="_blank" ><i class="fab fa-facebook-f"></i></a></li>
 						<li><a href="https://twitter.com/bts_consultants" target="_blank"><i class="fab fa-twitter"></i></a></li>
 						<li><a href="https://www.linkedin.com/company/best-technology-solutions-bts" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-					<li><a href="https://wa.me/971506652671" target="_blank" ><i class="fab fa-whatsapp"></i></a></li>
+					<li><a href="https://wa.me/971547049500" target="_blank" ><i class="fab fa-whatsapp"></i></a></li>
 						<li><a href="https://www.instagram.com/best_technology_solutions/" target="_blank" ><i class="fab fa-instagram"></i></a></li>
 					</ul>
 				</div>
@@ -20,7 +20,7 @@
 					<i class="far fa-envelope" style="opacity:0.9"></i> {{$branch->email}}
 					</span></a>
 					<a href="{{ route('contactus') }}" id="zz"><span class="lnr lnr-whatsapp"></span> <span class="text">
-					<i class="fab fa-whatsapp" style="opacity:0.9"></i>00971-50-6652671
+					<i class="fab fa-whatsapp" style="opacity:0.9"></i>00971-547049500
 					</span></a></div>
 				</div>
 			</div>
