@@ -18,6 +18,7 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     protected $namespace = 'App\Http\Controllers\web';
+
     protected $namespaceAdmin = 'App\Http\Controllers\admin';
 
     /**

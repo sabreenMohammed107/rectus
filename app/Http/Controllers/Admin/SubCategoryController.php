@@ -20,15 +20,15 @@ class SubCategoryController extends Controller
     public function __construct(CourseSubCategory $object)
     {
         $this->middleware('auth');
-  
+
         $this->object = $object;
         $this->viewName = 'admin.subCategory.';
         $this->routeName = 'subcat.';
         $this->message = 'The Data has been saved';
         $this->errormessage = 'check Your Data ';
-        
-       
-      
+
+
+
     }
     /**
      * Display a listing of the resource.
@@ -61,7 +61,7 @@ class SubCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $active=0;
         $hq=0;
 
@@ -69,7 +69,7 @@ if($request->input('subcategory')=='on'){
     $active=1;
 }
 
-       
+
     $data=[
             'subcategory_code'=>$request->input('subcategory_code'),
             'subcategory_en_name'=>$request->input('subcategory_en_name'),
@@ -78,16 +78,16 @@ if($request->input('subcategory')=='on'){
             'active'=>$active,
                         ];
                         if($request->hasFile('pic'))
-             
+
              {
 
              $subcategory_image=$request->file('pic');
-       
+
              $data['subcategory_image'] = $this->UplaodImage($subcategory_image);
              }
 
         $this->object::create($data);
-       
+
         return redirect()->route($this->routeName.'index')->with('flash_success', $this->message);
     }
 
@@ -110,9 +110,9 @@ if($request->input('subcategory')=='on'){
      */
     public function edit($id)
     {
-        
+
         $subcategory =CourseSubCategory::where('id', '=', $id)->first();
-       
+
          $categories=CourseCategory::where('id', '!=',4)->where('id', '!=',6)->get();
 
          return view($this->viewName.'edit', compact('categories','subcategory'));
@@ -127,11 +127,11 @@ if($request->input('subcategory')=='on'){
      */
     public function update(Request $request, $id)
     {
-        
 
-		
+
+
         $active=0;
-      
+
 
        if($request->input('subcategory')=='on'){
            $active=1;
@@ -146,19 +146,19 @@ if($request->input('subcategory')=='on'){
 
                 $data['course_category_id']=$request->input('course_category_id');
              }
-            
+
              if($request->hasFile('pic'))
-             
+
              {
                 $subcategory_image=$request->file('pic');
-       
+
                 $data['subcategory_image'] = $this->UplaodImage($subcategory_image);
 
              }
-     
-       
+
+
         $this->object::findOrFail($id)->update($data);
-       
+
         return redirect()->route($this->routeName.'index')->with('flash_success', $this->message);
     }
 
@@ -173,18 +173,18 @@ if($request->input('subcategory')=='on'){
         $subcategory =CourseSubCategory::where('id', '=', $id)->first();
         // Delete File ..
         $file = $subcategory->subcategory_image;
-      
+
         $file_name = public_path('uploads/courses/'.$file);
-            
+
         if ($subcategory->rounds()->count()) {
 
-            return redirect()->back()->with('flash_danger','You cannot delete related with another...');    
+            return redirect()->back()->with('flash_danger','You cannot delete related with another...');
          }
             $subcategory->delete();
                 File::delete($file_name);
                 return redirect()->route($this->routeName.'index')->with('flash_success', 'Data Has Been Deleted Successfully !');
-           
-          
+
+
     }
 
     public function UplaodImage($file_request)
@@ -201,10 +201,10 @@ if($request->input('subcategory')=='on'){
 		// Rename The Image ..
 		$imageName = $name;
 		$uploadPath = public_path('uploads/courses');
-		
+
 		// Move The image..
 		$file->move($uploadPath, $imageName);
-       
+
 		return $imageName;
     }
 }
