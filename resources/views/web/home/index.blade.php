@@ -244,7 +244,7 @@
 						$catId=1;
 						?>
 					<a href="{{ url('category/'.$catId) }}" >
-						<h4><i class="fas fa-cogs" style="color:#fff;font-size:20px"></i>ENGINEERING & TECHNICAL SERVICES </h4>
+						<h4><i class="fas fa-cogs" style="color:#fff;font-size:20px"></i> ENGINEERING & TECHNICAL SERVICES </h4>
 					</a>
 					</div>
 					<div class="desc-wrap">
