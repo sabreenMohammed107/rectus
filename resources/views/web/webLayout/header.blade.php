@@ -20,7 +20,7 @@
 					<i class="far fa-envelope" style="opacity:0.9"></i> {{$branch->email}}
 					</span></a>
 					<a href="{{ route('contactus') }}" id="zz"><span class="lnr lnr-whatsapp"></span> <span class="text">
-					<i class="fab fa-whatsapp" style="opacity:0.9"></i>00971-547049500
+					<i class="fab fa-whatsapp" style="opacity:0.9"></i> 00971-547049500
 					</span></a></div>
 				</div>
 			</div>
