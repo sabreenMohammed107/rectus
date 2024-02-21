@@ -3,12 +3,12 @@
 
 
 @section('crumb')
-    
+
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
       <a href="{{url('admin')}}"><i class="material-icons"></i> {{ __('Home') }} </a></li>
-      <li class="breadcrumb-item active" aria-current="page"> {{ __('Bts-Numbers') }} </li>
+      <li class="breadcrumb-item active" aria-current="page"> {{ __('Rectus-Numbers') }} </li>
     </ol>
   </nav>
 
@@ -23,8 +23,8 @@
 
   <div class="ms-panel">
     <div class="ms-panel-header d-flex justify-content-between">
-    <h6>BTS_numbers</h6>
-        <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#addnumber"> add BTS_numbers </a>
+    <h6>Rectus_numbers</h6>
+        <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#addnumber"> add Rectus_numbers </a>
     </div>
     <div class="ms-panel-body">
       <div class="table-responsive">
@@ -41,16 +41,16 @@
             <tr>
             <td>{{$index+1}}</td>
               <td>{{$number->bts_number_en_name}}</td>
-              
+
               <td>{{$number->bts_number_value}}</td>
-            
+
               @if($number->active == 1)
                           <td><i class="fas fa-check"></i></td>
                           @else
                           <td><i class="fas fa-times"></i></td>
                           @endif
               <td>
-                <a href="{{ route('number.edit', $number->id) }}" class="btn btn-info d-inline-block" 
+                <a href="{{ route('number.edit', $number->id) }}" class="btn btn-info d-inline-block"
                 >edit</a>
               <a href="#" onclick="destroy('this Number','{{$number->id}}')" class="btn d-inline-block btn-danger">delete</a>
               <form id="delete_{{$number->id}}" action="{{ route('number.destroy', $number->id) }}"  method="POST" style="display: none;">
@@ -81,13 +81,13 @@
       <div class="modal-dialog modal-lg " role="document">
         <div class="modal-content">
           <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">X
-           
+
           </button>
           <h3>Add number</h3>
-        
+
           <div class="modal-body">
-  
-           
+
+
             <div class="ms-auth-container row no-gutters">
               <div class="col-12 p-3">
               @if (count($errors) > 0)
@@ -111,9 +111,9 @@
                             </div>
                           </div>
                          </div>
-                    
-                         
-                       
+
+
+
                           <div class="col-md-8">
                             <div class="form-group">
                               <label>Number_value</label>
@@ -128,7 +128,7 @@
                               checked>
                        <label for="category">active Number</label>
                      </div>
-                             
+
                             </div>
                     </div>
                     <div class="input-group d-flex justify-content-end text-center">

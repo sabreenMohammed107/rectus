@@ -47,7 +47,7 @@ position: fixed;
                             <?php
 
                             $courseId = $course->id;
-                            $url = 'https://btsconsultant.com/courseDetails/' . $courseId;
+                            $url = 'https://Rectus.com/courseDetails/' . $courseId;
                             ?>
 
                             <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($url) }}" style="padding:3px 7px;background-color:#777" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ urlencode($url) }}','popup','width=600,height=600'); return false;"><i class="fab fa-facebook-f" style="color:#fff"></i></a>
@@ -398,7 +398,7 @@ position: fixed;
                             <?php
 
                             $courseId = $course->id;
-                            $url = 'https://btsconsultant.com/courseDetails/' . $courseId;
+                            $url = 'https://Rectus.com/courseDetails/' . $courseId;
                             ?>
 
                             <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($url) }}" style="padding:3px 7px;background-color:#777" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ urlencode($url) }}','popup','width=600,height=600'); return false;"><i class="fab fa-facebook-f" style="color:#fff"></i></a>
@@ -666,7 +666,7 @@ position: fixed;
                             <h4>Technical Team</h4>
                         </a>
                         <p>
-                            BTS keen to selects highly technical instructors based on professional field experience
+                            Rectus keen to selects highly technical instructors based on professional field experience
                     </div>
                     <div class="col single-detials">
                         <span class="lnr lnr-license" style="color:#32a2a8"></span>
@@ -674,7 +674,7 @@ position: fixed;
                             <h4>Strengths and capabilities</h4>
                         </a>
                         <p>
-                            Since BTS was established, it considered a training partner for world class oil & gas institution
+                            Since Rectus was established, it considered a training partner for world class oil & gas institution
                         </p>
                     </div>
                 </div>

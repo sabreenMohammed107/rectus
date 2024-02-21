@@ -12,7 +12,7 @@
 		</div>
 	</section>
 	<!-- End banner Area -->
-	
+
 	<!-- Start form Area -->
 	<section class="event-details-area section-gap">
 		<div class="container">
@@ -50,8 +50,8 @@ Read on below to find out more about what our positions entail and what skills a
 					<div class="accordion-left">
 						<!-- accordion 2 start-->
 						<dl class="accordion">
-						
-						
+
+
 						@foreach($careers as $career)
 							<dt>
 								<a href="">{{$career->job_name}}</a>
@@ -141,7 +141,7 @@ Read on below to find out more about what our positions entail and what skills a
 			<div class="overlay overlay-bg"></div>
 			<div class="row justify-content-center">
 				<div class="wrap">
-					<h1 class="text-white">Thank You For Your Interest In Joining BTS Teamwork</h1>
+					<h1 class="text-white">Thank You For Your Interest In Joining Rectus Teamwork</h1>
 					<p style="visibility:hidden">
 						There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station whether that is on the deck.
 					</p>

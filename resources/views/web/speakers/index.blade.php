@@ -19,7 +19,7 @@
 			<h4 style="padding-bottom:30px;color:#32a2a8">Are you highly qualified, experienced and respected in your field of technical expertise ?</h4>
 			<h4 style="padding-bottom:30px">Then, YOU ARE WHO WE’RE LOOKING FOR!</h4>
 			<hr />
-			<p>At BTS, commitment to excellence is at the core of everything we do and we are always looking to welcome motivated, talented and experienced professionals to support our growth. If you have the passion to deliver training courses, seminars and workshops with the highest standards, we invite you to view our current openings for experienced trainers below:</p>
+			<p>At Rectus, commitment to excellence is at the core of everything we do and we are always looking to welcome motivated, talented and experienced professionals to support our growth. If you have the passion to deliver training courses, seminars and workshops with the highest standards, we invite you to view our current openings for experienced trainers below:</p>
 		</div>
 </section>
 
@@ -51,9 +51,9 @@
 								border: 1px solid #ced4da !important;
 							}
 						</style>
-						
+
 							<h5 class="mb-30">Personal Details</h5>
-							
+
 							<div class=" input-group-icon mt-10">
 								<select name="salut_id" class="form-control "  >
                                         <option value="">select Salutation....</option>
@@ -63,7 +63,7 @@
                                            @endforeach
 
                                       </select>
-							
+
 							</div>
 							<div class="mt-10">
 								<input type="text" name="frist_name" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'"  class="single-input">
@@ -80,7 +80,7 @@
 								<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
 								<input type="text" name="address" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'"  class="single-input">
 							</div>
-							
+
 							<div class=" input-group-icon mt-10">
 								<!-- <div class="icon" ><i class="fa fa-globe" aria-hidden="true"></i></div> -->
 								<select name="country_id" class="form-control  dynamic" data-show-subtext="true" data-live-search="true" id="country" data-dependent="state" >
@@ -91,18 +91,18 @@
                                            @endforeach
 
                                       </select>
-							
+
 							</div>
 							<div class="input-group-icon mt-10">
 								<!-- <div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div> -->
-							
+
 								<select name="venue_id" class="form-control " data-show-subtext="true" data-live-search="true" id="state">
                                         <option value="">select ....</option>
-                                                                           
+
                                       </select>
-								
+
 							</div>
-							
+
 							<div class="mt-10">
 								<input type="" name="phone" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'"  class="single-input-primary">
 							</div>
@@ -115,7 +115,7 @@
 							<div class="button-group-area mt-40">
 								<button type="submit"  class="genric-btn primary e-large">Submit</button>
 							</div>
-						
+
 					</div>
 					<div class="col-lg-3 col-md-4 mt-sm-30 element-wrap">
 						<div class="single-element-widget">
@@ -127,7 +127,7 @@
 									<label for="primary-checkbox"></label>
 								</div>
 							</div>
-							
+
 						@foreach($expertises as $expertise)
 							<div class="switch-wrap d-flex justify-content-between">
 								<p>{{$expertise->text}}</p>
@@ -147,9 +147,9 @@
 							<div class="row">
 								<div class="col-lg-6 col-md-12 mt-sm-30 element-wrap">
 									<div class="single-element-widget">
-										
+
 										@foreach($courses as $course)
-										
+
 										<div class="switch-wrap d-flex justify-content-between">
 											<p>{{$course->name}}</p>
 											<div class="confirm-checkbox">
@@ -160,7 +160,7 @@
 										@endforeach
 									</div>
 								</div>
-								
+
 							</div>
 						</div>
 						<hr />
@@ -207,21 +207,21 @@
 $(document).ready(function(){
 
  $('.dynamic').change(function(){
-    
+
   if($(this).val() != '')
   {
    var select = $(this).attr("id");
    var value = $(this).val();
    var dependent = $(this).data('dependent');
    var _token = $('input[name="_token"]').val();
-  
+
    $.ajax({
     url:"{{route('speaker_dependentCountry.fetch')}}",
     method:"POST",
     data:{select:select, value:value, _token:_token, dependent:dependent},
     success:function(result)
     {
-        
+
      $('#state').html(result);
     }
 
@@ -229,11 +229,11 @@ $(document).ready(function(){
   }
  });
 
- 
- 
+
+
 
 });
- 
+
 
 </script>
     @endsection

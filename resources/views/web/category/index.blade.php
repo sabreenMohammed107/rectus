@@ -12,7 +12,7 @@
 					<h1 class="text-white">{{$category->category_en_name}}</h1>
 					<p class="text-color link-nav"><a href="{{ url('/') }}">Home </a>  <span class="lnr lnr-arrow-right"></span>
 					  <a >{{$category->category_en_name}}</a>
-					    
+
 				</div>
 			</div>
 		</div>
@@ -39,11 +39,11 @@
 	</div>
 	<section class="top-category-widget-area pt-90 pb-90" style="background-color:#ffffff !important;padding-top:0px">
 		<div id="all-cat" class="container">
-			
-				
+
+
 					@include('web.category.catList')
 
-					
+
 			</div>
 	</section>
 	<!--End category tab-->
@@ -53,8 +53,8 @@
 		<div class="row d-flex justify-content-center" style="margin:0px !important">
 			<div class="menu-content pb-15">
 				<div class="title text-center">
-					<h4 class="text-color" style="font-family:pruistin;font-size:30px;padding-top:50px">BTS Schedules</h4>
-					<h1 class="mb-10" style="font-size:30px">Download The Complete BTS Training Schedules Here</h1>
+					<h4 class="text-color" style="font-family:pruistin;font-size:30px;padding-top:50px">Rectus Schedules</h4>
+					<h1 class="mb-10" style="font-size:30px">Download The Complete Rectus Training Schedules Here</h1>
 				</div>
 			</div>
 		</div>
@@ -90,27 +90,27 @@ $(document).ready(function() {
 
 //pagination
 $(document).on('click', '#category .pagination a', function(event){
-  event.preventDefault(); 
+  event.preventDefault();
   var page = $(this).attr('href').split('page=')[1];
- 
+
   fetch_data(page);
  });
- 
- 
+
+
  function fetch_data(page)
  {
-	 
+
   $.ajax({
-	
+
     url:"{{ URL::to('fetch_data') }}?page="+page,
 	data:
 		{
-		
+
 			id:$("#catId").val(),
 
-		
+
         } ,
-   
+
    success:function(data)
    {
     $('#all-cat').html(data);
@@ -120,14 +120,14 @@ $(document).on('click', '#category .pagination a', function(event){
 //dawnload calender
 $('#downloadCurrentCalender').click(function() {
             var calender = $('input[name="calender"]').val();
-            
-            
+
+
             var link = document.createElement("a");
 						link.download = 'Current-Calender';
 						link.href = calender;
 						link.click();
 
-		
+
 		});
 });
 
