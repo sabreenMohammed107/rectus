@@ -42,7 +42,7 @@
                     We provide expert consulting engineering services for petroleum, chemicals, oil, gas, petrochemical, environmental, high-tech, communication, power and heavy industries in all engineering fields. Services include reliability surveys and improvements, profitability improvement program including energy and yield, equipment consulting (including pressure vessels, heat exchangers, piping, machinery, fired heaters, instrumentation, controls, structures, stacks), risk informed maintenance and inspection planning, turnaround planning, fitness-for-service, project management, heavy lift, oil spill, troubleshooting process operations, plant optimization and process safety management.					</p>
 				</div>
 				<div class="col-lg-3">
-					<img src="{{ asset('webasset/images/engineer.PNG')}}" style="border-radius:1rem ;width:100% ;height:200px" />
+					<img src="{{ asset('webasset/images/engineer.png')}}" style="border-radius:1rem ;width:100% ;height:200px" />
 				</div>
 			</div>
 		</div>
@@ -63,7 +63,7 @@ Through this process, Rectus has the ability and capability to assure our partne
 					</p>
 				</div>
 				<div class="col-lg-3">
-                <img src="{{ asset('webasset/images/cmg.PNG')}}" style="border-radius:1rem ;width:100% ;height:200px" />
+                <img src="{{ asset('webasset/images/cmg.png')}}" style="border-radius:1rem ;width:100% ;height:200px" />
 				</div>
 			</div>
 		</div>
@@ -88,7 +88,7 @@ After meeting with the client and agreeing the scope of the project, a team of s
 					</p>
 				</div>
 				<div class="col-lg-3">
-                <img src="{{ asset('webasset/images/mange.PNG')}}" style="border-radius:1rem ;width:100% ;height:200px" />
+                <img src="{{ asset('webasset/images/mange.png')}}" style="border-radius:1rem ;width:100% ;height:200px" />
 				</div>
 			</div>
 		</div>
