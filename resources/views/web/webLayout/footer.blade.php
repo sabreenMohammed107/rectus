@@ -5,7 +5,7 @@
 			<div class="menu-content pb-50 col-lg-8">
 				<div class="title text-center">
 					<h4 class="text-color" style="font-family:pruistin;font-size:30px">Get in Touch</h4>
-					<h1 class="mb-10" style="font-size:30px">We Would Love To Hear From You!</h1>
+					<h1 class="mb-10" style="font-size:30px">Your feedback matters to us</h1>
 					<p>Dedicated to ongoing enhancement</p>
 				</div>
 			</div>
