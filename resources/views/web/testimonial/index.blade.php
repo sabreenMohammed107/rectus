@@ -21,31 +21,31 @@
 					<div class="title text-center">
 						<h4 class="text-color" style="font-family:pruistin;font-size:30px">Testimonials</h4>
 						<h1 class="mb-10" style="font-family:;font-size:30px">Testimonials</h1>
-						<p>We will never stop improving</p>
+						<p>Dedicated to ongoing enhancement</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 video-right justify-content-center align-items-center d-flex relative">
 					<div class="overlay overlay-bg"></div>
-					
+
                     <div class="video">
 	         <iframe width="560" height="315" src="{{ asset('uploads/vedio')}}/{{ $testimonial->testimonials_video_url }}?autoplay=1" frameborder="0" allowfullscreen></iframe>
-			
+
 		     </div>
 				</div>
 				<div class="col-lg-6 info-area-right">
 					<h4>	WHAT DO OUR DELEGATES AND CLIENTS SAY ABOUT US?</h4>
 
 					<br />
-					
+
 					<p>
-				
+
 					We are always delighted to receive positive comments regarding our courses.
 Here are some of our many testimonials. Feedback from our clients is most important to us. Client feedback enables us to continuously develop and improve our course offerings based on the experiences and opinions of former course participants.  In this section, we would like to share some of the feedback that we have received from individuals and companies.  We also share regular updates on our social media pages (Facebook, LinkedIn & Twitter) so please check us out if you want to see more recent updates.
 
 					</p>
-					
+
 					<p>
 					The first comments have been made by our open-course delegates who have attended our wide range of courses and the last testimonials are from a few of our clients about the experience they had with us with In-House training.					</p>
 				</div>
@@ -54,7 +54,7 @@ Here are some of our many testimonials. Feedback from our clients is most import
 	</section>
 	<!-- End course-mission Area -->
 
-	
+
 
 	<!-- Start review Area -->
 	<div class="container">
@@ -63,7 +63,7 @@ Here are some of our many testimonials. Feedback from our clients is most import
 				<div class="title text-center">
 					<h4 class="text-color" style="font-family:pruistin;font-size:30px">Reviews</h4>
 					<h1 class="mb-10" style="font-family:;font-size:30px">Reviews</h1>
-					<p>We will never stop improving</p>
+					<p>Dedicated to ongoing enhancement</p>
 				</div>
 			</div>
 		</div>
@@ -85,24 +85,24 @@ Here are some of our many testimonials. Feedback from our clients is most import
                                 @else
 								<span class="fa fa-star"></span>
                                 @endif
-								
+
 							</div>
                             @endforeach
 						</div>
 						<p>
-{!!$review->reviewer_text!!}						
+{!!$review->reviewer_text!!}
 </p>
 					</div>
 					@endforeach
 					@endif
-					
+
 				</div>
 			</div>
-		
-			
+
+
 		</div>
 	</section>
-	<!-- End review Area -->	
+	<!-- End review Area -->
 
 	<!-- Start gallery Area -->
 	<section class="gallery-area section-gap">
@@ -112,7 +112,7 @@ Here are some of our many testimonials. Feedback from our clients is most import
 					<div class="title text-center">
 						<h4 class="text-color" style="font-family:pruistin;font-size:30px">Testimonials</h4>
 						<h1 class="mb-10" style="font-family:;font-size:30px">Images Gallery</h1>
-						<p>We will never stop improving</p>
+						<p>Dedicated to ongoing enhancement</p>
 					</div>
 				</div>
 			</div>
@@ -123,7 +123,7 @@ Here are some of our many testimonials. Feedback from our clients is most import
 						<div class="single-imgs relative">
 							<div class="overlay overlay-bg"></div>
 							<div class="relative">
-                           
+
 								<img class="img-fluid" style="height:250px" src="{{ asset('uploads/gallery')}}/{{ $galleries['0']['image_path']}}" alt="">
 							</div>
 						</div>

@@ -328,7 +328,7 @@
 				<div class="title text-center">
 					<h4 class="text-color" style="font-family:pruistin;font-size:30px;padding-top:50px">Upcoming Courses</h4>
 					<h1 class="mb-10" style="font-size:30px">Upcoming Courses We Offer</h1>
-					<p>We will never stop improving</p>
+					<p>Dedicated to ongoing enhancement</p>
 				</div>
 			</div>
 		</div>
@@ -383,7 +383,7 @@
 		<div class="title text-center">
 			<h4 class="text-color" style="font-family:pruistin;font-size:30px;padding-top:50px">Our Clients</h4>
 			<h1 class="mb-10" style="font-size:30px">Our Clients</h1>
-			<p>We will never stop improving</p>
+			<p>Dedicated to ongoing enhancement</p>
 		</div>
 	</div>
 </div>
@@ -416,7 +416,7 @@
 		<div class="title text-center">
 			<h4 class="text-color" style="font-family:pruistin;font-size:30px;padding-top:50px">RECTUS in Numbers</h4>
 			<h1 class="mb-10" style="font-size:30px">RECTUS in Numbers</h1>
-			<p>We will never stop improving</p>
+			<p>Dedicated to ongoing enhancement</p>
 		</div>
 	</div>
 </div>
@@ -452,7 +452,7 @@
 				<div class="title text-center">
 					<h4 class="text-color" style="font-family:pruistin;font-size:30px;padding-top:50px">Our Experienced Instructors</h4>
 					<h1 class="mb-10" style="font-size:30px">Meet Your Trainer</h1>
-					<p>We will never stop improving</p>
+					<p>Dedicated to ongoing enhancement</p>
 				</div>
 			</div>
 		</div>
@@ -506,7 +506,7 @@
 		<div class="title text-center">
 			<h4 class="text-color" style="font-family:pruistin;font-size:30px;padding-top:50px">Our Partners</h4>
 			<h1 class="mb-10" style="font-size:30px">Our Partners</h1>
-			<p>We will never stop improving</p>
+			<p>Dedicated to ongoing enhancement</p>
 		</div>
 	</div>
 </div>
@@ -541,7 +541,7 @@
 		<div class="title text-center">
 			<h4 class="text-color" style="font-family:pruistin;font-size:30px;padding-top:50px">RECTUS Schedules</h4>
 			<h1 class="mb-10" style="font-size:30px">Download Complete RECTUS Schedules Here</h1>
-			<p>We will never stop improving</p>
+			<p>Dedicated to ongoing enhancement</p>
 		</div>
 	</div>
 </div>

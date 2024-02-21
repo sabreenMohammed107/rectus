@@ -22,24 +22,13 @@
 				</div>
 				<div class="col-lg-6 info-area-right">
 					<h1>
-					Who we are 
+					Who we are
 					</h1>
 					<p>
-					We are an international engineering & management training and consulting firm, providing training programs and consulting services to hundreds of organizations in UK and abroad. We have built our reputation on providing innovative solutions and custom-designed training programs to address problems and challenges facing our clients in rapidly changing times. Since 2000, we have trained more than 25,000 people who have applied effective time-saving procedures and techniques to increase productivity, ultimately resulting in an improved bottom line for our clients.					</p>
+                        RECTUS Training & Consultancy is a leading organization in the field of strategy implementation and behavioural training and consulting. Our basic ability lies in successfully supporting the organizational strategies with people, processes, and systems (Information Technology) in order to improve the transformational or cultural performance and make the operations more effective.</p>
 					<br>
 					<p>
-					BTS offers you high quality, professional services that will increase your productivity and decrease your expenses.
-<br>
-					We strive to:
-					<ul>
-					<li>•	Have a direct effect upon your profitability</li>
-					<li>•	Help you in your pursuit of excellence</li>
-					<li>•	Assist you in implementing and achieving your strategic plans</li>
-					<li>•	Enhance your image within your industry</li>
-</ul>
-
-
-</p>
+                        Our team comprises of highly talented, determined, enthused, active, and experienced professionals, who possess years of experience and expertise and put in their best efforts in every project. We have been able to earn reputation, trustworthiness, and goodwill through our wide-ranging training programs and consulting solutions that cover a huge section of subjects and aptitude areas. Different types of course delivery formats are designed by us so as to fulfill the individual needs of the trainees and customize the training schedules. We work closely with our clients and try our best to understand their objectives and help them overcome the challenges they are facing constantly. We come up with unique solutions that will fit your organizational requirements.</p>
 				</div>
 			</div>
 		</div>
@@ -53,8 +42,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<blockquote class="generic-blockquote">
-						Our vision is to consistently deliver excellent training courses and seminars which set the highest standards in our industry.						</blockquote>
-					</div>
+                            We have our dedicated teams that encourage our clients to explore and utilize their full potential and empower them to make the best use of their available tools and resources					</div>
 				</div>
 			</div>
 		</div>
@@ -68,12 +56,11 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<blockquote class="generic-blockquote">
-						<ul>
-					<li>	•	Promote and support employers and employees in their continuous professional and organisational development whilst empowering them through the provision of innovative, high-quality workplace learning programs, resources and services.</li>
-					<li>•	Earn the trust and confidence of our clients by providing the most reliable training and consulting products and services in the region.<li>
-					<li>•	Ensure that our services are aligned with our client's needs and to strive for excellence in every way.</li>
-					<li>•	Inspire and encourage our clients to be enthusiastic about what they do by providing them opportunities associated with those newly acquired skills.</li>
-						</ul>
+						<p>
+                            We aim to assist our clients in optimizing the capacities of their existing assets and resources and in improving the performance of their workforce to ensure their business reach new heights of development. We help our clients to get the maximum business output that would not have been possible for them to achieve on their own.                        </p>
+                        <p>
+                            There are certain sets of skills and behaviors that both individuals and teams need to possess in order to reach the pinnacle of success in their professional career at present as well as, in the future – we guide the professionals to reach that point of success and development by providing them with the required skills and expertise. We are always there to listen to your problem and provide our solution to it as well as, take the necessary actions to drive you towards your goals.
+                        </p>
 						</blockquote>
 					</div>
 				</div>
@@ -90,9 +77,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<blockquote class="generic-blockquote">
-						BTS is a client-centric service provider where our service quality focuses on ultimate customer satisfaction which serves as the cornerstone of the business. We see our success in the success of our clients in reaching their goals - that's the value we place.
- 
- Our customer service strategy is evaluated constantly throughout the year to measure our performance to meet the customers' expectations and their needs along with the associated performances of venues and trainers. We focus on building excellent relationships with our clients to enhance their satisfaction with us which is our pride and the tool to benchmark and measure our success.
+                            RECTUS is a client-centric service provider where our service quality focuses on ultimate customer satisfaction which serves as the cornerstone of the business. We see our success in the success of our clients in reaching their goals - that's the value we place. Our customer service strategy is evaluated constantly throughout the year to measure our performance to meet the customers' expectations and their needs along with the associated performances of venues and trainers. We focus on building excellent relationships with our clients to enhance their satisfaction with us which is our pride and the tool to benchmark and measure our success.
 					 </div>
 				</div>
 			</div>
@@ -129,7 +114,7 @@
 		<div class="title text-center">
 			<h4 class="text-color" style="font-family:pruistin;font-size:30px;padding-top:50px">Our Clients</h4>
 			<h1 class="mb-10" style="font-size:30px">Our Clients</h1>
-			<p>We will never stop improving
+			<p>Dedicated to ongoing enhancement
 
 </p>
 		</div>
@@ -144,14 +129,14 @@
 					<div class="thumb-wrap relative">
 						<div class="thumb relative">
 							<div class="overlay overlay-bg"></div>
-							<img class="img-fluid" 
+							<img class="img-fluid"
 							src="{{ asset('uploads/clients')}}/{{ $client->client_logo_url }}" alt="{{ $client->client_name }}"
 							style="max-height:100px;max-width:200px">
 						</div>
 					</div>
 				</div>
 				@endforeach
-				
+
 			</div>
 		</div>
 	</div>

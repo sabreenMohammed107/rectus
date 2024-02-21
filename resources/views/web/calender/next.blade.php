@@ -1575,7 +1575,7 @@ td:first-child { width:75%; }
 				<div class="wrap">
 					<h1 class="text-white">Download BTS Training Calendar</h1>
 					<p>
-					We will never stop improving					</p>
+					Dedicated to ongoing enhancement					</p>
 					<a class="primary-btn" id="downloadCurrentCalender" >
 							Calender {{$yearCal}}
 				               </a>

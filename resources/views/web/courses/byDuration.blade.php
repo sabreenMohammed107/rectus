@@ -7,7 +7,7 @@
             <div class="about-content col-lg-12">
                 <h1 class="text-white"> {{$courseSubCategory->subcategory_en_name }}</h1>
                 <p class="text-color link-nav"><a href="{{ url('/') }}">Home </a>
-                 <span class="lnr lnr-arrow-right"></span> 
+                 <span class="lnr lnr-arrow-right"></span>
                 <a href="{{ url('category/'.$courseSubCategory->course_category_id) }}">{{ $courseCategory->category_en_name }}</a>
                 </p>
             </div>
@@ -129,7 +129,7 @@
                 <div class="container title text-center">
                     <h4 class="text-color" style="font-family:pruistin;font-size:30px">Technical Training</h4>
                     <h1 class="mb-10" style="font-size:30px">Courses We Offer</h1>
-                    <p>We will never stop improving</p>
+                    <p>Dedicated to ongoing enhancement</p>
                 </div>
             </div>
         </div>
@@ -249,7 +249,7 @@
             <div class="title text-center">
                 <h4 class="text-color" style="font-family:pruistin;font-size:30px">Technical Training</h4>
                 <h1 class="mb-10" style="font-size:30px">Get Your Best Offer</h1>
-                <p>We will never stop improving</p>
+                <p>Dedicated to ongoing enhancement</p>
             </div>
         </div>
     </div>
@@ -264,12 +264,12 @@
                 Quality Policy
                 </h1>
                 <p>
-                               
+
                     Providing services with a high quality that are satisfying the requirements  <br>
                 	Appling the specifications and legalizations to ensure the quality of service.  <br>
                	Best utilization of resources for continually improving the business activities.<br>
-            
-             
+
+
                               </p>
                 <div class="row details-content">
                     <div class="col single-detials">
@@ -311,10 +311,10 @@
                                         <option  value='{{$objectCourse->id}}' >
                                          {{ $objectCourse->course_en_name }}</option>
                                            @endforeach
-                            
+
                         </select>
-                         
-								
+
+
 							</div>
 							<button type="submit" class="primary-btn text-uppercase" style="background-color:#32a2a8">Submit</button>
 						</form>

@@ -23,7 +23,7 @@
 					<div class="container title text-center">
 						<h4 class="text-color" style="font-family:pruistin;font-size:30px">Technical Training</h4>
 						<h1 class="mb-10" style="font-size:30px">Courses We Offer</h1>
-						<p>We will never stop improving</p>
+						<p>Dedicated to ongoing enhancement</p>
 					</div>
 				</div>
 			</div>
@@ -52,10 +52,10 @@
                             </a>
                             <p style="margin-bottom:0px">
                             {{ Str::limit($round->course->course_en_desc, 100, ' ...') }}
-                             
+
                             </p>
                         </div>
-                        
+
                         <a href="{{ url('courseDetails/'.$round->course->id) }}" style="color:#32a2a8">Read More <i class="fas fa-caret-right"></i></a>
                     </td>
                     <td style="width:15%;">
@@ -79,10 +79,10 @@
                     </td>
                 </tr>
                         @endforeach
-						
+
 					</tbody>
 				</table>
-				
+
 			</div>
 		</div>
 	</section>
@@ -96,7 +96,7 @@
                 <div class="title text-center">
                     <h4 class="text-color" style="font-family:pruistin;font-size:30px">Technical Training</h4>
                     <h1 class="mb-10" style="font-family:;font-size:30px">Upcoming Courses</h1>
-                    <p>We will never stop improving</p>
+                    <p>Dedicated to ongoing enhancement</p>
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@
                     </a>
                     <p>
                     {{ Str::limit($randomRound->course->course_en_desc, 200, ' ...') }}
-                      
+
                     </p>
                 </div>
                 <button type="submit" class="primary-btn" style="width:100%">Book Courses</button>
@@ -146,7 +146,7 @@
             <div class="title text-center">
                 <h4 class="text-color" style="font-family:pruistin;font-size:30px">Technical Training</h4>
                 <h1 class="mb-10" style="font-size:30px">Get Your Best Offer</h1>
-                <p>We will never stop improving</p>
+                <p>Dedicated to ongoing enhancement</p>
             </div>
         </div>
     </div>
@@ -161,12 +161,12 @@
                 Quality Policy
                 </h1>
                 <p>
-                               
+
                     Providing services with a high quality that are satisfying the requirements  <br>
                 	Appling the specifications and legalizations to ensure the quality of service.  <br>
                	Best utilization of resources for continually improving the business activities.<br>
-            
-             
+
+
                               </p>
                 <div class="row details-content">
                     <div class="col single-detials">
@@ -208,10 +208,10 @@
                                         <option  value='{{$objectCourse->id}}' >
                                          {{ $objectCourse->course_en_name }}</option>
                                            @endforeach
-                                  
+
                         </select>
-                         
-								
+
+
 							</div>
 							<button type="submit" class="primary-btn text-uppercase" style="background-color:#32a2a8">Submit</button>
 						</form>

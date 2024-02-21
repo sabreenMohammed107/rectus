@@ -52,7 +52,7 @@
 								<a href="{{ route('accreditations') }}">Accreditations</a>
 							</li>
 							<li class="menu-has-children">
-								<a href="{{ route('tesimonial') }}">Testimonials</a>
+								{{-- <a href="{{ route('tesimonial') }}">Testimonials</a> --}}
 							</li>
 						</ul>
 					</li>

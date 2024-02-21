@@ -6,7 +6,7 @@
 				<div class="title text-center">
 					<h4 class="text-color" style="font-family:pruistin;font-size:30px">Get in Touch</h4>
 					<h1 class="mb-10" style="font-size:30px">We Would Love To Hear From You!</h1>
-					<p>We will never stop improving</p>
+					<p>Dedicated to ongoing enhancement</p>
 				</div>
 			</div>
 		</div>
@@ -79,7 +79,7 @@
 						<ul>
 							<li><a href="{{url('/aboutUs')}}" >About Us</a></li>
 							<li><a href="{{ route('accreditations') }}">Accreditations</a></li>
-							<li><a href="{{ route('tesimonial') }}">Testimonials</a></li>
+							{{-- <li><a href="{{ route('tesimonial') }}">Testimonials</a></li> --}}
 							<li><a href="{{url('/consunltancy')}}">Consultancy</a></li>
 						</ul>
 					</div>

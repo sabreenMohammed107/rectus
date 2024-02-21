@@ -24,7 +24,7 @@
                 <div class="container title text-center">
                     <h4 class="text-color" style="font-family:pruistin;font-size:30px">Technical Training</h4>
                     <h1 class="mb-10" style="font-size:30px">Courses We Offer</h1>
-                    <p>We will never stop improving</p>
+                    <p>Dedicated to ongoing enhancement</p>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
                 <div class="title text-center">
                     <h4 class="text-color" style="font-family:pruistin;font-size:30px">Technical Training</h4>
                     <h1 class="mb-10" style="font-family:;font-size:30px">Upcoming Courses</h1>
-                    <p>We will never stop improving</p>
+                    <p>Dedicated to ongoing enhancement</p>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                     </a>
                     <p>
                     {{ Str::limit($randomRound->course->course_en_desc, 200, ' ...') }}
-                      
+
                     </p>
                 </div>
                 <button type="submit" class="primary-btn" style="width:100%">Book Courses</button>
@@ -100,7 +100,7 @@
             <div class="title text-center">
                 <h4 class="text-color" style="font-family:pruistin;font-size:30px">Technical Training</h4>
                 <h1 class="mb-10" style="font-size:30px">Get Your Best Offer</h1>
-                <p>We will never stop improving</p>
+                <p>Dedicated to ongoing enhancement</p>
             </div>
         </div>
     </div>
@@ -183,10 +183,10 @@
     $(document).ready(function() {
 
 
-       
+
         //pagination
         $(document).on('click', '#category .pagination a', function(event) {
-           
+
             event.preventDefault();
             var page = $(this).attr('href').split('page=')[1];
 
@@ -195,7 +195,7 @@
 
 
         function fetch_data(page) {
-           
+
             $.ajax({
 
                 url: "{{ URL::to('fetch_data_search') }}?page=" + page,
