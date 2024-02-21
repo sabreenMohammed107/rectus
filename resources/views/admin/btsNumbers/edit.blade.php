@@ -3,12 +3,12 @@
 
 
 @section('crumb')
-    
+
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
       <a href="{{url('admin')}}"><i class="material-icons"></i> {{ __('Home') }} </a></li>
-      <li class="breadcrumb-item active" aria-current="page"> {{ __('BTS Number') }} </li>
+      <li class="breadcrumb-item active" aria-current="page"> {{ __('Rectus Number') }} </li>
     </ol>
   </nav>
 
@@ -33,7 +33,7 @@
 				</div>
 				@endif
 </div>
-<div class="col-md-12">  
+<div class="col-md-12">
 <form action="{{route('number.update',$number->id)}}" method="POST"  >
                   <div class="ms-auth-container row">
                   {{ csrf_field() }}
@@ -47,9 +47,9 @@
                             </div>
                           </div>
                          </div>
-                    
-                         
-                       
+
+
+
                           <div class="col-md-8">
                             <div class="form-group">
                               <label>Number_value</label>
@@ -69,7 +69,7 @@
                           @endif
                        <label for="category">active Number</label>
                      </div>
-                             
+
                             </div>
                     </div>
                     <div class="input-group d-flex justify-content-end text-center">
@@ -77,7 +77,7 @@
                       <input type="submit" value="Add" class="btn btn-success ">
                     </div>
    </form>
-   
+
    </div>
 		</div>
 	</div>
