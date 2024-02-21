@@ -26,7 +26,7 @@ Terms & Conditions
 						<div>
 							<h6>1 ) Registration </h6>
 							<ul class="list-links  div-scroll" style="list-style:square">
-								<li><p>	Registration for courses can be made via our website  (<a href="www.Rectus.com" style="color:#32a2a8">www.Rectus.com</a>) or by contacting our Registration Desk on +971 2 6452630 or at  <a href="info@Rectus.com" style="color:#32a2a8">info@Rectus.com</a></p></li>
+								<li><p>	Registration for courses can be made via our website  (<a href="www.Rectus.com" style="color:#32a2a8">www.Rectus.com</a>) or by contacting our Registration Desk on +971 2 6452630 or at  <a href="info@rectustraining.com" style="color:#32a2a8">info@rectustraining.com</a></p></li>
 								<li><p>	For on-line bookings, please select the course that you require and click on the “Register Now” button, following the instructions step by step</p></li>
 								<li><p>	Upon receipt of booking in order, enrollment on the respective training course will be confirmed by Registration Team with all necessary documentation.</p></li>
                                 <li><p>	For Company restoration can be by Official restoration E-mail, P.O. or Service contract.</p></li>
@@ -55,7 +55,7 @@ Terms & Conditions
 							<h6>4 )Cancellation by Client</h6>
 							<ul class="list-links  div-scroll" style="list-style:square">
 								<li><p>	Once you have completed your booking, received your confirmation of enrolment and a dated payment Invoice, you are deemed to have a contract with Rectus. You reserve the right to cancel this contract given the below terms</p></li>
-								<li><p>	All cancellations must be received in writing at <a href="#" style="color:#32a2a8">info@Rectus.com</a>  at least 15 days prior to the training
+								<li><p>	All cancellations must be received in writing at <a href="#" style="color:#32a2a8">info@rectustraining.com</a>  at least 15 days prior to the training
                                 </p></li>
 								<li><p>	After the cancellation period has expired, consideration may be given, on a case to case basis, if a registered delegate nominates a substitute on the same course, shifts to next session of the course or moves to a new course.</p></li>
 								<li><p>	For a cancellation request made on or before the statutory 15 day cancellation period, a credit note issued which can be used against future course fees. Or Full refund of the Exact amount received with the same method received (not include bank charges).</p></li>

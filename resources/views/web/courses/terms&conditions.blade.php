@@ -125,7 +125,7 @@
                 <p>Abu Dhabi, UAE</p>
                 <p><span style="color:#32a2a8">Tel :</span> +971 2 557 7389</p>
                 <p><span style="color:#32a2a8">Fax :</span> +971 2 557 7128</p>
-                <p><span style="color:#32a2a8">E :</span><a> info@petroknowledge.com</a></p>
+                <p><span style="color:#32a2a8">E :</span><a> petroknowledge.com</a></p>
                 <p><span style="color:#32a2a8">E :</span><a> customize@petroknowledge.com</a></p>
                 <div class="sidebar-widgets" style="padding-bottom:0px">
                     <div class="widget-wrap">

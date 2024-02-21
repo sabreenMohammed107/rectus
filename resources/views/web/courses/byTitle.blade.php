@@ -241,7 +241,7 @@
                 <h1 class="text-white">
                 Quality Policy
                 </h1>
-                <p>
+                <p style="color: #b8b7b7;" >
 
                     Providing services with a high quality that are satisfying the requirements  <br>
                 	Appling the specifications and legalizations to ensure the quality of service.  <br>
@@ -255,14 +255,14 @@
                         <a href="#">
                             <h4>Technical Team</h4>
                         </a>
-                        <p>
+                        <p style="color: #b8b7b7;" >
                             Rectus keen to selects highly technical instructors based on professional field experience                    </div>
                     <div class="col single-detials">
                         <span class="lnr lnr-license" style="color:#32a2a8"></span>
                         <a href="#">
                             <h4>Strengths and capabilities</h4>
                         </a>
-                        <p>
+                        <p style="color: #b8b7b7;" >
                         Since Rectus was established, it considered a training partner for world class oil & gas institution
                                                 </p>
                     </div>
