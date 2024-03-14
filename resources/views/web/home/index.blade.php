@@ -156,14 +156,36 @@
 
 		<div class="wrapper" >
 
+                <div class=" h-100">
+                    {{-- <img   src="{{ asset('webasset/images/banner-bg.jpg')}}" alt="Image de naruto usada de fondo">
 
-		{{-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" >
-		<source src="{{ asset('uploads/vedio')}}/{{ $homeSlider->slider_video_url }}" type="video/mp4">
-				</video> --}}
-                <div class="gradient box h-100">
-                    <img   src="{{ asset('webasset/images/banner-bg.jpg')}}" alt="Image de naruto usada de fondo">
-
-                    <p>EXPLORE YOUR OPPORTUNITIES AT  - RECTUS</p>
+                    <p>EXPLORE YOUR OPPORTUNITIES AT  - RECTUS</p> --}}
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="{{ asset('webasset/images/banner-bg.jpg')}}" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="{{ asset('webasset/images/accreditation.jpg')}}" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="{{ asset('webasset/images/about.jpg')}}" alt="Third slide">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
                 </div>
 
 
@@ -179,14 +201,15 @@
 <div class="banner-area relative" id="home" style="z-index:8;top:20px">
 	<div id="search-section" class="search-section section-padding feature-area">
 		<div class="row" style="padding:0px;margin:0px">
-			<div class="col-lg-4 col-md-12 col-sm-12">
+			{{-- <div class="col-lg-4 col-md-12 col-sm-12">
 				<div class="row">
 					<div style="width:250px;height:100px;background-color:#32a2a8;margin:0px;padding:0px;;margin-bottom: 10px">
 						<h3 style="padding-top:10%;padding-left:10%;color:#fff">Find Your Specific Training Course</h3>
 					</div>
 					<div class="arrow-right"></div>
 				</div>
-			</div>
+			</div> --}}
+            <div class="col-lg-3"></div>
 			<div class="col-lg-8">
 				<div class="search-section-padding">
 					<form  action="{{route('searchForm')}}" class="search-area">
@@ -244,7 +267,7 @@
 						$catId=1;
 						?>
 					<a href="{{ url('category/'.$catId) }}" >
-						<h4><i class="fas fa-cogs" style="color:#fff;font-size:20px"></i> ENGINEERING & TECHNICAL SERVICES </h4>
+						<h4><i class="fas fa-cogs" style="color:#ee565c;font-size:20px"></i> ENGINEERING & TECHNICAL SERVICES </h4>
 					</a>
 					</div>
 					<div class="desc-wrap">
@@ -265,7 +288,7 @@
 						$catId=2;
 						?>
 						<a href="{{ url('category/'.$catId) }}">
-						<h4><i class="fas fa-users" style="color:#fff;font-size:20px"></i> LEADERSHIP AND PROFESSIONAL GROWTH</h4>
+						<h4><i class="fas fa-users" style="color:#ee565c;font-size:20px"></i> LEADERSHIP AND PROFESSIONAL GROWTH</h4>
 				</a>
 					</div>
 					<div class="desc-wrap">
@@ -283,7 +306,7 @@
 						$catId=3;
 						?>
 						<a href="{{ url('category/'.$catId) }}">
-						<h4><i class="fas fa-graduation-cap" style="color:#fff;font-size:20px"></i> TALENT MANAGEMENT AND ORGANIZATIONAL DEVELOPMENT</h4>
+						<h4><i class="fas fa-graduation-cap" style="color:#ee565c;font-size:20px"></i> TALENT MANAGEMENT AND ORGANIZATIONAL DEVELOPMENT</h4>
 					</a>
 					</div>
 					<div class="desc-wrap">
@@ -302,16 +325,15 @@
 						$catId=4;
 
 						?>
-						<a href='{{url ("/courses/$catId/$catId/date") }}'>
-						<h4><i class="fas fa-book-reader" style="color:#fff;font-size:20px"></i> BUSINESS OPERATIONS AND COMPLIANCE</h4>
+						<a href='{{ url('category/'.$catId) }}'>
+						<h4><i class="fas fa-book-reader" style="color:#ee565c;font-size:20px"></i> BUSINESS OPERATIONS AND COMPLIANCE</h4>
 					</a>
 					</div>
 					<div class="desc-wrap">
 						<p>
-						تقدم بى تى إس للتدريب والإستشارات الإدارية حلول التدريب الإحترافي. ذات مستوى عالمي بمهنية وجودة، لتمكين المنظمات والأفراد العاملين في القطاعين الحكومي والخاص
-						</p>
+                            Energy markets are increasingly global and interconnected. Energy price volatility has increased significantly over the past few years, driven by geopolitical instability,</p>
 
-						<a href='{{url ("/courses/$catId/$catId/date") }}'>More Details</a>
+						<a href='{{ url('category/'.$catId) }}'>More Details</a>
 					</div>
 				</div>
 			</div>

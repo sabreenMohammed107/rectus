@@ -25,15 +25,10 @@
 			<div class="title text-center">
 				<h4 class="text-color" style="font-family:pruistin;font-size:30px;padding-top:50px">Explore Training Subjects</h4>
 				<h1 class="mb-10" style="font-size:30px">{{$category->category_en_name}}</h1>
-				@if($category->id !=4)
-				<div style="padding:0 150px;text-align: justify;color:#777">
-				<p>{{$category->category_en_description}}</p>
+				<div style="padding:0 150px;text-align: justify;color:#010101">
+				<p>{!! $category->category_en_description !!}</p>
 				</div>
-				@else
-				<div style="padding:0 150px;text-align: right;color:#777">
-				<p>{{$category->category_en_description}}</p>
-				</div>
-				@endif
+
 			</div>
 		</div>
 	</div>
