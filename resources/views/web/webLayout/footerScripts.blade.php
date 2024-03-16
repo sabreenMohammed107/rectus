@@ -17,8 +17,8 @@
 
 <!-- select search  -->
 
-   
-  
+
+
  <script type="text/javascript">function add_chatinline(){var hccid=17729003;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
 add_chatinline(); </script>
 <!--Select date-->
@@ -65,7 +65,7 @@ add_chatinline(); </script>
 
 				duration: 4000,
 				easing: 'linear',
-			
+
 				refreshInterval:'300',
 				step: function() {
 					$this.text(Math.floor(this.countNum));
@@ -80,7 +80,7 @@ add_chatinline(); </script>
 
 
 	});
-} 
+}
     });
 </script>
 
@@ -92,11 +92,11 @@ add_chatinline(); </script>
 			$('#alertDiv').hide();
 			location.reload();
 		});
-			
+
     // $("#video")[0].src += "&autoplay=1";
     // ev.preventDefault();
- 
-  
+
+
 });
 		$('.message-icon').click(function() {
 			$('.chat').fadeToggle(500);
