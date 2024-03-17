@@ -256,7 +256,7 @@
                                 </div>
                                 <div class="col-md-3" style="margin:0px 5px 10px 0px">
                                     <input type="submit" value="Search" class="form-control btn text-uppercase"
-                                        style="background-color:#32a2a8;color:#fff;" />
+                                        style="background-color:#32a2a8;color:#fff !important;" />
                                 </div>
                             </div>
                         </form>
