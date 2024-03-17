@@ -5206,5 +5206,16 @@ font-size: 11px;
         top:50px;
     }
 }
+.form-control {
+    color:#030303 !important;
+}
 
+::placeholder {
+    color: #030303 !important;
+    opacity: 1; /* Firefox */
+  }
+
+  ::-ms-input-placeholder { /* Edge 12-18 */
+    color: #030303 !important;
+  }
 /*others */
