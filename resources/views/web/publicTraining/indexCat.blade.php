@@ -1,9 +1,9 @@
-<div class="col-lg-10 col-md-8 col-sm-12">
+<div class="col-lg-9 col-md-8 col-sm-12">
 						<!-- Tab panes -->
 						<div  class="tab-content">
 							<div class="tab-pane active" >
 						@foreach($trainingCategories as $trAll)
-							
+
 								<div class="col-lg-4 col-md-6 col-sm-12">
 									<div class="single-cat-widget">
 										<div class="content relative">
@@ -23,11 +23,11 @@
 										</div>
 									</div>
 								</div>
-							
+
 						@endforeach
 							<div class="col-lg-4"></div>
 							<div class="col-lg-8 align-content-center">
-								
+
 							</div>
 
 						</div>
@@ -35,6 +35,6 @@
 					</div>
 					<div class="clearfix"></div>
                     <div id="categoryAll" class="blog-pagination justify-content-center"  >
-						
+
 						{!! $trainingCategories->links() !!}
 						</div>

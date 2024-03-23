@@ -15,38 +15,8 @@
                     class="fab fa-instagram"></i></a></div>
     </div>
     <!--End Social Icon-->
-
-    <!--Start Chat Icon-->
-    <!-- <div class="chat">
-         Send us your message
-         <div class="messages-box clearfix" id="messages-box">
-          <div class="message">
-           <i class="fa fa-close"></i>
-           <p>hellow first message</p>
-          </div>
-          <div class="message">
-           <i class="fa fa-close"></i>
-           <p>hellow first message</p>
-          </div>
-         </div> -->
-
-    <!-- /.massage-box -->
-
-    <!-- <div class="create-massage">
-          <form>
-           <input type="text" placeholder="type message">
-           <button type="submit"><i class="fa fa-send"></i></button>
-          </form>
-         </div> -->
-    <!-- / .create-massage -->
-
     </div>
-    <!-- <div class="message-icon">
-         <i class="fas fa-comment-alt" style="font-size:60px;color:#32a2a8"></i>
-        </div> -->
-    <!--End Chat Icon-->
-
-    <!--Start Intro Section-->
+       <!--Start Intro Section-->
     <style>
         .video-wrapper {
             position: relative;
@@ -79,34 +49,47 @@
         .form-control::placeholder {
             font-weight: bold;
         }
-    </style>
-    <!-- <section id="intro">
 
+        .slide-image {
+            width: 100%;
+            height: 80vh;
+            object-fit: cover;
+            filter: brightness(0.6);
+        }
 
+        .slide-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            text-align: center;
+            padding: 1rem;
+        }
 
-         </div>
-         <div class="video-wrapper">
-         <video playsinline="playsinline" style="width: 100%;" autoplay="autoplay" muted="muted" loop="loop"  >
-             <source src="{{ asset('uploads/vedio') }}/{{ $homeSlider->slider_video_url }}" type="video/mp4">
-            </video>
+        .slide-title {
+            width: 100%;
+            max-width: 50rem;
+            color: white;
+            font-size: 2rem;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
 
-          <div class="container">
-          <div class="text-holder">
+        .slide-desc {
+            width: 100%;
+            max-width: 50rem;
+            color: lightgray;
+            font-size: 1rem;
+            font-weight: 300;
+        }
 
-             <h1 class="text-uppercase" style="color:#000000">
-              {{ $homeSlider->slider_en_title }}
-             </h1>
-             <mark class="" style="color:#ffffff;background-color:#212529;opacity:.7">
-              {{ $homeSlider->slider_en_subtitle }}
-             </mark>
-
-        </div>
-
-          </div>
-        </div>
-
-        </section> -->
-    <style>
         .wrapper {
             position: absolute;
             top: 0;
@@ -159,7 +142,6 @@
             font-weight: bold;
 
         }
-
     </style>
     <section id="intro">
         <div class="banner-area relative h-100" id="home">
@@ -168,27 +150,65 @@
 
             <div class="wrapper">
 
-                <div class=" h-100">
-                    {{-- <img   src="{{ asset('webasset/images/banner-bg.jpg')}}" alt="Image de naruto usada de fondo">
+                <div class="h-100">
 
-                    <p>EXPLORE YOUR OPPORTUNITIES AT  - RECTUS</p> --}}
                     <div class="active-popular-carusel1">
 
                         <div class="single-popular-carusel">
 
-                                    <img  src="{{ asset('webasset/images/banner-bg.jpg') }}"
-                                        alt="img">
+                            <img class="slide-image" src="{{ asset('webasset/images/slider/energy.jpg') }}" alt="img">
+                            <div class="slide-content">
+                                <h3 class="slide-title">ENGINEERING & TECHNICAL SERVICES </h3>
+
+
+                            </div>
 
                         </div>
-                            <div class="single-popular-carusel">
+                        <div class="single-popular-carusel">
 
-                                    <img src="{{ asset('webasset/images/accreditation.jpg') }}"
-                                        alt="img">
-                                </div>
-                            <div class="single-popular-carusel">
+                            <img class="slide-image" src="{{ asset('webasset/images/slider/leadership.jpg') }}" alt="img">
+                            <div class="slide-content">
+                                <h3 class="slide-title">LEADERSHIP AND PROFESSIONAL GROWTH</h3>
 
-                                    <img  src="{{ asset('webasset/images/about.jpg') }}" alt="img">
-                                </div>
+
+                            </div>
+                        </div>
+                        <div class="single-popular-carusel">
+
+                            <img class="slide-image" src="{{ asset('webasset/images/slider/talent.jpg') }}" alt="img">
+                            <div class="slide-content">
+                                <h3 class="slide-title">TALENT MANAGEMENT AND ORGANIZATIONAL DEVELOPMENT</h3>
+
+
+                            </div>
+                        </div>
+                        <div class="single-popular-carusel">
+
+                            <img class="slide-image" src="{{ asset('webasset/images/slider/bussiness.jpg') }}" alt="img">
+                            <div class="slide-content">
+                                <h3 class="slide-title">BUSINESS OPERATIONS AND COMPLIANCE</h3>
+
+
+                            </div>
+                        </div>
+                        <div class="single-popular-carusel">
+
+                            <img class="slide-image" src="{{ asset('webasset/images/slider/finance.jpg') }}" alt="img">
+                            <div class="slide-content">
+                                <h3 class="slide-title">FINANCIAL MANAGEMENT</h3>
+
+
+                            </div>
+                        </div>
+                        <div class="single-popular-carusel">
+
+                            <img class="slide-image" src="{{ asset('webasset/images/slider/information.jpg') }}" alt="img">
+                            <div class="slide-content">
+                                <h3 class="slide-title">INFORMATION TECHNOLOGY MANAGEMENT</h3>
+
+
+                            </div>
+                        </div>
 
 
 
@@ -209,14 +229,7 @@
     <div class="banner-area relative" id="home" style="z-index:8;top:20px">
         <div id="search-section" class="search-section section-padding feature-area">
             <div class="row" style="padding:0px;margin:0px">
-                {{-- <div class="col-lg-4 col-md-12 col-sm-12">
-				<div class="row">
-					<div style="width:250px;height:100px;background-color:#32a2a8;margin:0px;padding:0px;;margin-bottom: 10px">
-						<h3 style="padding-top:10%;padding-left:10%;color:#fff">Find Your Specific Training Course</h3>
-					</div>
-					<div class="arrow-right"></div>
-				</div>
-			</div> --}}
+
                 <div class="col-lg-3"></div>
                 <div class="col-lg-8">
                     <div class="search-section-padding">
@@ -224,7 +237,8 @@
 
                             <div class="row form-group">
                                 <div class="col-md-3" style="margin:0px 5px 10px 0px">
-                                    <input type="text" class="form-control" name="wordName" placeholder="Enter Course" />
+                                    <input type="text" class="form-control" name="wordName"
+                                        placeholder="Enter Course" />
                                 </div>
                                 <div class="col-md-3" style="margin:0px 5px 10px 0px">
                                     <select class="form-control selectbox " name="category_id">
@@ -347,9 +361,8 @@
                             </a>
                         </div>
                         <div class="desc-wrap">
-                            <p>
-                                Energy markets are increasingly global and interconnected. Energy price volatility has
-                                increased significantly over the past few years, driven by geopolitical instability,</p>
+                            <p>Energy markets are increasingly global and interconnected. Energy price volatility has
+                                increased ..</p>
 
                             <a href='{{ url('category/' . $catId) }}'>More Details</a>
                         </div>

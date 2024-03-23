@@ -32,7 +32,7 @@
 				<div class="col-sm-12">
 					<h3>Courses Category</h3>
 					<hr />
-					<div class="col-lg-2 col-md-4 col-sm-12">
+					<div class="col-lg-3 col-md-4 col-sm-12">
 						<!-- required for floating -->
 						<!-- Nav tabs -->
                         <?php
@@ -42,11 +42,11 @@
 						$it=5;
 						?>
 						<ul class="nav nav-tabs tabs-left sideways list-group">
-							<li ><a href="{{ route('publicTraining') }}" data-toggle="tab">All Training</a></li>
-							<li><a href="{{ url('technicalTraining/'.$techId) }}" data-toggle="tab">Technical Training</a></li>
-							<li><a href="{{ url('softTraining/'.$soft) }}" data-toggle="tab">Soft Skills Training</a></li>
-							<li><a href="{{ url('certiTraining/'.$certi) }}" data-toggle="tab">Certified Courses</a></li>
-							<li class="active"><a href="{{ url('it/'.$it) }}" data-toggle="tab">IT Courses</a></li>
+							<li ><a href="{{ route('publicTraining') }}" data-toggle="tab">Technical Categories</a></li>
+							<li><a href="{{ url('technicalTraining/'.$techId) }}" data-toggle="tab">Soft skills Categories</a></li>
+							<li class="active" ><a href="{{ url('softTraining/'.$soft) }}" data-toggle="tab">Certified Courses</a></li>
+							<li><a href="{{ url('certiTraining/'.$certi) }}" data-toggle="tab">BUSINESS OPERATIONS AND COMPLIANCE</a></li>
+							<li><a href="{{ url('it/'.$it) }}" data-toggle="tab">Information Technology ( IT )</a></li>
 						</ul>
 					</div>
                     <div id="itList">

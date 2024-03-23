@@ -1,9 +1,9 @@
-<div class="col-lg-10 col-md-8 col-sm-12">
+<div class="col-lg-9 col-md-8 col-sm-12">
 						<!-- Tab panes -->
 						<div  class="tab-content">
 							<div class="tab-pane active" >
 						@foreach($certiTraining as $cert)
-							
+
 								<div class="col-lg-4 col-md-6 col-sm-12">
 									<div class="single-cat-widget">
 										<div class="content relative">
@@ -17,18 +17,18 @@
 													<span></span>
 													<p style=" margin:auto;width:80%">
 													{{ Str::limit($cert->subcategory_en_description, 120, ' ...') }}
-													
+
 													</p>
 												</div>
 											</a>
 										</div>
 									</div>
 								</div>
-							
+
 						@endforeach
 							<div class="col-lg-4"></div>
 							<div class="col-lg-8 align-content-center">
-								
+
 							</div>
 
 						</div>
@@ -36,6 +36,6 @@
 					</div>
 					<div class="clearfix"></div>
                     <div id="categoryCert" class="blog-pagination justify-content-center"  >
-						
+
 						{!! $certiTraining->links() !!}
 						</div>
