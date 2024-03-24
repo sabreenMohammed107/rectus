@@ -42,12 +42,13 @@
 						$it=5;
 						?>
 						<ul class="nav nav-tabs tabs-left sideways list-group">
-							<li class="active"><a href="{{ route('publicTraining') }}" data-toggle="tab">Technical Categories</a></li>
-							<li><a href="{{ url('technicalTraining/'.$techId) }}" data-toggle="tab">Soft skills Categories</a></li>
-							<li><a href="{{ url('softTraining/'.$soft) }}" data-toggle="tab">Certified Courses</a></li>
+							<li class="active"><a href="{{ route('publicTraining') }}" data-toggle="tab">ENGINEERING & TECHNICAL SERVICES </a></li>
+							<li><a href="{{ url('technicalTraining/'.$techId) }}" data-toggle="tab">LEADERSHIP AND PROFESSIONAL GROWTH</a></li>
+							<li><a href="{{ url('softTraining/'.$soft) }}" data-toggle="tab">TALENT MANAGEMENT AND ORGANIZATIONAL DEVELOPMENT</a></li>
 							<li><a href="{{ url('certiTraining/'.$certi) }}" data-toggle="tab">BUSINESS OPERATIONS AND COMPLIANCE</a></li>
-							<li><a href="{{ url('it/'.$it) }}" data-toggle="tab">Information Technology ( IT )</a></li>
-						</ul>
+							<li><a href="{{ url('it/'.$it) }}" data-toggle="tab">FINANCIAL MANAGEMENT</a></li>
+                            <li><a href="{{ url('it/'.$it) }}" data-toggle="tab">INFORMATION TECHNOLOGY MANAGEMENT</a></li>
+                        </ul>
 					</div>
                     <div id="contentList">
                       @include('web.publicTraining.indexCat')
