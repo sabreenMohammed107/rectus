@@ -298,8 +298,7 @@
                         </div>
                         <div class="desc-wrap">
                             <p>
-                                Our training programs are designed to maximize delegate participation.
-                                Participants ..
+                                Holistic, industry expertise, adaptability, regulatory compliance, emerging technologies, sustainability.
 
                             </p>
 
@@ -319,8 +318,7 @@
                             </a>
                         </div>
                         <div class="desc-wrap">
-                            <p>RECTUS offers a range of Soft Skills training courses which provides delegates opportunities
-                                to develop ..
+                            <p>Tailored, diverse, industry-aligned, senior executives, leadership journey, comprehensive.
                             </p>
 
                             <a href="{{ url('category/' . $catId) }}">More Details</a>
@@ -339,9 +337,7 @@
                             </a>
                         </div>
                         <div class="desc-wrap">
-                            <p>
-                                Why do some participants take Professional Certificate training course? According to The
-                                Guide to ..
+                            <p>Continuous development, HR expertise, energy industry focus, tailored courses, international recognition.
                             </p>
 
                             <a href="{{ url('category/' . $catId) }}">More Details</a>
@@ -361,8 +357,7 @@
                             </a>
                         </div>
                         <div class="desc-wrap">
-                            <p>Energy markets are increasingly global and interconnected. Energy price volatility has
-                                increased ..</p>
+                            <p>Global markets, price volatility, geopolitical factors, risk management, trading decisions.</p>
 
                             <a href='{{ url('category/' . $catId) }}'>More Details</a>
                         </div>
